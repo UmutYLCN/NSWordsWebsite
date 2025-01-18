@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Temel Kelimeler",
+    "words": [
+      {
+        "id": 1,
+        "word": "accomplish",
+        "definition": "to succeed in doing something",
+        "translation": "başarmak",
+        "meaning": "Bir şeyi başarıyla tamamlamak veya gerçekleştirmek",
+        "examples": [
+          "She accomplished all her goals for the year.",
+          "The team accomplished the project ahead of schedule."
+        ]
+      },
+      {
+        "id": 2,
+        "word": "enhance",
+        "definition": "to improve the quality or value of something",
+        "translation": "geliştirmek",
+        "meaning": "Bir şeyin kalitesini veya değerini artırmak",
+        "examples": [
+          "The new features will enhance the user experience.",
+          "Regular exercise can enhance your overall health."
+        ]
+      },
+      {
+        "id": 3,
+        "word": "persist",
+        "definition": "to continue firmly in an opinion or course of action",
+        "translation": "ısrar etmek",
+        "meaning": "Bir düşünce veya eylemde kararlılıkla devam etmek",
+        "examples": [
+          "If you persist in your efforts, you will succeed.",
+          "The problem persisted despite our attempts to fix it."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "İş Hayatı",
+    "words": [
+      {
+        "id": 4,
+        "word": "negotiate",
+        "definition": "to discuss something to reach an agreement",
+        "translation": "müzakere etmek",
+        "meaning": "Bir anlaşmaya varmak için görüşmek veya tartışmak",
+        "examples": [
+          "They are negotiating the terms of the contract.",
+          "We successfully negotiated a better price."
+        ]
+      },
+      {
+        "id": 5,
+        "word": "delegate",
+        "definition": "to give a particular job or responsibility to someone else",
+        "translation": "görev vermek",
+        "meaning": "Belirli bir işi veya sorumluluğu başka birine devretmek",
+        "examples": [
+          "A good manager knows how to delegate tasks effectively.",
+          "She delegated the project to her assistant."
+        ]
+      },
+      {
+        "id": 6,
+        "word": "collaborate",
+        "definition": "to work jointly with others on an activity or project",
+        "translation": "işbirliği yapmak",
+        "meaning": "Bir aktivite veya proje üzerinde başkalarıyla birlikte çalışmak",
+        "examples": [
+          "The two teams collaborated on the research project.",
+          "Artists often collaborate with other musicians."
+        ]
+      }
+    ]
+  }
+] 
