@@ -1,78 +1,1511 @@
 [
   {
     "id": 1,
-    "title": "Temel Kelimeler",
+    "title": "Reading & Writing Unit 1",
     "words": [
       {
-        "id": 1,
-        "word": "accomplish",
-        "definition": "to succeed in doing something",
-        "translation": "başarmak",
-        "meaning": "Bir şeyi başarıyla tamamlamak veya gerçekleştirmek",
+          "id": 1,
+          "word": "advice",
+          "definition": "an opinion you give someone about what he or she should do",
+          "translation": "tavsiye",
+          "meaning": "Birine ne yapması gerektiği hakkında verilen fikir",
+          "examples": [
+            "My grandmother gave me some great advice about saving money.",
+            "I always ask my mentor for advice on my career."
+          ]
+      },
+      {
+          "id": 2,
+          "word": "career",
+          "meaning": "Bir kişinin genellikle eğitim aldıktan sonra uzun süre yaptığı iş türleri",
+          "definition": "the kinds of work people do, usually after learning how and usually for a long time",
+          "translation": "meslek",
+          "examples": [
+            "She is considering a career in engineering.",
+            "Many people change careers several times in their lifetime."
+          ]
+      },
+      {
+          "id": 3,
+          "word": "hire",
+          "meaning": "Birine iş vermek",
+          "definition": "to give someone a job",
+          "translation": "işe almak",
+          "examples": [
+            "The company plans to hire 10 new employees next month.",
+            "We need to hire a new accountant."
+          ]
+      },{
+          "id": 4,
+          "word": "ideal",
+          "meaning": "Mükemmel, en uygun",
+          "definition": "perfect",
+          "translation": "ideal",
+          "examples": [
+            "This house is ideal for a small family.",
+            "She is the ideal candidate for the job."
+          ]
+      },
+      {
+          "id": 5,
+          "word": "interview",
+          "meaning": "Bir iş arayan kişinin, yeni bir çalışan arayan kişiyle görüştüğü toplantılar",
+          "definition": "meetings where a person looking for a job talks to the person who is looking for a new worker",
+          "translation": "görüşme",
+          "examples": [
+            "I had a job interview yesterday.",
+            "The interview process was very long."
+          ]
+      },
+      {
+          "id": 6,
+          "word": "postings",
+          "meaning": "İnternetteki reklamlar veya yorumlar",
+          "definition": "ads or comments on the Internet",
+          "translation": "ilanlar",
+          "examples": [
+            "I saw a job posting on the website.",
+            "There are many social media postings about the new product."
+          ]
+      },
+      {
+          "id": 7,
+          "word": "resumes",
+          "meaning": "Bir kişinin eğitim durumu ve önceki iş deneyimlerinin yazılı açıklamaları",
+          "definition": "written descriptions of people's education and previous jobs",
+          "translation": "özgeçmişler",
+          "examples": [
+            "I sent my resume to several companies.",
+            "Your resume should highlight your skills and experience."
+          ]
+      },
+      {
+          "id": 8,
+          "word": "rewards",
+          "meaning": "İş karşılığında elde edilen iyi şeyler (para veya sağlık sigortası gibi)",
+          "definition": "good things you get in return for work (such as money or health insurance)",
+          "translation": "ödüller",
+          "examples": [
+            "The company offers a variety of rewards to its employees.",
+            "Winning the award was a great reward for all our hard work."
+          ]
+      },
+      {
+          "id": 9,
+          "word": "setting",
+          "meaning": "Bir şeyin gerçekleştiği yer",
+          "definition": "the place where something happens",
+          "translation": "ortam",
+          "examples": [
+            "The setting of the novel is a small town in England.",
+            "The office setting is very casual."
+          ]
+      },
+      {
+          "id": 10,
+          "word": "skills",
+          "meaning": "İyi yapabildiğiniz şeyler; öğrendiğiniz ve pratik yaptığınız yetenekler",
+          "definition": "things that you can do well; abilities that you have learned and practiced",
+          "translation": "beceriler",
+          "examples": [
+            "He has excellent communication skills.",
+            "To be successful in this job, you need strong technical skills."
+          ]
+      },
+      {
+          "id": 11,
+          "word": "run your own business",
+          "meaning": "Kendi işini yürütmek",
+          "definition": "to start and manage your own company",
+          "translation": "kendi işini yürütmek",
+          "examples": [
+            "He wants to run his own business and be his own boss.",
+            "Starting a business is not easy, but it can be very rewarding."
+          ]
+      },
+      {
+          "id": 12,
+          "word": "experience",
+          "meaning": "Deneyim, yaşanmışlık",
+          "definition": "knowledge or skill that comes from having done something for a period of time",
+          "translation": "deneyim",
+          "examples": [
+            "She has ten years of experience in marketing.",
+            "I learned a lot from my experience working abroad."
+          ]
+      },
+        {
+          "id": 13,
+          "word": "challenge",
+          "meaning": "Zorluk, meydan okuma",
+          "definition": "a difficult task or problem",
+          "translation": "zorluk",
+          "examples": [
+            "Starting a business is a big challenge.",
+            "I like to challenge myself to learn new things."
+          ]            
+        }
+        
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Reading & Writing Unit 2",
+    "words": [
+      {
+        "id": 14,
+        "word": "combining",
+        "definition": "joining or mixing two or more things together",
+        "translation": "birleştirmek",
+        "meaning": "İki veya daha fazla şeyi bir araya getirmek",
         "examples": [
-          "She accomplished all her goals for the year.",
-          "The team accomplished the project ahead of schedule."
+          "She is combining her art skills with technology to create something new.",
+          "By combining different ingredients, we can make a delicious meal."
         ]
       },
       {
-        "id": 2,
-        "word": "enhance",
-        "definition": "to improve the quality or value of something",
-        "translation": "geliştirmek",
-        "meaning": "Bir şeyin kalitesini veya değerini artırmak",
+        "id": 15,
+        "word": "create",
+        "definition": "to make something new or original",
+        "translation": "yaratmak",
+        "meaning": "Yeni veya özgün bir şey ortaya çıkarmak",
         "examples": [
-          "The new features will enhance the user experience.",
-          "Regular exercise can enhance your overall health."
+          "The artist created a beautiful painting.",
+          "We need to create a solution to this problem."
         ]
       },
       {
-        "id": 3,
-        "word": "persist",
-        "definition": "to continue firmly in an opinion or course of action",
-        "translation": "ısrar etmek",
-        "meaning": "Bir düşünce veya eylemde kararlılıkla devam etmek",
+        "id": 16,
+        "word": "curious",
+        "definition": "eager to learn or know more about something",
+        "translation": "meraklı",
+        "meaning": "Bir şey hakkında daha fazla öğrenmeye istekli",
         "examples": [
-          "If you persist in your efforts, you will succeed.",
-          "The problem persisted despite our attempts to fix it."
+          "Children are naturally curious about the world.",
+          "She is curious to know how the machine works."
+        ]
+      },
+      {
+        "id": 17,
+        "word": "encourage",
+        "definition": "to give support or confidence to someone",
+        "translation": "cesaretlendirmek",
+        "meaning": "Birine destek vermek veya özgüven aşılamak",
+        "examples": [
+          "Parents should encourage their children to read more.",
+          "The teacher encourages students to ask questions."
+        ]
+      },
+      {
+        "id": 18,
+        "word": "fact",
+        "definition": "something that is known to be true",
+        "translation": "gerçek",
+        "meaning": "Doğru olduğu bilinen bir şey",
+        "examples": [
+          "It is a fact that the Earth revolves around the Sun.",
+          "Please check your facts before making a statement."
+        ]
+      },
+      {
+        "id": 19,
+        "word": "logical",
+        "definition": "making sense based on reason and facts",
+        "translation": "mantıklı",
+        "meaning": "Mantık ve gerçeklere dayalı olarak anlamlı olan",
+        "examples": [
+          "His explanation was very logical and easy to understand.",
+          "We need a logical approach to solve this problem."
+        ]
+      },
+      {
+        "id": 20,
+        "word": "measure",
+        "definition": "to find the size, amount, or degree of something",
+        "translation": "ölçmek",
+        "meaning": "Bir şeyin boyutunu, miktarını veya derecesini bulmak",
+        "examples": [
+          "The carpenter measured the room before installing the carpet.",
+          "Scientists measure the temperature of the ocean."
+        ]
+      },
+      {
+        "id": 21,
+        "word": "original",
+        "definition": "new and different from anything else",
+        "translation": "özgün",
+        "meaning": "Yeni ve diğer her şeyden farklı olan",
+        "examples": [
+          "She always has original ideas for her projects.",
+          "This is an original painting by Van Gogh."
+        ]
+      },
+      {
+        "id": 22,
+        "word": "piece",
+        "definition": "a part of something larger",
+        "translation": "parça",
+        "meaning": "Daha büyük bir şeyin parçası",
+        "examples": [
+          "I need a piece of paper to write this down.",
+          "The puzzle is missing one piece."
+        ]
+      },
+      {
+        "id": 23,
+        "word": "prove",
+        "definition": "to show that something is true",
+        "translation": "kanıtlamak",
+        "meaning": "Bir şeyin doğru olduğunu göstermek",
+        "examples": [
+          "The scientist proved his theory through experiments.",
+          "You need to prove that you can handle this responsibility."
+        ]
+      },
+      {
+        "id": 24,
+        "word": "solve",
+        "definition": "to find an answer or solution to a problem",
+        "translation": "çözmek",
+        "meaning": "Bir problemin cevabını veya çözümünü bulmak",
+        "examples": [
+          "The detective solved the mystery.",
+          "Working together, we can solve this problem."
+        ]
+      },
+      {
+        "id": 25,
+        "word": "study",
+        "definition": "to learn about something by reading and researching",
+        "translation": "çalışmak",
+        "meaning": "Okuyarak ve araştırarak bir şey hakkında bilgi edinmek",
+        "examples": [
+          "She studies biology at the university.",
+          "You need to study hard to pass the exam."
+        ]
+      },
+      {
+        "id": 26,
+        "word": "focus on",
+        "definition": "to concentrate attention or effort on something",
+        "translation": "odaklanmak",
+        "meaning": "Dikkat veya çabayı bir şey üzerine yoğunlaştırmak",
+        "examples": [
+          "You need to focus on your work and avoid distractions.",
+          "The company is focusing on developing new products."
+        ]
+      },
+      {
+        "id": 27,
+        "word": "take risks",
+        "definition": "to do something that might have unpleasant or unwanted results",
+        "translation": "risk almak",
+        "meaning": "Hoş olmayan veya istenmeyen sonuçları olabilecek bir şey yapmak",
+        "examples": [
+          "Entrepreneurs often have to take risks to succeed.",
+          "Sometimes you need to take risks to achieve your goals."
         ]
       }
     ]
   },
   {
-    "id": 2,
-    "title": "İş Hayatı",
+    "id": 3,
+    "title": "Reading & Writing Unit 3",
+    "words": [                 
+      {
+        "id": 28,
+        "word": "arrest",
+        "definition": "to take someone to a police station because they may have committed a crime",
+        "translation": "tutuklamak",
+        "meaning": "Birini suç işlemiş olabileceği için polis merkezine götürmek",
+        "examples": [
+          "The police arrested the suspect yesterday.",
+          "He was arrested for speeding and driving without a license."
+        ]
+      },
+      {
+        "id": 29,
+        "word": "bill",
+        "definition": "a piece of paper money",
+        "translation": "banknot",
+        "meaning": "Kağıt para",
+        "examples": [
+          "He paid with a hundred-dollar bill.",
+          "The cashier checked if the bill was real."
+        ]
+      },
+      {
+        "id": 30,
+        "word": "completely",
+        "definition": "totally, entirely",
+        "translation": "tamamen",
+        "meaning": "Bütünüyle, tamamıyla",
+        "examples": [
+          "The project is completely finished.",
+          "I completely agree with your opinion."
+        ]
+      },
+      {
+        "id": 31,
+        "word": "counterfeiter",
+        "definition": "someone who illegally copies money or other items",
+        "translation": "sahtekar",
+        "meaning": "Para veya başka eşyaları yasadışı olarak kopyalayan kişi",
+        "examples": [
+          "The police caught a counterfeiter printing fake money.",
+          "Counterfeiters use sophisticated equipment to make fake bills."
+        ]
+      },
+      {
+        "id": 32,
+        "word": "equipment",
+        "definition": "the tools or machines needed for a particular purpose",
+        "translation": "ekipman",
+        "meaning": "Belirli bir amaç için gereken araç veya makineler",
+        "examples": [
+          "The gym has new exercise equipment.",
+          "You need special equipment to climb mountains."
+        ]
+      },
+      {
+        "id": 33,
+        "word": "fake",
+        "definition": "not real; made to look like something real",
+        "translation": "sahte",
+        "meaning": "Gerçek olmayan; gerçeğine benzetilmiş",
+        "examples": [
+          "The police discovered fake passports.",
+          "She could tell the handbag was fake."
+        ]
+      },
+      {
+        "id": 34,
+        "word": "illegal",
+        "definition": "not allowed by law",
+        "translation": "yasadışı",
+        "meaning": "Kanunlara aykırı olan",
+        "examples": [
+          "It's illegal to drive without a license.",
+          "Selling counterfeit goods is illegal."
+        ]
+      },
+      {
+        "id": 35,
+        "word": "ink",
+        "definition": "colored liquid used for writing, printing, or drawing",
+        "translation": "mürekkep",
+        "meaning": "Yazı yazmak, basmak veya çizmek için kullanılan renkli sıvı",
+        "examples": [
+          "The printer is running out of ink.",
+          "She writes her letters with blue ink."
+        ]
+      },
+      {
+        "id": 36,
+        "word": "nervous",
+        "definition": "worried or anxious about something",
+        "translation": "gergin",
+        "meaning": "Endişeli veya kaygılı",
+        "examples": [
+          "She feels nervous before every presentation.",
+          "The suspect looked nervous during questioning."
+        ]
+      },
+      {
+        "id": 37,
+        "word": "prevent",
+        "definition": "to stop something from happening",
+        "translation": "önlemek",
+        "meaning": "Bir şeyin olmasını engellemek",
+        "examples": [
+          "Regular exercise helps prevent health problems.",
+          "The security system prevents unauthorized access."
+        ]
+      },
+      {
+        "id": 38,
+        "word": "scanner",
+        "definition": "a device that copies documents or images into a computer",
+        "translation": "tarayıcı",
+        "meaning": "Belgeleri veya görüntüleri bilgisayara kopyalayan cihaz",
+        "examples": [
+          "Use the scanner to make a digital copy of the document.",
+          "Modern scanners can produce very high-quality images."
+        ]
+      },
+      {
+        "id": 39,
+        "word": "technology",
+        "definition": "scientific knowledge used in practical ways",
+        "translation": "teknoloji",
+        "meaning": "Pratik yollarda kullanılan bilimsel bilgi",
+        "examples": [
+          "New technology has changed the way we communicate.",
+          "The company invests heavily in technology."
+        ]
+      },
+      {
+        "id": 40,
+        "word": "break the law",
+        "definition": "to do something illegal",
+        "translation": "kanunu çiğnemek",
+        "meaning": "Yasadışı bir şey yapmak",
+        "examples": [
+          "Speeding breaks the law.",
+          "Anyone who breaks the law must face the consequences."
+        ]
+      },
+      {
+        "id": 41,
+        "word": "polite",
+        "definition": "having or showing good manners",
+        "translation": "kibar",
+        "meaning": "İyi davranışlar gösteren veya sahip olan",
+        "examples": [
+          "She is always polite to everyone she meets.",
+          "It's polite to say thank you when someone helps you."
+        ]
+      },
+      {
+        "id": 42,
+        "word": "litter",
+        "definition": "to make a place untidy by leaving waste products lying around",
+        "translation": "çöp atmak",
+        "meaning": "Etrafta çöp bırakarak bir yeri kirletmek",
+        "examples": [
+          "Please don't litter in the park.",
+          "There are fines for littering on the street."
+        ]
+      },
+      {
+        "id": 43,
+        "word": "wait my turn",
+        "definition": "to wait until it is your time to do something",
+        "translation": "sıramı beklemek",
+        "meaning": "Bir şey yapmak için kendi zamanını beklemek",
+        "examples": [
+          "You must wait your turn to speak in class.",
+          "Everyone has to wait their turn at the doctor's office."
+        ]
+      },
+      {
+        "id": 44,
+        "word": "impolite",
+        "definition": "not showing good manners; rude",
+        "translation": "kaba",
+        "meaning": "İyi davranışlar göstermeyen; nezaketsiz",
+        "examples": [
+          "It's impolite to talk with your mouth full.",
+          "He was being impolite by interrupting everyone."
+        ]
+      },
+      {
+        "id": 45,
+        "word": "greeted",
+        "definition": "welcomed someone with particular words or actions",
+        "translation": "selamladı",
+        "meaning": "Birini belirli söz veya davranışlarla karşılamak",
+        "examples": [
+          "She greeted her guests at the door.",
+          "We greeted each other with a handshake."
+        ]
+      },
+      {
+        "id": 46,
+        "word": "tip",
+        "definition": "extra money given to someone who has provided a service",
+        "translation": "bahşiş",
+        "meaning": "Hizmet veren birine verilen ekstra para",
+        "examples": [
+          "Don't forget to leave a tip for the waiter.",
+          "He always gives a generous tip to the taxi driver."
+        ]
+      },
+      {
+        "id": 47,
+        "word": "stood in line",
+        "definition": "to wait in a queue",
+        "translation": "sıraya girmek",
+        "meaning": "Kuyrukta beklemek",
+        "examples": [
+          "We stood in line for an hour to buy tickets.",
+          "People stood in line patiently at the bus stop."
+        ]
+      },
+      {
+        "id": 48,
+        "word": "followed the rules",
+        "definition": "to obey the established guidelines or regulations",
+        "translation": "kurallara uymak",
+        "meaning": "Belirlenmiş yönerge veya düzenlemelere uymak",
+        "examples": [
+          "Students who followed the rules were rewarded.",
+          "Everyone must follow the rules of the game."
+        ]
+      },
+      {
+        "id": 49,
+        "word": "broke the rules",
+        "definition": "to disobey or violate established guidelines",
+        "translation": "kuralları çiğnemek",
+        "meaning": "Belirlenmiş yönergelere uymamak veya ihlal etmek",
+        "examples": [
+          "He broke the rules and was disqualified.",
+          "Students who break the rules face consequences."
+        ]
+      },
+      {
+        "id": 50,
+        "word": "against the rules",
+        "definition": "not permitted by the regulations",
+        "translation": "kurallara aykırı",
+        "meaning": "Düzenlemelere göre izin verilmeyen",
+        "examples": [
+          "Running in the hallway is against the rules.",
+          "It's against the rules to use phones during the exam."
+        ]
+      },
+      {
+        "id": 51,
+        "word": "exception to the rule",
+        "definition": "a case where a rule does not apply",
+        "translation": "kuralın istisnası",
+        "meaning": "Bir kuralın geçerli olmadığı durum",
+        "examples": [
+          "There are always exceptions to the rule.",
+          "In this case, we'll make an exception to the rule."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Reading & Writing Unit 4",
     "words": [
       {
-        "id": 4,
-        "word": "negotiate",
-        "definition": "to discuss something to reach an agreement",
-        "translation": "müzakere etmek",
-        "meaning": "Bir anlaşmaya varmak için görüşmek veya tartışmak",
+        "id": 52,
+        "word": "annoyed",
+        "definition": "slightly angry or irritated",
+        "translation": "rahatsız",
+        "meaning": "Hafif kızgın veya sinirlenmiş",
         "examples": [
-          "They are negotiating the terms of the contract.",
-          "We successfully negotiated a better price."
+          "She was annoyed by the loud noise.",
+          "The constant interruptions made him feel annoyed."
         ]
       },
       {
-        "id": 5,
-        "word": "delegate",
-        "definition": "to give a particular job or responsibility to someone else",
-        "translation": "görev vermek",
-        "meaning": "Belirli bir işi veya sorumluluğu başka birine devretmek",
+        "id": 53,
+        "word": "block",
+        "definition": "to stop something from moving or passing through",
+        "translation": "engellemek",
+        "meaning": "Bir şeyin hareketini veya geçişini durdurmak",
         "examples": [
-          "A good manager knows how to delegate tasks effectively.",
-          "She delegated the project to her assistant."
+          "The fallen tree blocked the road.",
+          "The spam filter blocks unwanted emails."
         ]
       },
       {
-        "id": 6,
-        "word": "collaborate",
-        "definition": "to work jointly with others on an activity or project",
-        "translation": "işbirliği yapmak",
-        "meaning": "Bir aktivite veya proje üzerinde başkalarıyla birlikte çalışmak",
+        "id": 54,
+        "word": "civilized",
+        "definition": "polite and well-mannered; culturally advanced",
+        "translation": "medeni",
+        "meaning": "Kibar ve görgülü; kültürel olarak gelişmiş",
         "examples": [
-          "The two teams collaborated on the research project.",
-          "Artists often collaborate with other musicians."
+          "They had a civilized discussion about their differences.",
+          "The restaurant offers a civilized dining experience."
+        ]
+      },
+      {
+        "id": 55,
+        "word": "confused",
+        "definition": "unable to think clearly or understand something",
+        "translation": "kafası karışık",
+        "meaning": "Net düşünemeyen veya bir şeyi anlayamayan",
+        "examples": [
+          "The students were confused by the complex math problem.",
+          "I'm confused about which direction to take."
+        ]
+      },
+      {
+        "id": 56,
+        "word": "elderly",
+        "definition": "old or aging",
+        "translation": "yaşlı",
+        "meaning": "Yaşlı veya yaşlanan",
+        "examples": [
+          "The elderly couple takes a walk every morning.",
+          "This program helps elderly people live independently."
+        ]
+      },
+      {
+        "id": 57,
+        "word": "enforce",
+        "definition": "to make sure that rules or laws are obeyed",
+        "translation": "uygulatmak",
+        "meaning": "Kural veya yasalara uyulmasını sağlamak",
+        "examples": [
+          "Police officers enforce traffic laws.",
+          "The school strictly enforces its dress code."
+        ]
+      },
+      {
+        "id": 58,
+        "word": "etiquette",
+        "definition": "the rules for polite behavior in society",
+        "translation": "görgü kuralları",
+        "meaning": "Toplumda kibar davranış kuralları",
+        "examples": [
+          "Business etiquette varies from country to country.",
+          "She teaches dining etiquette to corporate professionals."
+        ]
+      },
+      {
+        "id": 59,
+        "word": "expert",
+        "definition": "someone who has special knowledge or skill in a subject",
+        "translation": "uzman",
+        "meaning": "Bir konuda özel bilgi veya beceriye sahip kişi",
+        "examples": [
+          "He is an expert in computer security.",
+          "We consulted an expert for advice."
+        ]
+      },
+      {
+        "id": 60,
+        "word": "manners",
+        "definition": "polite ways of behaving with other people",
+        "translation": "görgü",
+        "meaning": "Başkalarıyla kibar davranış şekilleri",
+        "examples": [
+          "Good manners are important in every culture.",
+          "She taught her children proper table manners."
+        ]
+      },
+      {
+        "id": 61,
+        "word": "pole",
+        "definition": "a long, thin piece of wood or metal that stands upright",
+        "translation": "direk",
+        "meaning": "Dik duran uzun, ince tahta veya metal parça",
+        "examples": [
+          "The flag waves from a tall pole.",
+          "They installed new light poles along the street."
+        ]
+      },
+      {
+        "id": 62,
+        "word": "push",
+        "definition": "to move something by pressing against it",
+        "translation": "itmek",
+        "meaning": "Bir şeye bastırarak hareket ettirmek",
+        "examples": [
+          "Push the door to open it.",
+          "He pushed through the crowd to reach the exit."
+        ]
+      },
+      {
+        "id": 63,
+        "word": "rude",
+        "definition": "not polite; showing bad manners",
+        "translation": "kaba",
+        "meaning": "Kibar olmayan; kötü davranış gösteren",
+        "examples": [
+          "It's rude to interrupt when someone is speaking.",
+          "The customer was very rude to the waiter."
+        ]
+      },
+      {
+        "id": 64,
+        "word": "sneeze",
+        "definition": "to suddenly force air out through your nose and mouth",
+        "translation": "hapşırmak",
+        "meaning": "Aniden burun ve ağızdan hava çıkarmak",
+        "examples": [
+          "Cover your mouth when you sneeze.",
+          "Dust makes me sneeze."
+        ]
+      },
+      {
+        "id": 65,
+        "word": "blow your nose",
+        "definition": "to clear your nose by forcing air through it",
+        "translation": "sümkürmek",
+        "meaning": "Burnundan hava üfleyerek temizlemek",
+        "examples": [
+          "Use a tissue to blow your nose.",
+          "It's polite to excuse yourself when you need to blow your nose."
+        ]
+      },
+      {
+        "id": 66,
+        "word": "make eye contact with",
+        "definition": "to look directly into someone's eyes while communicating",
+        "translation": "göz teması kurmak",
+        "meaning": "İletişim kurarken birinin gözlerine doğrudan bakmak",
+        "examples": [
+          "It's important to make eye contact with your interviewer.",
+          "She made eye contact with everyone in the audience during her speech."
+        ]
+      },
+      {
+        "id": 67,
+        "word": "rely on",
+        "definition": "to need or depend on someone or something",
+        "translation": "güvenmek",
+        "meaning": "Birine veya bir şeye ihtiyaç duymak veya bağlı olmak",
+        "examples": [
+          "You can rely on me to help you.",
+          "Many businesses rely on computer technology."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Reading & Writing Unit 5",
+    "words": [
+      {
+        "id": 68,
+        "word": "perception",
+        "definition": "the way you notice or understand something using your senses",
+        "translation": "algı",
+        "meaning": "Duyularınızı kullanarak bir şeyi fark etme veya anlama şekli",
+        "examples": [
+          "People's perception of danger can vary greatly.",
+          "The optical illusion changes our perception of reality."
+        ]
+      },
+      {
+        "id": 69,
+        "word": "vision",
+        "definition": "the ability to see; sight",
+        "translation": "görüş",
+        "meaning": "Görme yeteneği; görme duyusu",
+        "examples": [
+          "Regular eye check-ups help maintain good vision.",
+          "Her vision became blurry without her glasses."
+        ]
+      },
+      {
+        "id": 70,
+        "word": "context",
+        "definition": "the situation in which something happens",
+        "translation": "bağlam",
+        "meaning": "Bir şeyin gerçekleştiği durum veya ortam",
+        "examples": [
+          "The word has a different meaning in this context.",
+          "You need to understand the historical context."
+        ]
+      },
+      {
+        "id": 71,
+        "word": "surrounding",
+        "definition": "the things, conditions, or influences around someone or something",
+        "translation": "çevre",
+        "meaning": "Bir kişi veya şeyin etrafındaki şeyler, koşullar veya etkiler",
+        "examples": [
+          "The hotel has beautiful surrounding gardens.",
+          "Animals adapt to their surrounding environment."
+        ]
+      },
+      {
+        "id": 72,
+        "word": "lenses",
+        "definition": "curved pieces of glass or plastic used to see better or take photographs",
+        "translation": "mercekler",
+        "meaning": "Daha iyi görmek veya fotoğraf çekmek için kullanılan kavisli cam veya plastik parçalar",
+        "examples": [
+          "She needs to clean her contact lenses daily.",
+          "The camera has multiple lenses for different types of shots."
+        ]
+      },
+      {
+        "id": 73,
+        "word": "factor",
+        "definition": "something that influences or causes a situation",
+        "translation": "etken",
+        "meaning": "Bir durumu etkileyen veya oluşturan şey",
+        "examples": [
+          "Stress is a major factor in many health problems.",
+          "Price is an important factor when buying a car."
+        ]
+      },
+      {
+        "id": 74,
+        "word": "senses",
+        "definition": "the five natural powers (sight, hearing, touch, taste, and smell) that help you understand the world",
+        "translation": "duyular",
+        "meaning": "Dünyayı anlamanıza yardımcı olan beş doğal güç (görme, işitme, dokunma, tat alma ve koku alma)",
+        "examples": [
+          "Dogs have very sharp senses.",
+          "Our senses help us understand our environment."
+        ]
+      },
+      {
+        "id": 75,
+        "word": "affect",
+        "definition": "to influence or cause a change in something or someone",
+        "translation": "etkilemek",
+        "meaning": "Bir şeyi veya birini etkilemek veya değişikliğe neden olmak",
+        "examples": [
+          "Lack of sleep can affect your concentration.",
+          "The weather affects my mood."
+        ]
+      },
+      {
+        "id": 76,
+        "word": "consider",
+        "definition": "to think about something carefully",
+        "translation": "düşünmek",
+        "meaning": "Bir şey hakkında dikkatlice düşünmek",
+        "examples": [
+          "Please consider all options before making a decision.",
+          "They are considering moving to another city."
+        ]
+      },
+      {
+        "id": 77,
+        "word": "fascinated",
+        "definition": "to be very interested in or attracted by something",
+        "translation": "büyülenmiş",
+        "meaning": "Bir şeye çok ilgi duyan veya çekilen",
+        "examples": [
+          "Children are often fascinated by animals.",
+          "She was fascinated by the ancient ruins."
+        ]
+      },
+      {
+        "id": 78,
+        "word": "image",
+        "definition": "a picture or visual representation of something",
+        "translation": "görüntü",
+        "meaning": "Bir şeyin resmi veya görsel temsili",
+        "examples": [
+          "The telescope captured clear images of the planet.",
+          "She uploaded the image to her social media account."
+        ]
+      },
+      {
+        "id": 79,
+        "word": "interpret",
+        "definition": "to explain the meaning of something",
+        "translation": "yorumlamak",
+        "meaning": "Bir şeyin anlamını açıklamak",
+        "examples": [
+          "The doctor helped interpret the test results.",
+          "It's difficult to interpret body language correctly."
+        ]
+      },
+      {
+        "id": 80,
+        "word": "joke",
+        "definition": "something said or done to make people laugh",
+        "translation": "şaka",
+        "meaning": "İnsanları güldürmek için söylenen veya yapılan şey",
+        "examples": [
+          "He always tells jokes to lighten the mood.",
+          "Everyone laughed at her joke."
+        ]
+      },
+      {
+        "id": 81,
+        "word": "explanation",
+        "definition": "a statement that makes something clear or easy to understand",
+        "translation": "açıklama",
+        "meaning": "Bir şeyi açık veya anlaşılır hale getiren ifade",
+        "examples": [
+          "The teacher gave a clear explanation of the concept.",
+          "I need an explanation for why you're late."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Reading & Writing Unit 6",
+    "words": [
+      {
+        "id": 82,
+        "word": "adventure",
+        "definition": "an exciting or dangerous experience",
+        "translation": "macera",
+        "meaning": "Heyecan verici veya tehlikeli bir deneyim",
+        "examples": [
+          "They went on an adventure in the Amazon rainforest.",
+          "Reading books can take you on amazing adventures."
+        ]
+      },
+      {
+        "id": 83,
+        "word": "dangerous",
+        "definition": "likely to cause harm or injury",
+        "translation": "tehlikeli",
+        "meaning": "Zarar veya yaralanmaya neden olabilecek",
+        "examples": [
+          "It's dangerous to drive in heavy snow.",
+          "Swimming in this area is dangerous due to strong currents."
+        ]
+      },
+      {
+        "id": 84,
+        "word": "defeat",
+        "definition": "to win against someone in a fight, game, or competition",
+        "translation": "yenmek",
+        "meaning": "Bir kavga, oyun veya yarışmada birine karşı kazanmak",
+        "examples": [
+          "Our team defeated the champions in the final match.",
+          "The army was defeated in the battle."
+        ]
+      },
+      {
+        "id": 85,
+        "word": "fail",
+        "definition": "to not succeed in achieving something",
+        "translation": "başarısız olmak",
+        "meaning": "Bir şeyi başarmakta yetersiz kalmak",
+        "examples": [
+          "He failed his driving test three times.",
+          "The business failed due to poor management."
+        ]
+      },
+      {
+        "id": 86,
+        "word": "intelligence",
+        "definition": "the ability to learn, understand and think in a logical way",
+        "translation": "zeka",
+        "meaning": "Öğrenme, anlama ve mantıklı düşünme yeteneği",
+        "examples": [
+          "She showed great intelligence in solving the problem.",
+          "Artificial intelligence is changing the world."
+        ]
+      },
+      {
+        "id": 87,
+        "word": "journey",
+        "definition": "an act of traveling from one place to another",
+        "translation": "yolculuk",
+        "meaning": "Bir yerden başka bir yere seyahat etme eylemi",
+        "examples": [
+          "The journey to the mountain top took three days.",
+          "Life is a journey of continuous learning."
+        ]
+      },
+      {
+        "id": 88,
+        "word": "magic",
+        "definition": "special powers that can make impossible things happen",
+        "translation": "sihir",
+        "meaning": "İmkansız şeylerin olmasını sağlayabilen özel güçler",
+        "examples": [
+          "The magician performed amazing magic tricks.",
+          "The story is full of magic and mystery."
+        ]
+      },
+      {
+        "id": 89,
+        "word": "mentor",
+        "definition": "an experienced person who advises and helps someone with less experience",
+        "translation": "mentor",
+        "meaning": "Daha az deneyimli birine tavsiye veren ve yardım eden deneyimli kişi",
+        "examples": [
+          "She found a great mentor in her first job.",
+          "A good mentor can help guide your career."
+        ]
+      },
+      {
+        "id": 90,
+        "word": "opportunity",
+        "definition": "a chance to do something or a situation that makes it possible to do something",
+        "translation": "fırsat",
+        "meaning": "Bir şey yapma şansı veya bir şeyi mümkün kılan durum",
+        "examples": [
+          "He took the opportunity to study abroad.",
+          "This job offers many opportunities for advancement."
+        ]
+      },
+      {
+        "id": 91,
+        "word": "protect",
+        "definition": "to keep someone or something safe from harm or damage",
+        "translation": "korumak",
+        "meaning": "Birini veya bir şeyi zarardan veya hasardan güvende tutmak",
+        "examples": [
+          "Parents want to protect their children from danger.",
+          "Sunscreen helps protect your skin from the sun."
+        ]
+      },
+      {
+        "id": 92,
+        "word": "safety",
+        "definition": "the state of being safe and protected from danger or harm",
+        "translation": "güvenlik",
+        "meaning": "Tehlike veya zarardan güvende ve korunmuş olma durumu",
+        "examples": [
+          "Safety is our top priority in this workplace.",
+          "Always check the safety instructions before using new equipment."
+        ]
+      },
+      {
+        "id": 93,
+        "word": "struggle",
+        "definition": "to try very hard to do something difficult",
+        "translation": "mücadele etmek",
+        "meaning": "Zor bir şeyi yapmak için çok çabalamak",
+        "examples": [
+          "Many students struggle with mathematics.",
+          "He struggled to carry all the heavy boxes."
+        ]
+      },
+      {
+        "id": 94,
+        "word": "succeed",
+        "definition": "to achieve something that you have been trying to do",
+        "translation": "başarmak",
+        "meaning": "Yapmaya çalıştığınız bir şeyi gerçekleştirmek",
+        "examples": [
+          "She worked hard and succeeded in getting the promotion.",
+          "Not everyone who tries will succeed, but everyone can learn from trying."
+        ]
+      },
+      {
+        "id": 95,
+        "word": "treasure",
+        "definition": "valuable things, such as gold, jewels or money",
+        "translation": "hazine",
+        "meaning": "Altın, mücevher veya para gibi değerli şeyler",
+        "examples": [
+          "Pirates searched for buried treasure on the island.",
+          "These old photographs are family treasures."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Reading & Writing Unit 7",
+    "words": [
+      {
+        "id": 96,
+        "word": "antibiotic",
+        "definition": "medicine that kills bacteria and cures infections",
+        "translation": "antibiyotik",
+        "meaning": "Bakterileri öldüren ve enfeksiyonları iyileştiren ilaç",
+        "examples": [
+          "The doctor prescribed antibiotics for the infection.",
+          "Always complete the full course of antibiotics."
+        ]
+      },
+      {
+        "id": 97,
+        "word": "bandage",
+        "definition": "a strip of material used to cover and protect a wound",
+        "translation": "bandaj",
+        "meaning": "Yarayı örtmek ve korumak için kullanılan malzeme şeridi",
+        "examples": [
+          "She put a bandage on the cut.",
+          "The nurse changed the bandage daily."
+        ]
+      },
+      {
+        "id": 98,
+        "word": "blood",
+        "definition": "the red liquid that flows through the body",
+        "translation": "kan",
+        "meaning": "Vücutta dolaşan kırmızı sıvı",
+        "examples": [
+          "The doctor took a blood sample for testing.",
+          "Regular exercise improves blood circulation."
+        ]
+      },
+      {
+        "id": 99,
+        "word": "cure",
+        "definition": "to make someone healthy again after an illness",
+        "translation": "tedavi etmek",
+        "meaning": "Birini hastalıktan sonra tekrar sağlıklı hale getirmek",
+        "examples": [
+          "Scientists are working to find a cure for cancer.",
+          "Rest and proper medication helped cure his illness."
+        ]
+      },
+      {
+        "id": 100,
+        "word": "fever",
+        "definition": "a body temperature that is higher than normal",
+        "translation": "ateş",
+        "meaning": "Normalden yüksek vücut sıcaklığı",
+        "examples": [
+          "The child has a high fever.",
+          "Take medicine to reduce the fever."
+        ]
+      },
+      {
+        "id": 101,
+        "word": "flow",
+        "definition": "to move in a continuous stream",
+        "translation": "akmak",
+        "meaning": "Sürekli bir akış halinde hareket etmek",
+        "examples": [
+          "Blood flows through our veins.",
+          "The river flows into the sea."
+        ]
+      },
+      {
+        "id": 102,
+        "word": "gently",
+        "definition": "in a careful and soft way",
+        "translation": "nazikçe",
+        "meaning": "Dikkatli ve yumuşak bir şekilde",
+        "examples": [
+          "Clean the wound gently with antiseptic.",
+          "She gently applied the cream to her skin."
+        ]
+      },
+      {
+        "id": 103,
+        "word": "patient",
+        "definition": "a person who is receiving medical treatment",
+        "translation": "hasta",
+        "meaning": "Tıbbi tedavi gören kişi",
+        "examples": [
+          "The doctor examined the patient carefully.",
+          "The patient is recovering well after surgery."
+        ]
+      },
+      {
+        "id": 104,
+        "word": "popular",
+        "definition": "liked or admired by many people",
+        "translation": "popüler",
+        "meaning": "Çok kişi tarafından sevilen veya beğenilen",
+        "examples": [
+          "Yoga is becoming increasingly popular as a form of exercise.",
+          "This is a popular treatment for back pain."
+        ]
+      },
+      {
+        "id": 105,
+        "word": "relax",
+        "definition": "to become less tense or anxious",
+        "translation": "rahatlamak",
+        "meaning": "Daha az gergin veya endişeli hale gelmek",
+        "examples": [
+          "Deep breathing helps you relax.",
+          "Try to relax your muscles during the massage."
+        ]
+      },
+      {
+        "id": 106,
+        "word": "saliva",
+        "definition": "the liquid naturally produced in the mouth",
+        "translation": "tükürük",
+        "meaning": "Ağızda doğal olarak üretilen sıvı",
+        "examples": [
+          "Saliva helps break down food during digestion.",
+          "The test requires a saliva sample."
+        ]
+      },
+      {
+        "id": 107,
+        "word": "shot",
+        "definition": "an injection of medicine",
+        "translation": "iğne",
+        "meaning": "İlaç enjeksiyonu",
+        "examples": [
+          "Children need several shots to prevent diseases.",
+          "The flu shot helps prevent influenza."
+        ]
+      },
+      {
+        "id": 108,
+        "word": "swelling",
+        "definition": "an area of the body that has become larger or puffed up",
+        "translation": "şişlik",
+        "meaning": "Vücudun büyümüş veya şişmiş bir bölgesi",
+        "examples": [
+          "Ice can help reduce swelling.",
+          "There was some swelling around the injured ankle."
+        ]
+      },
+      {
+        "id": 109,
+        "word": "swollen",
+        "definition": "enlarged, puffed up",
+        "translation": "şişmiş",
+        "meaning": "Büyümüş, kabarmış",
+        "examples": [
+          "Her ankle was swollen after the fall.",
+          "Apply ice to the swollen area."
+        ]
+      },
+      {
+        "id": 110,
+        "word": "treat",
+        "definition": "to give medical care to cure an illness or injury",
+        "translation": "tedavi etmek",
+        "meaning": "Bir hastalığı veya yaralanmayı iyileştirmek için tıbbi bakım vermek",
+        "examples": [
+          "The doctor knows how to treat this condition.",
+          "It's important to treat the infection early."
+        ]
+      },
+      {
+        "id": 111,
+        "word": "vein",
+        "definition": "a blood vessel that carries blood to the heart",
+        "translation": "damar",
+        "meaning": "Kanı kalbe taşıyan kan damarı",
+        "examples": [
+          "The nurse had trouble finding a vein for the injection.",
+          "Exercise helps improve blood flow in your veins."
+        ]
+      },
+      {
+        "id": 112,
+        "word": "sore throat",
+        "definition": "pain or discomfort in the throat",
+        "translation": "boğaz ağrısı",
+        "meaning": "Boğazda ağrı veya rahatsızlık",
+        "examples": [
+          "She has a sore throat and can't swallow easily.",
+          "Warm tea with honey can help with a sore throat."
+        ]
+      },
+      {
+        "id": 113,
+        "word": "headache",
+        "definition": "a pain in the head",
+        "translation": "baş ağrısı",
+        "meaning": "Başta hissedilen ağrı",
+        "examples": [
+          "Stress can cause headaches.",
+          "She took aspirin for her headache."
+        ]
+      },
+      {
+        "id": 114,
+        "word": "stomachache",
+        "definition": "pain in the stomach or abdomen",
+        "translation": "karın ağrısı",
+        "meaning": "Mide veya karında hissedilen ağrı",
+        "examples": [
+          "He got a stomachache after eating too much.",
+          "The child complained of a stomachache."
+        ]
+      },
+      {
+        "id": 115,
+        "word": "earache",
+        "definition": "pain inside the ear",
+        "translation": "kulak ağrısı",
+        "meaning": "Kulak içinde hissedilen ağrı",
+        "examples": [
+          "Swimming can sometimes cause earaches.",
+          "The child woke up with an earache."
+        ]
+      },
+      {
+        "id": 116,
+        "word": "toothache",
+        "definition": "pain in or around a tooth",
+        "translation": "diş ağrısı",
+        "meaning": "Diş içinde veya çevresinde hissedilen ağrı",
+        "examples": [
+          "A cavity can cause a toothache.",
+          "She couldn't sleep because of her toothache."
+        ]
+      },
+      {
+        "id": 117,
+        "word": "backache",
+        "definition": "pain in the back",
+        "translation": "sırt ağrısı",
+        "meaning": "Sırtta hissedilen ağrı",
+        "examples": [
+          "Lifting heavy objects can cause backache.",
+          "Regular exercise can help prevent backache."
+        ]
+      },
+      {
+        "id": 118,
+        "word": "sprained ankle",
+        "definition": "an injury to the ankle caused by twisting it",
+        "translation": "burkulmuş ayak bileği",
+        "meaning": "Ayak bileğinin burkulması sonucu oluşan yaralanma",
+        "examples": [
+          "She got a sprained ankle while playing basketball.",
+          "Rest and ice can help heal a sprained ankle."
+        ]
+      },
+      {
+        "id": 119,
+        "word": "the flu",
+        "definition": "a common illness that causes fever, weakness, and body aches",
+        "translation": "grip",
+        "meaning": "Ateş, halsizlik ve vücut ağrılarına neden olan yaygın bir hastalık",
+        "examples": [
+          "Many people get the flu during winter.",
+          "He missed work because he had the flu."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Reading & Writing Unit 8",
+    "words": [
+      {
+        "id": 120,
+        "word": "adapt",
+        "definition": "to change in order to deal with new situations",
+        "translation": "uyum sağlamak",
+        "meaning": "Yeni durumlara uyum sağlamak için değişmek",
+        "examples": [
+          "Animals must adapt to survive climate change.",
+          "It took time to adapt to living in a new country."
+        ]
+      },
+      {
+        "id": 121,
+        "word": "ancestor",
+        "definition": "a person in your family who lived a long time ago",
+        "translation": "ata",
+        "meaning": "Ailenizde uzun zaman önce yaşamış kişi",
+        "examples": [
+          "Our ancestors came from Europe 200 years ago.",
+          "Scientists study human ancestors to understand evolution."
+        ]
+      },
+      {
+        "id": 122,
+        "word": "connect",
+        "definition": "to join or link two or more things together",
+        "translation": "bağlamak",
+        "meaning": "İki veya daha fazla şeyi birbirine birleştirmek",
+        "examples": [
+          "The bridge connects two islands.",
+          "Social media helps people connect with friends."
+        ]
+      },
+      {
+        "id": 123,
+        "word": "convince",
+        "definition": "to make someone believe something is true",
+        "translation": "ikna etmek",
+        "meaning": "Birinin bir şeyin doğru olduğuna inanmasını sağlamak",
+        "examples": [
+          "She convinced her parents to let her study abroad.",
+          "The evidence convinced the jury of his innocence."
+        ]
+      },
+      {
+        "id": 124,
+        "word": "destroy",
+        "definition": "to damage something so badly that it no longer exists or cannot be repaired",
+        "translation": "yok etmek",
+        "meaning": "Bir şeyi artık var olmayacak veya tamir edilemeyecek kadar kötü hasara uğratmak",
+        "examples": [
+          "The fire destroyed the entire building.",
+          "Pollution is destroying our environment."
+        ]
+      },
+      {
+        "id": 125,
+        "word": "endangered",
+        "definition": "at risk of disappearing forever",
+        "translation": "nesli tükenmekte olan",
+        "meaning": "Sonsuza dek yok olma riski altında olan",
+        "examples": [
+          "Tigers are an endangered species.",
+          "Many endangered animals live in the rainforest."
+        ]
+      },
+      {
+        "id": 126,
+        "word": "nomadic",
+        "definition": "moving from place to place rather than living in one place",
+        "translation": "göçebe",
+        "meaning": "Bir yerde yaşamak yerine sürekli yer değiştiren",
+        "examples": [
+          "Nomadic tribes follow their herds across the grasslands.",
+          "Some people choose a nomadic lifestyle."
+        ]
+      },
+      {
+        "id": 127,
+        "word": "powerful",
+        "definition": "having great power, influence, or strength",
+        "translation": "güçlü",
+        "meaning": "Büyük güce, etkiye veya kuvvete sahip olan",
+        "examples": [
+          "The storm was very powerful.",
+          "She is one of the most powerful leaders in the world."
+        ]
+      },
+      {
+        "id": 128,
+        "word": "protest",
+        "definition": "to express strong disagreement with something",
+        "translation": "protesto etmek",
+        "meaning": "Bir şeye karşı güçlü anlaşmazlığını ifade etmek",
+        "examples": [
+          "Students protested against the new rules.",
+          "People gathered to protest environmental pollution."
+        ]
+      },
+      {
+        "id": 129,
+        "word": "roots",
+        "definition": "the origins or background of something",
+        "translation": "kökler",
+        "meaning": "Bir şeyin kökeni veya geçmişi",
+        "examples": [
+          "She's trying to learn about her family roots.",
+          "The music has its roots in African culture."
+        ]
+      },
+      {
+        "id": 130,
+        "word": "settle",
+        "definition": "to make a place your permanent home",
+        "translation": "yerleşmek",
+        "meaning": "Bir yeri kalıcı ev yapmak",
+        "examples": [
+          "Many immigrants settled in the new country.",
+          "They decided to settle in a small coastal town."
+        ]
+      },
+      {
+        "id": 131,
+        "word": "survive",
+        "definition": "to continue to live or exist",
+        "translation": "hayatta kalmak",
+        "meaning": "Yaşamaya veya var olmaya devam etmek",
+        "examples": [
+          "Few plants can survive in the desert.",
+          "The company survived the economic crisis."
+        ]
+      },
+      {
+        "id": 132,
+        "word": "unique",
+        "definition": "being the only one of its kind",
+        "translation": "benzersiz",
+        "meaning": "Türünün tek örneği olan",
+        "examples": [
+          "Every person's fingerprints are unique.",
+          "The island has many unique species of plants."
+        ]
+      },
+      {
+        "id": 133,
+        "word": "urgent",
+        "definition": "requiring immediate action or attention",
+        "translation": "acil",
+        "meaning": "Hemen harekete geçilmesi veya ilgilenilmesi gereken",
+        "examples": [
+          "This is an urgent message from the hospital.",
+          "Climate change requires urgent action."
         ]
       }
     ]

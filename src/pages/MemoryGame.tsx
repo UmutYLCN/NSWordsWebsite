@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Link, useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeftIcon } from '@heroicons/react/24/outline';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Unit, Word } from '../types';
+import { useParams, useNavigate } from 'react-router-dom';
+import { QuestionMarkCircleIcon } from '@heroicons/react/24/outline';
+import { motion} from 'framer-motion';
+import { Unit} from '../types';
 import { TrophyIcon } from '@heroicons/react/24/solid';
 
 interface Player {
@@ -342,10 +342,10 @@ const MemoryGame = () => {
                   backfaceVisibility: 'hidden'
                 }}
               >
-                ?
+                <QuestionMarkCircleIcon className="w-12 h-12 text-primary/30" />
               </motion.div>
               <motion.div
-                className="absolute inset-0 bg-primary text-white rounded-lg shadow-md flex items-center justify-center p-2 text-center"
+                className={`absolute inset-0 ${card.isMatched ? 'bg-primary' : 'bg-white'} text-${card.isMatched ? 'white' : 'primary'} rounded-lg shadow-md flex items-center justify-center p-2 text-center`}
                 initial={false}
                 animate={{
                   rotateY: card.isFlipped ? 0 : -180
@@ -355,7 +355,7 @@ const MemoryGame = () => {
                   backfaceVisibility: 'hidden'
                 }}
               >
-                {card.content}
+                <span className="text-lg font-medium">{card.content}</span>
               </motion.div>
             </motion.div>
           ))}
