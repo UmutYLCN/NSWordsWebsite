@@ -12,9 +12,11 @@
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@react-spring/web": "^9.7.5",
+    "@types/react-lottie": "^1.2.10",
     "framer-motion": "^11.18.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-lottie": "^1.2.10",
     "react-router-dom": "^6.28.2"
   },
   "devDependencies": {

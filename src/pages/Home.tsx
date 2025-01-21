@@ -97,9 +97,9 @@ export default function Home() {
               <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
                 <AcademicCapIcon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">İlerleme Takibi</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Hafıza Oyunu</h3>
               <p className="text-gray-600">
-                Öğrenme sürecinizi takip edin, başarılarınızı görün ve motivasyonunuzu yüksek tutun.
+                İki kişilik eğlenceli hafıza oyunu ile kelime öğrenmeyi daha keyifli hale getirin.
               </p>
             </div>
           </div>

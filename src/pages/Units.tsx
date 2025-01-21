@@ -101,12 +101,20 @@ const Units = () => {
               <p className="text-gray-600 mb-4">
                 {unit.words.length} kelime
               </p>
-              <Link
-                to={`/flashcards/${unit.id}`}
-                className="inline-block bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
-              >
-                İncele
-              </Link>
+              <div className="flex space-x-3">
+                <Link
+                  to={`/flashcards/${unit.id}`}
+                  className="inline-block bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
+                >
+                  İncele
+                </Link>
+                <Link
+                  to={`/memory-game/${unit.id}`}
+                  className="inline-block bg-secondary text-primary px-4 py-2 rounded-lg hover:bg-secondary/90 transition-colors"
+                >
+                  Hafıza Oyunu
+                </Link>
+              </div>
             </div>
           ))}
         </div>

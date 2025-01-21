@@ -6,6 +6,7 @@ import Exercise from './pages/Exercise';
 import MultipleChoice from './pages/exercises/MultipleChoice';
 import Matching from './pages/exercises/Matching';
 import Writing from './pages/exercises/Writing';
+import MemoryGame from './pages/MemoryGame';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/exercise/:unitId/multiple-choice" element={<MultipleChoice />} />
       <Route path="/exercise/:unitId/matching" element={<Matching />} />
       <Route path="/exercise/:unitId/writing" element={<Writing />} />
+      <Route path="/memory-game/:unitId" element={<MemoryGame />} />
     </Routes>
   );
 }
