@@ -1509,5 +1509,1604 @@
         ]
       }
     ]
+  },
+  {
+    "id": 9,
+    "title": "Listening & Speaking Unit 1",
+    "words": [
+      {
+        "id": 134,
+        "word": "concentrate",
+        "definition": "to focus all your attention on something",
+        "translation": "konsantre olmak",
+        "meaning": "Tüm dikkatini bir şeye vermek",
+        "examples": [
+          "It's hard to concentrate with all this noise.",
+          "She needs a quiet place to concentrate on her work."
+        ]
+      },
+      {
+        "id": 135,
+        "word": "factory",
+        "definition": "a building where goods are made in large quantities",
+        "translation": "fabrika",
+        "meaning": "Malların büyük miktarlarda üretildiği bina",
+        "examples": [
+          "He works in a chocolate factory.",
+          "The factory produces thousands of cars each month."
+        ]
+      },
+      {
+        "id": 136,
+        "word": "insurance policy",
+        "definition": "an agreement that provides protection against financial loss",
+        "translation": "sigorta poliçesi",
+        "meaning": "Mali kayıplara karşı koruma sağlayan anlaşma",
+        "examples": [
+          "Everyone should have a health insurance policy.",
+          "Read your insurance policy carefully before signing it."
+        ]
+      },
+      {
+        "id": 137,
+        "word": "creative",
+        "definition": "having new and original ideas",
+        "translation": "yaratıcı",
+        "meaning": "Yeni ve özgün fikirlere sahip olan",
+        "examples": [
+          "She's very creative in solving problems.",
+          "Children often have creative imaginations."
+        ]
+      },
+      {
+        "id": 138,
+        "word": "income",
+        "definition": "money received regularly for work or investments",
+        "translation": "gelir",
+        "meaning": "İş veya yatırımlardan düzenli olarak alınan para",
+        "examples": [
+          "His monthly income has increased.",
+          "Many people have multiple sources of income."
+        ]
+      },
+      {
+        "id": 139,
+        "word": "taste",
+        "definition": "the sensation of flavor in the mouth",
+        "translation": "tat",
+        "meaning": "Ağızda hissedilen lezzet duyusu",
+        "examples": [
+          "This soup has a delicious taste.",
+          "Different cultures have different tastes in food."
+        ]
+      },
+      {
+        "id": 140,
+        "word": "professional",
+        "definition": "relating to or belonging to a profession",
+        "translation": "profesyonel",
+        "meaning": "Bir mesleğe ait olan veya ilgili olan",
+        "examples": [
+          "She has a very professional attitude.",
+          "He became a professional chef after years of training."
+        ]
+      },
+      {
+        "id": 141,
+        "word": "flavor",
+        "definition": "the particular taste of something",
+        "translation": "lezzet",
+        "meaning": "Bir şeyin kendine özgü tadı",
+        "examples": [
+          "This ice cream comes in many different flavors.",
+          "The spices add flavor to the dish."
+        ]
+      },
+      {
+        "id": 142,
+        "word": "get started",
+        "definition": "to begin doing something",
+        "translation": "başlamak",
+        "meaning": "Bir şey yapmaya başlamak",
+        "examples": [
+          "Let's get started with the meeting.",
+          "It's important to get started early on big projects."
+        ]
+      },
+      {
+        "id": 143,
+        "word": "tongue",
+        "definition": "the soft, movable part in the mouth used for tasting",
+        "translation": "dil",
+        "meaning": "Ağızda tat almak için kullanılan yumuşak, hareketli organ",
+        "examples": [
+          "The hot soup burned my tongue.",
+          "The tongue can detect five basic tastes."
+        ]
+      },
+      {
+        "id": 144,
+        "word": "quit",
+        "definition": "to stop doing something permanently",
+        "translation": "bırakmak",
+        "meaning": "Bir şeyi kalıcı olarak yapmayı bırakmak",
+        "examples": [
+          "He quit his job to start his own business.",
+          "She's trying to quit smoking."
+        ]
+      },
+      {
+        "id": 145,
+        "word": "relaxing",
+        "definition": "making you feel calm and less stressed",
+        "translation": "rahatlatıcı",
+        "meaning": "Sakin ve daha az stresli hissettiren",
+        "examples": [
+          "A hot bath can be very relaxing.",
+          "I find gardening very relaxing."
+        ]
+      },
+      {
+        "id": 146,
+        "word": "stressful",
+        "definition": "causing mental or emotional strain",
+        "translation": "stresli",
+        "meaning": "Zihinsel veya duygusal gerginliğe neden olan",
+        "examples": [
+          "Moving to a new city can be stressful.",
+          "She has a very stressful job."
+        ]
+      },
+      {
+        "id": 147,
+        "word": "tiring",
+        "definition": "making you feel in need of rest",
+        "translation": "yorucu",
+        "meaning": "Dinlenme ihtiyacı hissettiren",
+        "examples": [
+          "It was a long and tiring day.",
+          "Exercise can be tiring but it's good for you."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Listening & Speaking Unit 2",
+    "words": [
+      {
+        "id": 148,
+        "word": "tasks",
+        "definition": "pieces of work that need to be done",
+        "translation": "görevler",
+        "meaning": "Yapılması gereken işler",
+        "examples": [
+          "She completed all her tasks for the day.",
+          "Break large tasks into smaller ones."
+        ]
+      },
+      {
+        "id": 149,
+        "word": "put off",
+        "definition": "to delay doing something",
+        "translation": "ertelemek",
+        "meaning": "Bir şeyi yapmayı geciktirmek",
+        "examples": [
+          "Don't put off your homework until tomorrow.",
+          "He keeps putting off going to the dentist."
+        ]
+      },
+      {
+        "id": 150,
+        "word": "factors",
+        "definition": "things that influence or cause a situation",
+        "translation": "etkenler",
+        "meaning": "Bir durumu etkileyen veya oluşturan şeyler",
+        "examples": [
+          "Many factors contribute to student success.",
+          "Stress is one of the main factors affecting health."
+        ]
+      },
+      {
+        "id": 151,
+        "word": "manage",
+        "definition": "to control or organize something",
+        "translation": "yönetmek",
+        "meaning": "Bir şeyi kontrol etmek veya organize etmek",
+        "examples": [
+          "She manages her time well.",
+          "Learning to manage stress is important."
+        ]
+      },
+      {
+        "id": 152,
+        "word": "negative",
+        "definition": "harmful or bad",
+        "translation": "olumsuz",
+        "meaning": "Zararlı veya kötü",
+        "examples": [
+          "Procrastination has negative effects on grades.",
+          "Try to avoid negative thoughts."
+        ]
+      },
+      {
+        "id": 153,
+        "word": "research studies",
+        "definition": "scientific investigations to discover facts",
+        "translation": "araştırma çalışmaları",
+        "meaning": "Gerçekleri keşfetmek için yapılan bilimsel incelemeler",
+        "examples": [
+          "Recent research studies show the benefits of exercise.",
+          "The university conducts many research studies."
+        ]
+      },
+      {
+        "id": 154,
+        "word": "procrastination",
+        "definition": "the habit of delaying things that need to be done",
+        "translation": "erteleme",
+        "meaning": "Yapılması gereken şeyleri geciktirme alışkanlığı",
+        "examples": [
+          "Procrastination can lead to poor grades.",
+          "Many students struggle with procrastination."
+        ]
+      },
+      {
+        "id": 155,
+        "word": "avoid",
+        "definition": "to stay away from something or prevent something from happening",
+        "translation": "kaçınmak",
+        "meaning": "Bir şeyden uzak durmak veya bir şeyin olmasını engellemek",
+        "examples": [
+          "Try to avoid distractions while studying.",
+          "She avoids eating junk food."
+        ]
+      },
+      {
+        "id": 156,
+        "word": "strategies",
+        "definition": "plans of action designed to achieve a goal",
+        "translation": "stratejiler",
+        "meaning": "Bir hedefe ulaşmak için tasarlanmış eylem planları",
+        "examples": [
+          "Develop good study strategies.",
+          "Teachers use different strategies to help students learn."
+        ]
+      },
+      {
+        "id": 157,
+        "word": "goals",
+        "definition": "things that you want to achieve",
+        "translation": "hedefler",
+        "meaning": "Ulaşmak istediğiniz şeyler",
+        "examples": [
+          "Set realistic goals for yourself.",
+          "She achieved all her academic goals."
+        ]
+      },
+      {
+        "id": 158,
+        "word": "distractions",
+        "definition": "things that prevent you from concentrating",
+        "translation": "dikkat dağıtıcılar",
+        "meaning": "Konsantre olmanızı engelleyen şeyler",
+        "examples": [
+          "Social media can be a major distraction.",
+          "Remove distractions from your study area."
+        ]
+      },
+      {
+        "id": 159,
+        "word": "reward",
+        "definition": "something given in recognition of good behavior or achievement",
+        "translation": "ödül",
+        "meaning": "İyi davranış veya başarı karşılığında verilen şey",
+        "examples": [
+          "Treat yourself to a reward after completing your work.",
+          "Good grades are a reward for hard work."
+        ]
+      },
+      {
+        "id": 160,
+        "word": "hit the books",
+        "definition": "to study hard",
+        "translation": "ders çalışmak",
+        "meaning": "Yoğun bir şekilde ders çalışmak",
+        "examples": [
+          "I need to hit the books for tomorrow's exam.",
+          "She's been hitting the books all week."
+        ]
+      },
+      {
+        "id": 161,
+        "word": "ace",
+        "definition": "to get an excellent grade on a test",
+        "translation": "tam not almak",
+        "meaning": "Bir sınavdan mükemmel not almak",
+        "examples": [
+          "She aced her math test.",
+          "Study hard and you'll ace the exam."
+        ]
+      },
+      {
+        "id": 162,
+        "word": "cut class",
+        "definition": "to skip a class without permission",
+        "translation": "derse girmemek",
+        "meaning": "İzinsiz olarak derse girmemek",
+        "examples": [
+          "Don't cut class, you might miss important information.",
+          "He got in trouble for cutting class."
+        ]
+      },
+      {
+        "id": 163,
+        "word": "hang out",
+        "definition": "to spend time relaxing or socializing",
+        "translation": "takılmak",
+        "meaning": "Rahatlamak veya sosyalleşmek için zaman geçirmek",
+        "examples": [
+          "They like to hang out at the coffee shop.",
+          "Don't just hang out, you need to study."
+        ]
+      },
+      {
+        "id": 164,
+        "word": "fall behind",
+        "definition": "to fail to keep up with others or with work",
+        "translation": "geride kalmak",
+        "meaning": "Diğerlerine veya işe ayak uyduramamak",
+        "examples": [
+          "Don't fall behind in your studies.",
+          "She fell behind because of her illness."
+        ]
+      },
+      {
+        "id": 165,
+        "word": "the last minute",
+        "definition": "the latest possible time before something happens",
+        "translation": "son dakika",
+        "meaning": "Bir şey olmadan önceki en son zaman",
+        "examples": [
+          "Don't leave your homework until the last minute.",
+          "He always prepares at the last minute."
+        ]
+      },
+      {
+        "id": 166,
+        "word": "pull an all-nighter",
+        "definition": "to stay up all night studying",
+        "translation": "sabahlamak",
+        "meaning": "Bütün gece ders çalışmak için uyanık kalmak",
+        "examples": [
+          "She pulled an all-nighter to finish her essay.",
+          "Don't pull an all-nighter before an exam."
+        ]
+      },
+      {
+        "id": 167,
+        "word": "bomb",
+        "definition": "to fail completely",
+        "translation": "başarısız olmak",
+        "meaning": "Tamamen başarısız olmak",
+        "examples": [
+          "He bombed the physics test.",
+          "I'm worried I'll bomb the presentation."
+        ]
+      },
+      {
+        "id": 168,
+        "word": "figure out",
+        "definition": "to understand or solve something",
+        "translation": "çözmek",
+        "meaning": "Bir şeyi anlamak veya çözümlemek",
+        "examples": [
+          "I can't figure out this math problem.",
+          "She finally figured out how to use the new software."
+        ]
+      },
+      {
+        "id": 169,
+        "word": "cram",
+        "definition": "to study intensively at the last minute",
+        "translation": "son anda çalışmak",
+        "meaning": "Son dakikada yoğun bir şekilde çalışmak",
+        "examples": [
+          "Don't cram the night before the exam.",
+          "She's cramming for tomorrow's test."
+        ]
+      },
+      {
+        "id": 170,
+        "word": "pressure",
+        "definition": "the feeling of stress or urgency",
+        "translation": "baskı",
+        "meaning": "Stres veya aciliyet hissi",
+        "examples": [
+          "Students feel a lot of pressure during exam week.",
+          "Don't put too much pressure on yourself."
+        ]
+      },
+      {
+        "id": 171,
+        "word": "waste",
+        "definition": "to use something in a careless or unnecessary way",
+        "translation": "israf etmek",
+        "meaning": "Bir şeyi dikkatsizce veya gereksiz yere kullanmak",
+        "examples": [
+          "Don't waste time on social media.",
+          "She wasted the whole afternoon watching TV."
+        ]
+      },
+      {
+        "id": 172,
+        "word": "positive attitude",
+        "definition": "an optimistic way of thinking or feeling",
+        "translation": "olumlu tutum",
+        "meaning": "İyimser düşünme veya hissetme şekli",
+        "examples": [
+          "Maintain a positive attitude while studying.",
+          "A positive attitude can help you overcome challenges."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Listening & Speaking Unit 3",
+    "words": [
+      {
+        "id": 173,
+        "word": "valuable",
+        "definition": "worth a lot of money or very useful",
+        "translation": "değerli",
+        "meaning": "Çok para eden veya çok faydalı olan",
+        "examples": [
+          "She keeps her valuable jewelry in a safe.",
+          "Time is a valuable resource."
+        ]
+      },
+      {
+        "id": 174,
+        "word": "item",
+        "definition": "a single thing or object",
+        "translation": "eşya",
+        "meaning": "Tek bir şey veya nesne",
+        "examples": [
+          "Please check each item on the list.",
+          "This item is currently out of stock."
+        ]
+      },
+      {
+        "id": 175,
+        "word": "spend",
+        "definition": "to use money to pay for things",
+        "translation": "harcamak",
+        "meaning": "Bir şey için para kullanmak",
+        "examples": [
+          "Don't spend all your money in one place.",
+          "She spends wisely and saves regularly."
+        ]
+      },
+      {
+        "id": 176,
+        "word": "earn",
+        "definition": "to get money for work you do",
+        "translation": "kazanmak",
+        "meaning": "Yaptığınız iş karşılığında para almak",
+        "examples": [
+          "He earns a good salary as a doctor.",
+          "Students can earn money working part-time."
+        ]
+      },
+      {
+        "id": 177,
+        "word": "be interested in",
+        "definition": "to want to know or learn more about something",
+        "translation": "ilgilenmek",
+        "meaning": "Bir şey hakkında daha fazla bilmek veya öğrenmek istemek",
+        "examples": [
+          "She is interested in learning new languages.",
+          "Are you interested in joining our club?"
+        ]
+      },
+      {
+        "id": 178,
+        "word": "exchange",
+        "definition": "to give something and receive something else in return",
+        "translation": "değiş tokuş",
+        "meaning": "Bir şey verip karşılığında başka bir şey almak",
+        "examples": [
+          "Students can exchange books at the library.",
+          "They exchanged phone numbers after the meeting."
+        ]
+      },
+      {
+        "id": 179,
+        "word": "service",
+        "definition": "work done for others as a job",
+        "translation": "hizmet",
+        "meaning": "Başkaları için iş olarak yapılan çalışma",
+        "examples": [
+          "The restaurant provides excellent service.",
+          "He works in customer service."
+        ]
+      },
+      {
+        "id": 180,
+        "word": "provides",
+        "definition": "to give something needed or useful to someone",
+        "translation": "sağlamak",
+        "meaning": "Birine ihtiyaç duyulan veya yararlı bir şey vermek",
+        "examples": [
+          "The company provides health insurance to employees.",
+          "The sun provides light and heat."
+        ]
+      },
+      {
+        "id": 181,
+        "word": "member",
+        "definition": "a person who belongs to a group or organization",
+        "translation": "üye",
+        "meaning": "Bir grup veya organizasyona ait olan kişi",
+        "examples": [
+          "She's been a member of the club for five years.",
+          "All family members must agree to the rules."
+        ]
+      },
+      {
+        "id": 182,
+        "word": "designing",
+        "definition": "creating or planning how something will look or work",
+        "translation": "tasarlamak",
+        "meaning": "Bir şeyin nasıl görüneceğini veya çalışacağını planlamak",
+        "examples": [
+          "She enjoys designing websites.",
+          "They are designing a new office building."
+        ]
+      },
+      {
+        "id": 183,
+        "word": "equal",
+        "definition": "the same in amount, size, or value",
+        "translation": "eşit",
+        "meaning": "Miktar, boyut veya değer olarak aynı",
+        "examples": [
+          "All students should have equal opportunities.",
+          "Divide the cake into equal parts."
+        ]
+      },
+      {
+        "id": 184,
+        "word": "network",
+        "definition": "a group of connected people or things",
+        "translation": "ağ",
+        "meaning": "Birbiriyle bağlantılı insanlar veya şeyler grubu",
+        "examples": [
+          "Social networks help people stay connected.",
+          "He has built a strong professional network."
+        ]
+      },
+      {
+        "id": 185,
+        "word": "borrow",
+        "definition": "to take and use something that belongs to someone else for a short time",
+        "translation": "ödünç almak",
+        "meaning": "Başkasına ait bir şeyi kısa süreliğine alıp kullanmak",
+        "examples": [
+          "Can I borrow your pen for a minute?",
+          "She often borrows books from the library."
+        ]
+      },
+      {
+        "id": 186,
+        "word": "stuff",
+        "definition": "things in general or personal belongings",
+        "translation": "eşya",
+        "meaning": "Genel olarak şeyler veya kişisel eşyalar",
+        "examples": [
+          "I need to pack my stuff for the trip.",
+          "There's a lot of stuff in the garage."
+        ]
+      },
+      {
+        "id": 187,
+        "word": "necessities",
+        "definition": "things that you must have to live",
+        "translation": "zorunlu ihtiyaçlar",
+        "meaning": "Yaşamak için sahip olmanız gereken şeyler",
+        "examples": [
+          "Food and water are basic necessities.",
+          "The shop sells daily necessities."
+        ]
+      },
+      {
+        "id": 188,
+        "word": "used",
+        "definition": "not new; previously owned or used by someone else",
+        "translation": "kullanılmış",
+        "meaning": "Yeni olmayan; daha önce başkası tarafından kullanılmış",
+        "examples": [
+          "You can save money by buying used books.",
+          "The car is used but in good condition."
+        ]
+      },
+      {
+        "id": 189,
+        "word": "I bet",
+        "definition": "used to say you think something is probably true",
+        "translation": "eminim",
+        "meaning": "Bir şeyin muhtemelen doğru olduğunu düşündüğünüzü söylemek için kullanılır",
+        "examples": [
+          "I bet she'll be late again.",
+          "I bet you're tired after working all day."
+        ]
+      },
+      {
+        "id": 190,
+        "word": "That's it",
+        "definition": "used to say that something is finished or complete",
+        "translation": "bu kadar",
+        "meaning": "Bir şeyin bittiğini veya tamamlandığını söylemek için kullanılır",
+        "examples": [
+          "That's it for today's lesson.",
+          "OK, that's it, we're done here."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Listening & Speaking Unit 4",
+    "words": [
+      {
+        "id": 191,
+        "word": "manners",
+        "definition": "polite ways of behaving with other people",
+        "translation": "görgü kuralları",
+        "meaning": "Diğer insanlarla kibar davranma yolları",
+        "examples": [
+          "Good manners are important in every culture.",
+          "She has excellent table manners."
+        ]
+      },
+      {
+        "id": 192,
+        "word": "be raised",
+        "definition": "to be brought up or grown up in a particular way",
+        "translation": "yetiştirilmek",
+        "meaning": "Belirli bir şekilde büyütülmek veya yetiştirilmek",
+        "examples": [
+          "She was raised to be polite to everyone.",
+          "He was raised in a small town."
+        ]
+      },
+      {
+        "id": 193,
+        "word": "courteous",
+        "definition": "polite and respectful",
+        "translation": "nazik",
+        "meaning": "Kibar ve saygılı",
+        "examples": [
+          "The staff was very courteous to all customers.",
+          "It's important to be courteous when meeting new people."
+        ]
+      },
+      {
+        "id": 194,
+        "word": "treat",
+        "definition": "to behave toward someone in a particular way",
+        "translation": "davranmak",
+        "meaning": "Birine belirli bir şekilde davranmak",
+        "examples": [
+          "Treat others as you want to be treated.",
+          "She treats everyone with respect."
+        ]
+      },
+      {
+        "id": 195,
+        "word": "respect",
+        "definition": "a feeling of admiration for someone or something",
+        "translation": "saygı",
+        "meaning": "Birine veya bir şeye karşı duyulan takdir hissi",
+        "examples": [
+          "Children should show respect to their elders.",
+          "He has earned the respect of his colleagues."
+        ]
+      },
+      {
+        "id": 196,
+        "word": "behavior",
+        "definition": "the way someone acts or conducts themselves",
+        "translation": "davranış",
+        "meaning": "Birinin hareket etme veya kendini ifade etme şekli",
+        "examples": [
+          "His behavior in class has improved.",
+          "Good behavior is expected in the library."
+        ]
+      },
+      {
+        "id": 197,
+        "word": "rude",
+        "definition": "not polite; offensive or impolite",
+        "translation": "kaba",
+        "meaning": "Kibar olmayan; saldırgan veya nezaketsiz",
+        "examples": [
+          "It's rude to interrupt when someone is speaking.",
+          "He made a rude comment about her dress."
+        ]
+      },
+      {
+        "id": 198,
+        "word": "document",
+        "definition": "an official paper or digital file with information",
+        "translation": "belge",
+        "meaning": "Bilgi içeren resmi kağıt veya dijital dosya",
+        "examples": [
+          "Please sign this document.",
+          "Keep all important documents in a safe place."
+        ]
+      },
+      {
+        "id": 199,
+        "word": "appreciate",
+        "definition": "to be grateful for something",
+        "translation": "takdir etmek",
+        "meaning": "Bir şey için minnettar olmak",
+        "examples": [
+          "I really appreciate your help.",
+          "They appreciate honest feedback."
+        ]
+      },
+      {
+        "id": 200,
+        "word": "conduct",
+        "definition": "to behave in a particular way",
+        "translation": "davranmak",
+        "meaning": "Belirli bir şekilde hareket etmek",
+        "examples": [
+          "Students must conduct themselves properly in school.",
+          "The meeting was conducted professionally."
+        ]
+      },
+      {
+        "id": 201,
+        "word": "likely",
+        "definition": "probably going to happen",
+        "translation": "muhtemelen",
+        "meaning": "Olması muhtemel olan",
+        "examples": [
+          "It's likely to rain tomorrow.",
+          "She is likely to win the competition."
+        ]
+      },
+      {
+        "id": 202,
+        "word": "confusing",
+        "definition": "difficult to understand",
+        "translation": "kafa karıştırıcı",
+        "meaning": "Anlaması zor olan",
+        "examples": [
+          "The instructions were very confusing.",
+          "I find this math problem confusing."
+        ]
+      },
+      {
+        "id": 203,
+        "word": "face-to-face",
+        "definition": "meeting or talking to someone in person",
+        "translation": "yüz yüze",
+        "meaning": "Biriyle şahsen görüşmek veya konuşmak",
+        "examples": [
+          "I prefer face-to-face meetings.",
+          "We had a face-to-face conversation about the issue."
+        ]
+      },
+      {
+        "id": 204,
+        "word": "immediate response",
+        "definition": "a reply that comes right away",
+        "translation": "anında yanıt",
+        "meaning": "Hemen gelen cevap",
+        "examples": [
+          "This situation requires an immediate response.",
+          "She got an immediate response to her email."
+        ]
+      },
+      {
+        "id": 205,
+        "word": "go out",
+        "definition": "to leave home for social activities",
+        "translation": "dışarı çıkmak",
+        "meaning": "Sosyal aktiviteler için evden çıkmak",
+        "examples": [
+          "They like to go out on weekends.",
+          "Let's go out for dinner tonight."
+        ]
+      },
+      {
+        "id": 206,
+        "word": "leave someone hanging",
+        "definition": "to keep someone waiting for an answer or decision",
+        "translation": "belirsizlikte bırakmak",
+        "meaning": "Birini bir cevap veya karar için bekletmek",
+        "examples": [
+          "Don't leave me hanging, tell me what happened!",
+          "She left him hanging for days before responding."
+        ]
+      },
+      {
+        "id": 207,
+        "word": "look forward to",
+        "definition": "to be excited about something that is going to happen",
+        "translation": "dört gözle beklemek",
+        "meaning": "Olacak bir şey için heyecan duymak",
+        "examples": [
+          "I'm looking forward to the weekend.",
+          "We're looking forward to seeing you."
+        ]
+      },
+      {
+        "id": 208,
+        "word": "call something off",
+        "definition": "to cancel a planned event",
+        "translation": "iptal etmek",
+        "meaning": "Planlanmış bir etkinliği iptal etmek",
+        "examples": [
+          "They had to call the party off due to bad weather.",
+          "The game was called off because of rain."
+        ]
+      },
+      {
+        "id": 209,
+        "word": "sounds good",
+        "definition": "used to express agreement or approval",
+        "translation": "kulağa iyi geliyor",
+        "meaning": "Anlaşma veya onay belirtmek için kullanılır",
+        "examples": [
+          "Meeting at 2 PM? Sounds good to me.",
+          "'Let's get pizza.' 'Sounds good!'"
+        ]
+      },
+      {
+        "id": 210,
+        "word": "turn down",
+        "definition": "to reject or refuse something",
+        "translation": "reddetmek",
+        "meaning": "Bir şeyi kabul etmemek veya geri çevirmek",
+        "examples": [
+          "She turned down the job offer.",
+          "I had to turn down their invitation."
+        ]
+      },
+      {
+        "id": 211,
+        "word": "I'll have to pass",
+        "definition": "used to politely decline an offer or invitation",
+        "translation": "katılamayacağım",
+        "meaning": "Bir teklif veya daveti nazikçe reddetmek için kullanılır",
+        "examples": [
+          "'Want to join us?' 'Sorry, I'll have to pass.'",
+          "I'll have to pass on the movie tonight."
+        ]
+      },
+      {
+        "id": 212,
+        "word": "take a rain check",
+        "definition": "to postpone accepting an offer until a later time",
+        "translation": "ertelemek",
+        "meaning": "Bir teklifi daha sonraki bir zamana ertelemek",
+        "examples": [
+          "I'll take a rain check on lunch today.",
+          "'Want to go shopping?' 'Can I take a rain check?'"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Listening & Speaking Unit 5",
+    "words": [
+      {
+        "id": 213,
+        "word": "remind",
+        "definition": "to make someone remember something",
+        "translation": "hatırlatmak",
+        "meaning": "Birine bir şeyi hatırlamasını sağlamak",
+        "examples": [
+          "The song reminds me of my childhood.",
+          "Please remind me to call the doctor tomorrow."
+        ]
+      },
+      {
+        "id": 214,
+        "word": "sudden",
+        "definition": "happening or coming unexpectedly",
+        "translation": "ani",
+        "meaning": "Beklenmedik şekilde olan veya gelen",
+        "examples": [
+          "There was a sudden change in the weather.",
+          "The sudden noise made everyone jump."
+        ]
+      },
+      {
+        "id": 215,
+        "word": "beat",
+        "definition": "a regular repeated pattern of sound or movement",
+        "translation": "ritim",
+        "meaning": "Düzenli tekrarlanan ses veya hareket kalıbı",
+        "examples": [
+          "The music has a strong beat.",
+          "She tapped her foot to the beat."
+        ]
+      },
+      {
+        "id": 216,
+        "word": "high-pitched",
+        "definition": "having a high sound or tone",
+        "translation": "tiz",
+        "meaning": "Yüksek ses veya tona sahip olan",
+        "examples": [
+          "She let out a high-pitched scream.",
+          "The alarm makes a high-pitched sound."
+        ]
+      },
+      {
+        "id": 217,
+        "word": "warning",
+        "definition": "something that tells you about possible danger",
+        "translation": "uyarı",
+        "meaning": "Olası bir tehlike hakkında sizi bilgilendiren şey",
+        "examples": [
+          "The weather service issued a storm warning.",
+          "There are warning signs on the dangerous road."
+        ]
+      },
+      {
+        "id": 218,
+        "word": "affect",
+        "definition": "to have an influence on someone or something",
+        "translation": "etkilemek",
+        "meaning": "Birini veya bir şeyi etkilemek",
+        "examples": [
+          "Music can affect your mood.",
+          "The weather affects how people feel."
+        ]
+      },
+      {
+        "id": 219,
+        "word": "environment",
+        "definition": "the surroundings or conditions in which a person lives",
+        "translation": "çevre",
+        "meaning": "Bir kişinin yaşadığı ortam veya koşullar",
+        "examples": [
+          "We need to protect the environment.",
+          "A positive work environment is important."
+        ]
+      },
+      {
+        "id": 220,
+        "word": "anxious",
+        "definition": "worried or nervous about something",
+        "translation": "endişeli",
+        "meaning": "Bir şey hakkında kaygılı veya gergin",
+        "examples": [
+          "She felt anxious before the presentation.",
+          "The loud noises made the dog anxious."
+        ]
+      },
+      {
+        "id": 221,
+        "word": "sensitive to",
+        "definition": "easily affected or responsive to something",
+        "translation": "duyarlı",
+        "meaning": "Bir şeyden kolayca etkilenen veya tepki veren",
+        "examples": [
+          "Some people are sensitive to loud noises.",
+          "Her skin is sensitive to sunlight."
+        ]
+      },
+      {
+        "id": 222,
+        "word": "association between",
+        "definition": "a connection or relationship between things",
+        "translation": "arasındaki bağlantı",
+        "meaning": "Şeyler arasındaki bağlantı veya ilişki",
+        "examples": [
+          "There is a strong association between diet and health.",
+          "Scientists studied the association between music and memory."
+        ]
+      },
+      {
+        "id": 223,
+        "word": "annoying",
+        "definition": "causing irritation or frustration",
+        "translation": "sinir bozucu",
+        "meaning": "Rahatsızlık veya kızgınlığa neden olan",
+        "examples": [
+          "The constant noise was very annoying.",
+          "She has some annoying habits."
+        ]
+      },
+      {
+        "id": 224,
+        "word": "energetic",
+        "definition": "full of energy and enthusiasm",
+        "translation": "enerjik",
+        "meaning": "Enerji ve coşku dolu",
+        "examples": [
+          "The children are very energetic in the morning.",
+          "The energetic music got everyone dancing."
+        ]
+      },
+      {
+        "id": 225,
+        "word": "mood",
+        "definition": "a temporary state of mind or feeling",
+        "translation": "ruh hali",
+        "meaning": "Geçici zihin veya duygu durumu",
+        "examples": [
+          "Music can change your mood.",
+          "She's in a good mood today."
+        ]
+      },
+      {
+        "id": 226,
+        "word": "lyrics",
+        "definition": "the words of a song",
+        "translation": "şarkı sözleri",
+        "meaning": "Bir şarkının sözleri",
+        "examples": [
+          "I love the lyrics of this song.",
+          "He wrote the lyrics for their new album."
+        ]
+      },
+      {
+        "id": 227,
+        "word": "rhythm",
+        "definition": "a strong, regular repeated pattern of movement or sound",
+        "translation": "ritim",
+        "meaning": "Güçlü, düzenli tekrarlanan hareket veya ses kalıbı",
+        "examples": [
+          "The dancers moved to the rhythm of the music.",
+          "She has a good sense of rhythm."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Listening & Speaking Unit 6",
+    "words": [
+      {
+        "id": 228,
+        "word": "altruistic",
+        "definition": "showing a selfless concern for others",
+        "translation": "özgeci",
+        "meaning": "Başkaları için bencil olmayan bir endişe gösteren",
+        "examples": [
+          "Her altruistic nature makes her help everyone in need.",
+          "Volunteering is an altruistic activity."
+        ]
+      },
+      {
+        "id": 229,
+        "word": "brave",
+        "definition": "ready to face and endure danger or pain",
+        "translation": "cesur",
+        "meaning": "Tehlike veya acıyla yüzleşmeye ve dayanmaya hazır",
+        "examples": [
+          "The brave firefighter saved the child.",
+          "It was brave of you to speak up."
+        ]
+      },
+      {
+        "id": 230,
+        "word": "community",
+        "definition": "a group of people living in the same place",
+        "translation": "topluluk",
+        "meaning": "Aynı yerde yaşayan insan grubu",
+        "examples": [
+          "They are active members of their local community.",
+          "The community came together to help after the storm."
+        ]
+      },
+      {
+        "id": 231,
+        "word": "courage",
+        "definition": "the ability to face danger or difficulties without fear",
+        "translation": "cesaret",
+        "meaning": "Korkmadan tehlike veya zorluklarla yüzleşme yeteneği",
+        "examples": [
+          "It takes courage to stand up for what you believe in.",
+          "She showed great courage during her illness."
+        ]
+      },
+      {
+        "id": 232,
+        "word": "genes",
+        "definition": "parts of DNA that carry genetic information",
+        "translation": "genler",
+        "meaning": "Genetik bilgiyi taşıyan DNA parçaları",
+        "examples": [
+          "Eye color is determined by genes.",
+          "Some traits are passed down through genes."
+        ]
+      },
+      {
+        "id": 233,
+        "word": "ordinary",
+        "definition": "normal or usual; not special or different",
+        "translation": "sıradan",
+        "meaning": "Normal veya alışılmış; özel veya farklı olmayan",
+        "examples": [
+          "It was just an ordinary day.",
+          "She lives in an ordinary house in an ordinary street."
+        ]
+      },
+      {
+        "id": 234,
+        "word": "praise",
+        "definition": "to express approval or admiration",
+        "translation": "övmek",
+        "meaning": "Takdir veya hayranlık ifade etmek",
+        "examples": [
+          "The teacher praised her work.",
+          "Everyone praised his courage."
+        ]
+      },
+      {
+        "id": 235,
+        "word": "react",
+        "definition": "to respond to something or someone",
+        "translation": "tepki vermek",
+        "meaning": "Bir şeye veya birine karşılık vermek",
+        "examples": [
+          "How did she react to the news?",
+          "The market reacted positively to the announcement."
+        ]
+      },
+      {
+        "id": 236,
+        "word": "risk",
+        "definition": "the possibility of something bad happening",
+        "translation": "risk",
+        "meaning": "Kötü bir şeyin olma olasılığı",
+        "examples": [
+          "He took a risk by starting his own business.",
+          "Smoking increases the risk of cancer."
+        ]
+      },
+      {
+        "id": 237,
+        "word": "unselfish",
+        "definition": "willing to help others instead of thinking about yourself",
+        "translation": "özverili",
+        "meaning": "Kendini düşünmek yerine başkalarına yardım etmeye istekli",
+        "examples": [
+          "Her unselfish act helped many people.",
+          "He is known for his unselfish behavior."
+        ]
+      },
+      {
+        "id": 238,
+        "word": "volunteer",
+        "definition": "to offer to do something without being forced",
+        "translation": "gönüllü olmak",
+        "meaning": "Zorlanmadan bir şey yapmayı teklif etmek",
+        "examples": [
+          "She volunteers at the local hospital.",
+          "Many people volunteered to help after the disaster."
+        ]
+      },
+      {
+        "id": 239,
+        "word": "responsible for",
+        "definition": "having control and authority over something",
+        "translation": "sorumlu",
+        "meaning": "Bir şey üzerinde kontrol ve yetkiye sahip olmak",
+        "examples": [
+          "Who is responsible for this project?",
+          "Parents are responsible for their children."
+        ]
+      },
+      {
+        "id": 240,
+        "word": "the right thing",
+        "definition": "the morally correct action or decision",
+        "translation": "doğru olan şey",
+        "meaning": "Ahlaki olarak doğru eylem veya karar",
+        "examples": [
+          "You did the right thing by telling the truth.",
+          "Sometimes it's hard to know what the right thing is."
+        ]
+      },
+      {
+        "id": 241,
+        "word": "show concern for",
+        "definition": "to care about and worry about someone or something",
+        "translation": "endişe göstermek",
+        "meaning": "Biri veya bir şey için kaygılanmak ve önemsemek",
+        "examples": [
+          "She showed concern for her sick neighbor.",
+          "The company shows concern for environmental issues."
+        ]
+      },
+      {
+        "id": 242,
+        "word": "turned out",
+        "definition": "to happen in a particular way or have a particular result",
+        "translation": "sonuçlanmak",
+        "meaning": "Belirli bir şekilde gerçekleşmek veya belirli bir sonucu olmak",
+        "examples": [
+          "Everything turned out fine in the end.",
+          "The party turned out better than expected."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Listening & Speaking Unit 7",
+    "words": [
+      {
+        "id": 243,
+        "word": "chronic",
+        "definition": "persisting for a long time or constantly recurring",
+        "translation": "kronik",
+        "meaning": "Uzun süre devam eden veya sürekli tekrarlayan",
+        "examples": [
+          "He suffers from chronic back pain.",
+          "Diabetes is a chronic condition."
+        ]
+      },
+      {
+        "id": 244,
+        "word": "symptoms",
+        "definition": "signs that indicate the existence of something",
+        "translation": "belirtiler",
+        "meaning": "Bir şeyin varlığını gösteren işaretler",
+        "examples": [
+          "Fever and cough are common flu symptoms.",
+          "She showed symptoms of stress."
+        ]
+      },
+      {
+        "id": 245,
+        "word": "diagnose",
+        "definition": "to identify an illness or problem",
+        "translation": "teşhis etmek",
+        "meaning": "Bir hastalık veya sorunu belirlemek",
+        "examples": [
+          "The doctor diagnosed her with asthma.",
+          "It took months to diagnose the problem."
+        ]
+      },
+      {
+        "id": 246,
+        "word": "treatment",
+        "definition": "medical care given to a patient",
+        "translation": "tedavi",
+        "meaning": "Hastaya verilen tıbbi bakım",
+        "examples": [
+          "She's undergoing treatment for cancer.",
+          "The treatment was successful."
+        ]
+      },
+      {
+        "id": 247,
+        "word": "habits",
+        "definition": "regular behaviors or practices",
+        "translation": "alışkanlıklar",
+        "meaning": "Düzenli davranışlar veya uygulamalar",
+        "examples": [
+          "Good eating habits are important for health.",
+          "It's hard to break bad habits."
+        ]
+      },
+      {
+        "id": 248,
+        "word": "monitor",
+        "definition": "to watch and check something over time",
+        "translation": "izlemek",
+        "meaning": "Bir şeyi zaman içinde takip etmek ve kontrol etmek",
+        "examples": [
+          "Doctors monitor the patient's heart rate.",
+          "Parents should monitor their children's internet use."
+        ]
+      },
+      {
+        "id": 249,
+        "word": "medication",
+        "definition": "medicine or drugs used to treat illness",
+        "translation": "ilaç",
+        "meaning": "Hastalığı tedavi etmek için kullanılan ilaçlar",
+        "examples": [
+          "Don't forget to take your medication.",
+          "This medication should help with the pain."
+        ]
+      },
+      {
+        "id": 250,
+        "word": "motivate",
+        "definition": "to encourage someone to do something",
+        "translation": "motive etmek",
+        "meaning": "Birini bir şey yapmaya teşvik etmek",
+        "examples": [
+          "Good teachers know how to motivate their students.",
+          "Success stories can motivate people to try harder."
+        ]
+      },
+      {
+        "id": 251,
+        "word": "patients",
+        "definition": "people receiving medical treatment",
+        "translation": "hastalar",
+        "meaning": "Tıbbi tedavi gören kişiler",
+        "examples": [
+          "The doctor sees twenty patients each day.",
+          "Some patients need long-term care."
+        ]
+      },
+      {
+        "id": 252,
+        "word": "advice",
+        "definition": "guidance or recommendations",
+        "translation": "tavsiye",
+        "meaning": "Yönlendirme veya öneriler",
+        "examples": [
+          "The doctor gave me advice about diet.",
+          "Follow the doctor's advice carefully."
+        ]
+      },
+      {
+        "id": 253,
+        "word": "turn to",
+        "definition": "to go to someone for help or advice",
+        "translation": "başvurmak",
+        "meaning": "Yardım veya tavsiye için birine gitmek",
+        "examples": [
+          "When in trouble, she turns to her family.",
+          "Many people turn to the internet for health advice."
+        ]
+      },
+      {
+        "id": 254,
+        "word": "cure",
+        "definition": "to make an illness go away completely",
+        "translation": "tedavi etmek",
+        "meaning": "Bir hastalığı tamamen iyileştirmek",
+        "examples": [
+          "Scientists are trying to find a cure for cancer.",
+          "There's no cure for the common cold."
+        ]
+      },
+      {
+        "id": 255,
+        "word": "convince",
+        "definition": "to persuade someone to do something",
+        "translation": "ikna etmek",
+        "meaning": "Birini bir şey yapmaya ikna etmek",
+        "examples": [
+          "The doctor convinced him to quit smoking.",
+          "It was hard to convince her to see a doctor."
+        ]
+      },
+      {
+        "id": 256,
+        "word": "deal with",
+        "definition": "to handle or cope with a situation",
+        "translation": "başa çıkmak",
+        "meaning": "Bir durumla başa çıkmak veya yönetmek",
+        "examples": [
+          "Learning to deal with stress is important.",
+          "How do you deal with difficult patients?"
+        ]
+      },
+      {
+        "id": 257,
+        "word": "prevent",
+        "definition": "to stop something from happening",
+        "translation": "önlemek",
+        "meaning": "Bir şeyin olmasını engellemek",
+        "examples": [
+          "Regular exercise helps prevent heart disease.",
+          "Good hygiene can prevent infections."
+        ]
+      },
+      {
+        "id": 258,
+        "word": "suffer from",
+        "definition": "to be affected by an illness or problem",
+        "translation": "muzdarip olmak",
+        "meaning": "Bir hastalık veya sorundan etkilenmek",
+        "examples": [
+          "Many people suffer from allergies.",
+          "She suffers from chronic headaches."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Listening & Speaking Unit 8",
+    "words": [
+      {
+        "id": 259,
+        "word": "acquire",
+        "definition": "to gain or obtain something",
+        "translation": "edinmek",
+        "meaning": "Bir şey kazanmak veya elde etmek",
+        "examples": [
+          "Children acquire language naturally.",
+          "She acquired new skills through training."
+        ]
+      },
+      {
+        "id": 260,
+        "word": "bilingual",
+        "definition": "able to speak two languages fluently",
+        "translation": "iki dilli",
+        "meaning": "İki dili akıcı konuşabilen",
+        "examples": [
+          "She is bilingual in English and Spanish.",
+          "Many children grow up in bilingual households."
+        ]
+      },
+      {
+        "id": 261,
+        "word": "disappear",
+        "definition": "to stop existing or become impossible to see",
+        "translation": "kaybolmak",
+        "meaning": "Var olmayı bırakmak veya görünmez olmak",
+        "examples": [
+          "Many languages are starting to disappear.",
+          "The sun disappeared behind the clouds."
+        ]
+      },
+      {
+        "id": 262,
+        "word": "dominant",
+        "definition": "most important, powerful, or influential",
+        "translation": "baskın",
+        "meaning": "En önemli, güçlü veya etkili",
+        "examples": [
+          "English is the dominant language in international business.",
+          "The dominant culture influences minority groups."
+        ]
+      },
+      {
+        "id": 263,
+        "word": "endangered",
+        "definition": "at risk of disappearing completely",
+        "translation": "tehlike altında",
+        "meaning": "Tamamen yok olma riski altında",
+        "examples": [
+          "Many indigenous languages are endangered.",
+          "We must protect endangered species."
+        ]
+      },
+      {
+        "id": 264,
+        "word": "eventually",
+        "definition": "in the end, after some time",
+        "translation": "sonunda",
+        "meaning": "Bir süre sonra, en sonunda",
+        "examples": [
+          "Eventually, she learned to speak the language fluently.",
+          "The problem will eventually solve itself."
+        ]
+      },
+      {
+        "id": 265,
+        "word": "extinct",
+        "definition": "no longer existing",
+        "translation": "nesli tükenmiş",
+        "meaning": "Artık var olmayan",
+        "examples": [
+          "Some languages have become extinct.",
+          "Dinosaurs went extinct millions of years ago."
+        ]
+      },
+      {
+        "id": 266,
+        "word": "generation",
+        "definition": "all people born and living at about the same time",
+        "translation": "nesil",
+        "meaning": "Yaklaşık aynı zamanda doğmuş ve yaşayan tüm insanlar",
+        "examples": [
+          "The younger generation prefers digital communication.",
+          "Language skills are passed down through generations."
+        ]
+      },
+      {
+        "id": 267,
+        "word": "linguist",
+        "definition": "someone who studies languages",
+        "translation": "dilbilimci",
+        "meaning": "Dilleri inceleyen kişi",
+        "examples": [
+          "Linguists study how languages evolve.",
+          "She works as a linguist at the university."
+        ]
+      },
+      {
+        "id": 268,
+        "word": "policy",
+        "definition": "a plan of action adopted by an organization or government",
+        "translation": "politika",
+        "meaning": "Bir kuruluş veya hükümet tarafından benimsenen eylem planı",
+        "examples": [
+          "The school has a strict language policy.",
+          "The government introduced a new immigration policy."
+        ]
+      },
+      {
+        "id": 269,
+        "word": "preserve",
+        "definition": "to maintain something in its original state",
+        "translation": "korumak",
+        "meaning": "Bir şeyi orijinal halinde muhafaza etmek",
+        "examples": [
+          "We must preserve endangered languages.",
+          "The community works to preserve their cultural traditions."
+        ]
+      },
+      {
+        "id": 270,
+        "word": "replace",
+        "definition": "to put something new in place of something else",
+        "translation": "değiştirmek",
+        "meaning": "Bir şeyin yerine başka bir şey koymak",
+        "examples": [
+          "English has replaced Latin as the language of science.",
+          "Old words are sometimes replaced by new ones."
+        ]
+      },
+      {
+        "id": 271,
+        "word": "came up with",
+        "definition": "to think of or create something",
+        "translation": "ortaya çıkarmak",
+        "meaning": "Bir şey düşünmek veya yaratmak",
+        "examples": [
+          "Who came up with this idea?",
+          "They came up with a solution to the problem."
+        ]
+      },
+      {
+        "id": 272,
+        "word": "got together",
+        "definition": "to meet or gather with others",
+        "translation": "bir araya gelmek",
+        "meaning": "Başkalarıyla buluşmak veya toplanmak",
+        "examples": [
+          "The linguists got together to discuss the project.",
+          "Let's get together this weekend."
+        ]
+      },
+      {
+        "id": 273,
+        "word": "native language",
+        "definition": "the first language learned as a child",
+        "translation": "ana dil",
+        "meaning": "Çocukken öğrenilen ilk dil",
+        "examples": [
+          "Her native language is Turkish.",
+          "It's easier to express emotions in your native language."
+        ]
+      },
+      {
+        "id": 274,
+        "word": "official language",
+        "definition": "the language adopted by a country for government use",
+        "translation": "resmi dil",
+        "meaning": "Bir ülkenin resmi kullanım için benimsediği dil",
+        "examples": [
+          "English is the official language in many countries.",
+          "Canada has two official languages: English and French."
+        ]
+      }
+    ]
   }
 ] 
