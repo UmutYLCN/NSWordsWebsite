@@ -4,12 +4,26 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    'bg-blue-500',
+    'bg-green-500',
+    'bg-purple-500',
+    'bg-orange-500',
+    'bg-pink-500',
+    'bg-red-500',
+    'ring-blue-500',
+    'ring-green-500',
+    'ring-purple-500',
+    'ring-orange-500',
+    'ring-pink-500',
+    'ring-red-500',
+  ],
   theme: {
     extend: {
       colors: {
-        primary: '#218B8E',
-        secondary: '#C1F7F4',
-        background: '#F5F5F5'
+        primary: '#6366f1',
+        secondary: '#f0fdf4',
+        background: '#f8fafc',
       },
       fontFamily: {
         sans: ['Segoe UI', 'system-ui', 'sans-serif']

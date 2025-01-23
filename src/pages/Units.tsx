@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeftIcon } from '@heroicons/react/24/outline';
+import { ArrowLeftIcon, FunnelIcon } from '@heroicons/react/24/outline';
 import { Unit } from '../types';
 
 const Units = () => {
   const [units, setUnits] = useState<Unit[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [selectedType, setSelectedType] = useState<string | null>(null);
 
   useEffect(() => {
     let isMounted = true;
@@ -53,6 +54,13 @@ const Units = () => {
     };
   }, []);
 
+  const filteredUnits = units.filter(unit => {
+    if (!selectedType) return true;
+    return selectedType === 'RW' 
+      ? unit.title.includes('Reading & Writing')
+      : unit.title.includes('Listening & Speaking');
+  });
+
   const handleRetry = () => {
     setLoading(true);
     setError(null);
@@ -84,32 +92,84 @@ const Units = () => {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8">
-        <div className="flex items-center mb-8 justify-between relative">
+        {/* Header */}
+        <div className="flex items-center mb-12 justify-between">
           <Link to="/" className="flex items-center text-gray-600 hover:text-primary">
             <ArrowLeftIcon className="w-5 h-5 mr-2" />
             <span>Geri Dön</span>
           </Link>
-          <h1 className="text-3xl font-bold text-primary absolute left-1/2 -translate-x-1/2">Üniteler</h1>
+          <h1 className="text-3xl font-bold text-primary">Üniteler</h1>
           <div className="w-24"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {units.map((unit) => (
-            <div key={unit.id} className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
-              <h2 className="text-xl font-semibold mb-4">{unit.title}</h2>
-              <p className="text-gray-600 mb-4">
-                {unit.words.length} kelime
-              </p>
-              <div className="flex space-x-3">
-                <Link
-                  to={`/flashcards/${unit.id}`}
-                  className="w-full bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors text-center"
+        {/* Filtre ve İçerik Bölümü */}
+        <div className="flex flex-col lg:flex-row gap-8">
+          {/* Sol Taraf - Filtreler */}
+          <div className="lg:w-64">
+            <div className="bg-white rounded-xl shadow-sm p-4">
+              <div className="flex items-center gap-2 pb-4 border-b border-gray-100">
+                <FunnelIcon className="w-5 h-5 text-primary" />
+                <h2 className="font-semibold text-gray-900">Filtrele</h2>
+              </div>
+              <div className="mt-4 space-y-2">
+                <button
+                  onClick={() => setSelectedType(null)}
+                  className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
+                    !selectedType
+                      ? 'bg-primary/10 text-primary font-medium'
+                      : 'text-gray-600 hover:bg-gray-50'
+                  }`}
                 >
-                  İncele
-                </Link>
+                  Tüm Üniteler
+                </button>
+                <button
+                  onClick={() => setSelectedType('RW')}
+                  className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
+                    selectedType === 'RW'
+                      ? 'bg-primary/10 text-primary font-medium'
+                      : 'text-gray-600 hover:bg-gray-50'
+                  }`}
+                >
+                  Reading & Writing
+                </button>
+                <button
+                  onClick={() => setSelectedType('LS')}
+                  className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
+                    selectedType === 'LS'
+                      ? 'bg-primary/10 text-primary font-medium'
+                      : 'text-gray-600 hover:bg-gray-50'
+                  }`}
+                >
+                  Listening & Speaking
+                </button>
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* Sağ Taraf - Üniteler */}
+          <div className="flex-1">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+              {filteredUnits.map((unit) => (
+                <div 
+                  key={unit.id} 
+                  className="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-all hover:translate-y-[-2px]"
+                >
+                  <h2 className="text-xl font-semibold mb-4">{unit.title}</h2>
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+                      {unit.words.length} kelime
+                    </span>
+                  </div>
+                  <Link
+                    to={`/flashcards/${unit.id}`}
+                    className="block w-full bg-primary text-white px-4 py-2.5 rounded-lg hover:bg-primary/90 transition-colors text-center font-medium"
+                  >
+                    İncele
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>

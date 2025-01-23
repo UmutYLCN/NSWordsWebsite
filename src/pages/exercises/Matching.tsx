@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
-import { Unit, Word } from '../../types';
+import { Unit} from '../../types';
 
 interface MatchingItem {
   id: string;
@@ -21,6 +21,7 @@ const Matching = () => {
   const [score, setScore] = useState(0);
   const [remainingPairs, setRemainingPairs] = useState(0);
   const [translationOrder, setTranslationOrder] = useState<string[]>([]);
+  const [incorrectPair, setIncorrectPair] = useState<string[]>([]);
 
   useEffect(() => {
     const loadWords = async () => {
@@ -76,7 +77,7 @@ const Matching = () => {
 
   const handleItemClick = (itemId: string) => {
     const clickedItem = items.find(item => item.id === itemId);
-    if (!clickedItem || clickedItem.isMatched) return;
+    if (!clickedItem || clickedItem.isMatched || incorrectPair.includes(itemId)) return;
 
     if (selectedItem === null) {
       setSelectedItem(itemId);
@@ -94,8 +95,15 @@ const Matching = () => {
         ));
         setScore(prev => prev + 1);
         setRemainingPairs(prev => prev - 1);
+        setSelectedItem(null);
+      } else {
+        // Yanlış eşleşme
+        setIncorrectPair([selectedItem, itemId]);
+        setTimeout(() => {
+          setIncorrectPair([]);
+          setSelectedItem(null);
+        }, 1000);
       }
-      setSelectedItem(null);
     }
   };
 
@@ -136,6 +144,8 @@ const Matching = () => {
                   className={`w-full p-4 rounded-lg text-left transition-all ${
                     item.isMatched
                       ? 'bg-green-100 border border-green-500 text-green-700'
+                      : incorrectPair.includes(item.id)
+                      ? 'bg-red-100 border-2 border-red-500 text-red-700'
                       : selectedItem === item.id
                       ? 'bg-primary/10 border-2 border-primary'
                       : 'hover:bg-gray-50 border border-gray-200'
@@ -158,6 +168,8 @@ const Matching = () => {
                   className={`w-full p-4 rounded-lg text-left transition-all ${
                     item.isMatched
                       ? 'bg-green-100 border border-green-500 text-green-700'
+                      : incorrectPair.includes(item.id)
+                      ? 'bg-red-100 border-2 border-red-500 text-red-700'
                       : selectedItem === item.id
                       ? 'bg-primary/10 border-2 border-primary'
                       : 'hover:bg-gray-50 border border-gray-200'

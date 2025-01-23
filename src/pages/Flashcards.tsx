@@ -1,6 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeftIcon, AcademicCapIcon, Square3Stack3DIcon } from '@heroicons/react/24/outline';
+import { 
+  ArrowLeftIcon, 
+  AcademicCapIcon, 
+  Square3Stack3DIcon,
+  ChevronRightIcon 
+} from '@heroicons/react/24/outline';
 import { Unit, Word } from '../types';
 
 const Flashcards = () => {
@@ -70,30 +75,41 @@ const Flashcards = () => {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8">
-        <div className="flex items-center mb-8 justify-between">
+        <div className="flex items-center mb-8">
           <Link to="/units" className="flex items-center text-gray-600 hover:text-primary transition-colors">
             <ArrowLeftIcon className="w-5 h-5 mr-2" />
             <span>Geri Dön</span>
           </Link>
+        </div>
+
+        {/* Başlık ve Butonlar */}
+        <div className="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-6">
           <h1 className="text-3xl font-bold text-primary">{unit.title}</h1>
-          <div className="flex space-x-3">
+          <div className="flex flex-col sm:flex-row gap-3">
             <Link
               to={`/exercise/${unit.id}`}
-              className="flex items-center bg-secondary text-primary px-4 py-2 rounded-lg hover:bg-secondary/90 transition-colors"
+              className="group flex items-center justify-between bg-green-100 hover:bg-green-500 text-green-600 hover:text-white px-6 py-3 rounded-xl transition-all duration-300"
             >
-              <AcademicCapIcon className="w-5 h-5 mr-2" />
-              <span>Egzersiz Yap</span>
+              <div className="flex items-center">
+                <AcademicCapIcon className="w-6 h-6 mr-3" />
+                <span className="font-medium">Egzersiz Yap</span>
+              </div>
+              <ChevronRightIcon className="w-5 h-5 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300" />
             </Link>
             <Link
               to={`/memory-game/${unit.id}`}
-              className="flex items-center bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600 transition-colors"
+              className="group flex items-center justify-between bg-purple-100 hover:bg-purple-500 text-purple-600 hover:text-white px-6 py-3 rounded-xl transition-all duration-300"
             >
-              <Square3Stack3DIcon className="w-5 h-5 mr-2" />
-              <span>Hafıza Oyunu</span>
+              <div className="flex items-center">
+                <Square3Stack3DIcon className="w-6 h-6 mr-3" />
+                <span className="font-medium">Hafıza Oyunu</span>
+              </div>
+              <ChevronRightIcon className="w-5 h-5 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300" />
             </Link>
           </div>
         </div>
 
+        {/* Kartlar Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {unit.words.map((word: Word) => (
             <div
