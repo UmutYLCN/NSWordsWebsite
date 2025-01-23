@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeftIcon, AcademicCapIcon } from '@heroicons/react/24/outline';
+import { ArrowLeftIcon, AcademicCapIcon, Square3Stack3DIcon } from '@heroicons/react/24/outline';
 import { Unit, Word } from '../types';
 
 const Flashcards = () => {
@@ -76,13 +76,22 @@ const Flashcards = () => {
             <span>Geri Dön</span>
           </Link>
           <h1 className="text-3xl font-bold text-primary">{unit.title}</h1>
-          <Link
-            to={`/exercise/${unit.id}`}
-            className="flex items-center bg-secondary text-primary px-4 py-2 rounded-lg hover:bg-secondary/90 transition-colors"
-          >
-            <AcademicCapIcon className="w-5 h-5 mr-2" />
-            <span>Egzersiz Yap</span>
-          </Link>
+          <div className="flex space-x-3">
+            <Link
+              to={`/exercise/${unit.id}`}
+              className="flex items-center bg-secondary text-primary px-4 py-2 rounded-lg hover:bg-secondary/90 transition-colors"
+            >
+              <AcademicCapIcon className="w-5 h-5 mr-2" />
+              <span>Egzersiz Yap</span>
+            </Link>
+            <Link
+              to={`/memory-game/${unit.id}`}
+              className="flex items-center bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600 transition-colors"
+            >
+              <Square3Stack3DIcon className="w-5 h-5 mr-2" />
+              <span>Hafıza Oyunu</span>
+            </Link>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

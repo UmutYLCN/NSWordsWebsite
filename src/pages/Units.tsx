@@ -103,15 +103,9 @@ const Units = () => {
               <div className="flex space-x-3">
                 <Link
                   to={`/flashcards/${unit.id}`}
-                  className="inline-block bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
+                  className="w-full bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors text-center"
                 >
                   İncele
-                </Link>
-                <Link
-                  to={`/memory-game/${unit.id}`}
-                  className="inline-block bg-secondary text-primary px-4 py-2 rounded-lg hover:bg-secondary/90 transition-colors"
-                >
-                  Hafıza Oyunu
                 </Link>
               </div>
             </div>
