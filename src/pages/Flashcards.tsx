@@ -26,19 +26,45 @@ const Flashcards = () => {
           throw new Error('Veriler yüklenemedi');
         }
         const data = await response.json();
-        const foundUnit = data.find((u: Unit) => u.id === Number(unitId));
+
+        // Mix ünite kontrolü
+        const isMixUnit = Number(unitId) >= 1000;
         
-        if (foundUnit) {
-          setUnit(foundUnit);
+        if (isMixUnit) {
+          const unitNumber = Number(unitId) - 1000;
+          const rwUnit = data.find((u: Unit) => 
+            u.title.includes('Reading & Writing') && 
+            u.title.includes(`Unit ${unitNumber}`)
+          );
+          const lsUnit = data.find((u: Unit) => 
+            u.title.includes('Listening & Speaking') && 
+            u.title.includes(`Unit ${unitNumber}`)
+          );
+
+          if (rwUnit && lsUnit) {
+            const mixUnit = {
+              id: Number(unitId),
+              title: `Mix Unit ${unitNumber}`,
+              words: [...rwUnit.words, ...lsUnit.words]
+            };
+            setUnit(mixUnit);
+          } else {
+            throw new Error('Ünite bulunamadı');
+          }
         } else {
-          throw new Error('Ünite bulunamadı');
+          const foundUnit = data.find((u: Unit) => u.id === Number(unitId));
+          if (foundUnit) {
+            setUnit(foundUnit);
+          } else {
+            throw new Error('Ünite bulunamadı');
+          }
         }
+        
+        setLoading(false);
       } catch (error) {
         console.error('Kelimeler yüklenirken bir hata oluştu:', error);
         setError('Kelimeler yüklenirken bir hata oluştu. Lütfen sayfayı yenileyin.');
         setTimeout(() => navigate('/units'), 2000);
-      } finally {
-        setLoading(false);
       }
     };
 

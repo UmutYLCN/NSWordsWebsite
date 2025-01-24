@@ -26,7 +26,32 @@ const MultipleChoice = () => {
       try {
         const response = await fetch('/data.json');
         const units: Unit[] = await response.json();
-        const currentUnit = units.find(u => u.id === Number(unitId));
+
+        // Mix ünite kontrolü
+        const isMixUnit = Number(unitId) >= 1000;
+        let currentUnit: Unit | undefined;
+        
+        if (isMixUnit) {
+          const unitNumber = Number(unitId) - 1000;
+          const rwUnit = units.find(u => 
+            u.title.includes('Reading & Writing') && 
+            u.title.includes(`Unit ${unitNumber}`)
+          );
+          const lsUnit = units.find(u => 
+            u.title.includes('Listening & Speaking') && 
+            u.title.includes(`Unit ${unitNumber}`)
+          );
+
+          if (rwUnit && lsUnit) {
+            currentUnit = {
+              id: Number(unitId),
+              title: `Mix Unit ${unitNumber}`,
+              words: [...rwUnit.words, ...lsUnit.words]
+            };
+          }
+        } else {
+          currentUnit = units.find(u => u.id === Number(unitId));
+        }
         
         if (!currentUnit) {
           throw new Error('Ünite bulunamadı');
@@ -34,7 +59,7 @@ const MultipleChoice = () => {
 
         const generatedQuestions = currentUnit.words.map(word => {
           // Her kelime için diğer kelimelerden 3 yanlış cevap seç
-          const otherWords = currentUnit.words.filter(w => w.id !== word.id);
+          const otherWords = currentUnit!.words.filter(w => w.id !== word.id);
           const wrongAnswers = otherWords
             .sort(() => Math.random() - 0.5)
             .slice(0, 3)

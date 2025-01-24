@@ -7,7 +7,18 @@ const Units = () => {
   const [units, setUnits] = useState<Unit[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedType, setSelectedType] = useState<string | null>(null);
+  const [selectedType, setSelectedType] = useState<string | null>(() => {
+    const savedFilter = localStorage.getItem('unitFilter');
+    return savedFilter || null;
+  });
+
+  useEffect(() => {
+    if (selectedType) {
+      localStorage.setItem('unitFilter', selectedType);
+    } else {
+      localStorage.removeItem('unitFilter');
+    }
+  }, [selectedType]);
 
   useEffect(() => {
     let isMounted = true;
@@ -17,12 +28,7 @@ const Units = () => {
         setLoading(true);
         setError(null);
         
-        const response = await fetch('/data.json', {
-          headers: {
-            'Accept': 'application/json',
-            'Cache-Control': 'no-cache'
-          }
-        });
+        const response = await fetch('/data.json');
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -33,9 +39,28 @@ const Units = () => {
         if (!Array.isArray(data)) {
           throw new Error('Veri formatı geçersiz');
         }
+
+        // Reading & Writing ve Listening & Speaking ünitelerini ayır
+        const rwUnits = data.filter(unit => unit.title.includes('Reading & Writing'));
+        const lsUnits = data.filter(unit => unit.title.includes('Listening & Speaking'));
+
+        // Mix üniteleri oluştur
+        const mixUnits = rwUnits.map(rwUnit => {
+          const unitNumber = rwUnit.title.match(/\d+/)?.[0];
+          if (!unitNumber) return null;
+
+          const lsUnit = lsUnits.find(unit => unit.title.includes(`Unit ${unitNumber}`));
+          if (!lsUnit) return null;
+
+          return {
+            id: 1000 + parseInt(unitNumber),
+            title: `Mix Unit ${unitNumber}`,
+            words: [...rwUnit.words, ...lsUnit.words]
+          };
+        }).filter((unit): unit is Unit => unit !== null);
         
         if (isMounted) {
-          setUnits(data);
+          setUnits([...data, ...mixUnits]);
           setLoading(false);
         }
       } catch (error) {
@@ -56,9 +81,10 @@ const Units = () => {
 
   const filteredUnits = units.filter(unit => {
     if (!selectedType) return true;
-    return selectedType === 'RW' 
-      ? unit.title.includes('Reading & Writing')
-      : unit.title.includes('Listening & Speaking');
+    if (selectedType === 'RW') return unit.title.includes('Reading & Writing');
+    if (selectedType === 'LS') return unit.title.includes('Listening & Speaking');
+    if (selectedType === 'MIX') return unit.title.includes('Mix Unit');
+    return true;
   });
 
   const handleRetry = () => {
@@ -141,6 +167,16 @@ const Units = () => {
                   }`}
                 >
                   Listening & Speaking
+                </button>
+                <button
+                  onClick={() => setSelectedType('MIX')}
+                  className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
+                    selectedType === 'MIX'
+                      ? 'bg-primary/10 text-primary font-medium'
+                      : 'text-gray-600 hover:bg-gray-50'
+                  }`}
+                >
+                  Mix Units
                 </button>
               </div>
             </div>

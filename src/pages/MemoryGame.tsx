@@ -147,6 +147,21 @@ const MemoryGame = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [showExitConfirm, setShowExitConfirm] = useState(false);
 
+  // Tarayıcı geri tuşu kontrolü
+  useEffect(() => {
+    const handlePopState = (event: PopStateEvent) => {
+      event.preventDefault();
+      window.history.pushState(null, '', window.location.pathname);
+      if (gameStarted && !gameOver) {
+        setShowExitConfirm(true);
+      }
+    };
+
+    window.history.pushState(null, '', window.location.pathname);
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [gameStarted, gameOver]);
+
   useEffect(() => {
     const loadCards = async () => {
       try {
@@ -509,71 +524,108 @@ const MemoryGame = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-8">
-        {/* Üst Bar */}
-        <div className="flex items-center justify-between mb-8">
-          <button 
-            onClick={() => setShowExitConfirm(true)}
-            className="flex items-center text-gray-600 hover:text-primary transition-colors"
-          >
-            <ArrowLeftIcon className="w-5 h-5 mr-2" />
-            <span>Geri Dön</span>
-          </button>
-          {/* Skor Tablosu */}
-          <div className="flex space-x-8">
-            {players.map((player, idx) => (
-              <div
-                key={idx}
-                className={`text-lg font-semibold ${
-                  currentPlayerIndex === idx
-                    ? 'text-primary ring-2 ring-primary rounded-lg px-4 py-2'
-                    : 'text-gray-600'
-                }`}
-              >
-                {player.name}: {player.score}
-              </div>
-            ))}
+      <div className="container mx-auto px-4 py-4">
+        {/* Skor Tablosu - Kompakt Tasarım */}
+        <div className="flex justify-center mb-6">
+          <div className="bg-white rounded-xl shadow-sm p-3 w-full max-w-xl">
+            <div className="flex justify-between items-center gap-4">
+              {players.map((player, idx) => (
+                <div
+                  key={idx}
+                  className={`flex-1 p-2 rounded-lg transition-all ${
+                    currentPlayerIndex === idx
+                      ? `bg-${player.color}/10 ring-1 ring-${player.color}`
+                      : 'bg-gray-50'
+                  }`}
+                >
+                  <div className="flex items-center gap-2">
+                    <div className={`w-2 h-2 rounded-full bg-${player.color}`} />
+                    <span className={`font-medium text-sm text-${player.color} truncate`}>
+                      {player.name}
+                    </span>
+                  </div>
+                  <div className="text-lg font-bold text-gray-900 mt-1">
+                    {player.score} puan
+                  </div>
+                  {currentPlayerIndex === idx && (
+                    <div className={`text-xs mt-0.5 text-${player.color}`}>
+                      Sıra Sende
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Oyun Alanı */}
-        <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
-          {cards.map((card) => (
-            <motion.div
-              key={card.id}
-              className={`aspect-[3/4] relative cursor-pointer ${
-                card.isMatched ? 'opacity-50' : ''
-              }`}
-              onClick={() => handleCardClick(card.id)}
-            >
+        <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-8 gap-2 sm:gap-3">
+          {cards.map((card) => {
+            const isSelected = flippedCards.includes(card.id);
+            const playerColor = isSelected ? players[currentPlayerIndex].color : '';
+
+            return (
               <motion.div
-                className="absolute inset-0 bg-white rounded-lg shadow-md flex items-center justify-center p-2 text-center"
-                initial={false}
-                animate={{
-                  rotateY: card.isFlipped ? 180 : 0
-                }}
-                transition={{ duration: 0.3 }}
-                style={{
-                  backfaceVisibility: 'hidden'
-                }}
+                key={card.id}
+                className={`aspect-[3/4] relative cursor-pointer transform-gpu transition-transform duration-200 ${
+                  !card.isMatched && 'hover:scale-105'
+                } ${
+                  card.isMatched ? 'opacity-40' : ''
+                }`}
+                onClick={() => handleCardClick(card.id)}
               >
-                <QuestionMarkCircleIcon className="w-12 h-12 text-primary/30" />
+                {/* Ön Yüz (Kapalı) */}
+                <motion.div
+                  className={`absolute inset-0 bg-white rounded-xl shadow-sm flex items-center justify-center p-2 text-center transition-colors ${
+                    isSelected 
+                      ? `ring-2 ring-${playerColor}` 
+                      : ''
+                  }`}
+                  initial={false}
+                  animate={{
+                    rotateY: card.isFlipped ? 180 : 0
+                  }}
+                  transition={{ duration: 0.3 }}
+                  style={{
+                    backfaceVisibility: 'hidden'
+                  }}
+                >
+                  <QuestionMarkCircleIcon 
+                    className={`w-10 h-10 ${
+                      isSelected 
+                        ? `text-${playerColor}` 
+                        : 'text-gray-400'
+                    }`}
+                  />
+                </motion.div>
+
+                {/* Arka Yüz (Açık) */}
+                <motion.div
+                  className={`absolute inset-0 bg-white rounded-xl shadow-sm flex items-center justify-center p-2 text-center transition-colors ${
+                    card.isMatched
+                      ? `ring-2 ring-${players[card.isMatched ? (players[0].score > players[1].score ? 0 : 1) : currentPlayerIndex].color}`
+                      : isSelected
+                      ? `ring-2 ring-${playerColor}`
+                      : ''
+                  }`}
+                  initial={false}
+                  animate={{
+                    rotateY: card.isFlipped ? 0 : -180
+                  }}
+                  transition={{ duration: 0.3 }}
+                  style={{
+                    backfaceVisibility: 'hidden'
+                  }}
+                >
+                  <span className={`text-base font-medium ${
+                    isSelected ? `text-${playerColor}` : 'text-gray-800'
+                  }`}>
+                    {card.content}
+                  </span>
+                </motion.div>
               </motion.div>
-              <motion.div
-                className={`absolute inset-0 ${card.isMatched ? 'bg-primary' : 'bg-white'} text-${card.isMatched ? 'white' : 'primary'} rounded-lg shadow-md flex items-center justify-center p-2 text-center`}
-                initial={false}
-                animate={{
-                  rotateY: card.isFlipped ? 0 : -180
-                }}
-                transition={{ duration: 0.3 }}
-                style={{
-                  backfaceVisibility: 'hidden'
-                }}
-              >
-                <span className="text-lg font-medium">{card.content}</span>
-              </motion.div>
-            </motion.div>
-          ))}
+            );
+          })}
         </div>
         <ExitConfirmPopup />
       </div>

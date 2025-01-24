@@ -24,7 +24,32 @@ const Writing = () => {
       try {
         const response = await fetch('/data.json');
         const units: Unit[] = await response.json();
-        const currentUnit = units.find(u => u.id === Number(unitId));
+
+        // Mix ünite kontrolü
+        const isMixUnit = Number(unitId) >= 1000;
+        let currentUnit: Unit | undefined;
+        
+        if (isMixUnit) {
+          const unitNumber = Number(unitId) - 1000;
+          const rwUnit = units.find(u => 
+            u.title.includes('Reading & Writing') && 
+            u.title.includes(`Unit ${unitNumber}`)
+          );
+          const lsUnit = units.find(u => 
+            u.title.includes('Listening & Speaking') && 
+            u.title.includes(`Unit ${unitNumber}`)
+          );
+
+          if (rwUnit && lsUnit) {
+            currentUnit = {
+              id: Number(unitId),
+              title: `Mix Unit ${unitNumber}`,
+              words: [...rwUnit.words, ...lsUnit.words]
+            };
+          }
+        } else {
+          currentUnit = units.find(u => u.id === Number(unitId));
+        }
 
         if (!currentUnit) {
           throw new Error('Ünite bulunamadı');
