@@ -18,6 +18,7 @@ interface Card {
   originalId: number;
   isFlipped: boolean;
   isMatched: boolean;
+  matchedBy?: number;
 }
 
 const Confetti = () => {
@@ -90,8 +91,8 @@ const ColorPickerPopup = ({
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={onClose}>
-      <div className="bg-white rounded-xl p-6 shadow-lg" onClick={e => e.stopPropagation()}>
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">Renk Seçin</h3>
+      <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg" onClick={e => e.stopPropagation()}>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Renk Seçin</h3>
         <div className="grid grid-cols-3 gap-3 mb-4">
           {playerColors.map((color) => (
             <button
@@ -218,15 +219,15 @@ const MemoryGame = () => {
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className="bg-white rounded-xl p-6 shadow-lg max-w-sm w-full mx-4"
+          className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg max-w-sm w-full mx-4"
         >
           <div className="flex items-center gap-3 text-red-500 mb-4">
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
             </svg>
-            <h3 className="text-lg font-semibold">Hata</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Hata</h3>
           </div>
-          <p className="text-gray-600 mb-6">Lütfen farklı renkler seçin!</p>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">Lütfen farklı renkler seçin!</p>
           <button
             onClick={() => setShowAlert(false)}
             className="w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600 transition-colors"
@@ -281,7 +282,7 @@ const MemoryGame = () => {
           setCards(prevCards =>
             prevCards.map(card =>
               card.originalId === firstCard.originalId
-                ? { ...card, isMatched: true }
+                ? { ...card, isMatched: true, matchedBy: currentPlayerIndex }
                 : card
             )
           );
@@ -304,7 +305,7 @@ const MemoryGame = () => {
           }
         }, 1000);
       } else {
-        // Eşleşme başarısız
+        // Eşleşme başarısız - 2 saniye beklet
         setTimeout(() => {
           setCards(prevCards =>
             prevCards.map(card =>
@@ -316,7 +317,7 @@ const MemoryGame = () => {
           setFlippedCards([]);
           setCanFlip(true);
           setCurrentPlayerIndex(prevIndex => (prevIndex === 0 ? 1 : 0));
-        }, 1000);
+        }, 2000);
       }
     }
   };
@@ -340,12 +341,12 @@ const MemoryGame = () => {
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className="bg-white rounded-xl p-6 shadow-lg max-w-sm w-full mx-4"
+          className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg max-w-sm w-full mx-4"
         >
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
             Oyundan Çıkmak İstiyor musunuz?
           </h3>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 dark:text-gray-400 mb-6">
             Oyundan çıkarsanız ilerlemeniz kaydedilmeyecektir.
           </p>
           <div className="flex gap-3">
@@ -357,7 +358,7 @@ const MemoryGame = () => {
             </button>
             <button
               onClick={() => setShowExitConfirm(false)}
-              className="flex-1 bg-gray-200 text-gray-800 py-2 rounded-lg hover:bg-gray-300 transition-colors"
+              className="flex-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-400 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
             >
               İptal
             </button>
@@ -369,7 +370,7 @@ const MemoryGame = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-background flex items-center justify-center">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
         <div className="text-primary text-xl">Yükleniyor...</div>
       </div>
     );
@@ -377,13 +378,13 @@ const MemoryGame = () => {
 
   if (!gameStarted) {
     return (
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4 py-8">
           {/* Geri Dön Butonu */}
           <div className="mb-8">
             <Link 
               to="/units"
-              className="flex items-center text-gray-600 hover:text-primary transition-colors"
+              className="flex items-center text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
             >
               <ArrowLeftIcon className="w-5 h-5 mr-2" />
               <span>Geri Dön</span>
@@ -392,17 +393,17 @@ const MemoryGame = () => {
 
           <div className="flex items-center justify-center">
             <div className="max-w-md w-full">
-              <h2 className="text-3xl font-bold text-primary text-center mb-8">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">
                 Oyuncu Bilgilerini Girin
               </h2>
-              <div className="bg-white rounded-xl p-8 shadow-lg space-y-6">
+              <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg space-y-6">
                 {/* 1. Oyuncu */}
                 <div>
                   <div className="flex justify-between items-center mb-2">
-                    <label className="block text-gray-700">
-                      1. Oyuncu <span className="text-sm text-gray-500">(opsiyonel)</span>
+                    <label className="block text-gray-700 dark:text-gray-400">
+                      1. Oyuncu <span className="text-sm text-gray-500 dark:text-gray-600">(opsiyonel)</span>
                     </label>
-                    <span className="text-sm text-gray-500">Renk Seç</span>
+                    <span className="text-sm text-gray-500 dark:text-gray-600">Renk Seç</span>
                   </div>
                   <div className="flex gap-3">
                     <input
@@ -410,12 +411,12 @@ const MemoryGame = () => {
                       value={player1Name}
                       onChange={(e) => setPlayer1Name(e.target.value)}
                       placeholder="Player 1"
-                      className="flex-1 p-3 border rounded-lg focus:ring-2 focus:ring-primary/20"
+                      className="flex-1 p-3 border rounded-lg focus:ring-2 focus:ring-primary/20 dark:bg-gray-700 dark:text-gray-400"
                     />
                     <button
                       onClick={() => setShowColorPicker1(true)}
                       className={`w-12 h-12 rounded-lg transition-all ${
-                        player1Color ? `bg-${player1Color} ring-2 ring-${player1Color}` : 'bg-gray-100'
+                        player1Color ? `bg-${player1Color} ring-2 ring-${player1Color}` : 'bg-gray-100 dark:bg-gray-700'
                       }`}
                     />
                   </div>
@@ -424,10 +425,10 @@ const MemoryGame = () => {
                 {/* 2. Oyuncu */}
                 <div>
                   <div className="flex justify-between items-center mb-2">
-                    <label className="block text-gray-700">
-                      2. Oyuncu <span className="text-sm text-gray-500">(opsiyonel)</span>
+                    <label className="block text-gray-700 dark:text-gray-400">
+                      2. Oyuncu <span className="text-sm text-gray-500 dark:text-gray-600">(opsiyonel)</span>
                     </label>
-                    <span className="text-sm text-gray-500">Renk Seç</span>
+                    <span className="text-sm text-gray-500 dark:text-gray-600">Renk Seç</span>
                   </div>
                   <div className="flex gap-3">
                     <input
@@ -435,12 +436,12 @@ const MemoryGame = () => {
                       value={player2Name}
                       onChange={(e) => setPlayer2Name(e.target.value)}
                       placeholder="Player 2"
-                      className="flex-1 p-3 border rounded-lg focus:ring-2 focus:ring-primary/20"
+                      className="flex-1 p-3 border rounded-lg focus:ring-2 focus:ring-primary/20 dark:bg-gray-700 dark:text-gray-400"
                     />
                     <button
                       onClick={() => setShowColorPicker2(true)}
                       className={`w-12 h-12 rounded-lg transition-all ${
-                        player2Color ? `bg-${player2Color} ring-2 ring-${player2Color}` : 'bg-gray-100'
+                        player2Color ? `bg-${player2Color} ring-2 ring-${player2Color}` : 'bg-gray-100 dark:bg-gray-700'
                       }`}
                     />
                   </div>
@@ -486,21 +487,21 @@ const MemoryGame = () => {
         <motion.div
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className="bg-white rounded-xl p-8 shadow-lg max-w-md w-full mx-4 text-center relative"
+          className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg max-w-md w-full mx-4 text-center relative"
         >
           <div className="flex justify-center mb-4">
             <TrophyIcon className="w-16 h-16 text-yellow-500" />
           </div>
 
-          <h2 className="text-4xl font-bold text-primary mb-4">
+          <h2 className="text-4xl font-bold text-primary dark:text-white mb-4">
             Tebrikler {winner.name}!
           </h2>
           
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
             Oyunu Kazandın! 🎉
           </p>
 
-          <div className="space-y-4 mb-8 bg-gray-50 p-4 rounded-lg">
+          <div className="space-y-4 mb-8 bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
             <div className="flex justify-between items-center px-4">
               <span className="font-semibold">{players[0].name}</span>
               <span className="text-lg font-bold text-primary">{players[0].score} puan</span>
@@ -523,11 +524,11 @@ const MemoryGame = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 py-4">
         {/* Skor Tablosu - Kompakt Tasarım */}
         <div className="flex justify-center mb-6">
-          <div className="bg-white rounded-xl shadow-sm p-3 w-full max-w-xl">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-3 w-full max-w-xl">
             <div className="flex justify-between items-center gap-4">
               {players.map((player, idx) => (
                 <div
@@ -535,7 +536,7 @@ const MemoryGame = () => {
                   className={`flex-1 p-2 rounded-lg transition-all ${
                     currentPlayerIndex === idx
                       ? `bg-${player.color}/10 ring-1 ring-${player.color}`
-                      : 'bg-gray-50'
+                      : 'bg-gray-50 dark:bg-gray-800'
                   }`}
                 >
                   <div className="flex items-center gap-2">
@@ -544,7 +545,7 @@ const MemoryGame = () => {
                       {player.name}
                     </span>
                   </div>
-                  <div className="text-lg font-bold text-gray-900 mt-1">
+                  <div className="text-lg font-bold text-gray-900 dark:text-white mt-1">
                     {player.score} puan
                   </div>
                   {currentPlayerIndex === idx && (
@@ -576,7 +577,7 @@ const MemoryGame = () => {
               >
                 {/* Ön Yüz (Kapalı) */}
                 <motion.div
-                  className={`absolute inset-0 bg-white rounded-xl shadow-sm flex items-center justify-center p-2 text-center transition-colors ${
+                  className={`absolute inset-0 bg-white dark:bg-gray-800 rounded-xl shadow-sm flex items-center justify-center p-2 text-center transition-colors ${
                     isSelected 
                       ? `ring-2 ring-${playerColor}` 
                       : ''
@@ -594,16 +595,16 @@ const MemoryGame = () => {
                     className={`w-10 h-10 ${
                       isSelected 
                         ? `text-${playerColor}` 
-                        : 'text-gray-400'
+                        : 'text-gray-400 dark:text-gray-600'
                     }`}
                   />
                 </motion.div>
 
                 {/* Arka Yüz (Açık) */}
                 <motion.div
-                  className={`absolute inset-0 bg-white rounded-xl shadow-sm flex items-center justify-center p-2 text-center transition-colors ${
+                  className={`absolute inset-0 bg-white dark:bg-gray-800 rounded-xl shadow-sm p-2 text-center transition-colors ${
                     card.isMatched
-                      ? `ring-2 ring-${players[card.isMatched ? (players[0].score > players[1].score ? 0 : 1) : currentPlayerIndex].color}`
+                      ? `ring-2 ring-${players[card.matchedBy || 0].color}`
                       : isSelected
                       ? `ring-2 ring-${playerColor}`
                       : ''
@@ -614,11 +615,14 @@ const MemoryGame = () => {
                   }}
                   transition={{ duration: 0.3 }}
                   style={{
-                    backfaceVisibility: 'hidden'
+                    backfaceVisibility: 'hidden',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center'
                   }}
                 >
                   <span className={`text-base font-medium ${
-                    isSelected ? `text-${playerColor}` : 'text-gray-800'
+                    isSelected ? `text-${playerColor}` : 'text-gray-800 dark:text-gray-400'
                   }`}>
                     {card.content}
                   </span>

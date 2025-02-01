@@ -18,6 +18,7 @@ export default {
     'ring-pink-500',
     'ring-red-500',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -31,4 +32,4 @@ export default {
     },
   },
   plugins: [],
-} 
+}
