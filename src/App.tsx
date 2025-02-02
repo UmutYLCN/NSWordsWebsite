@@ -19,6 +19,8 @@ function App() {
         <Route path="/exercise/:unitId" element={<Exercise />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        {/* Fallback route for the base URL */}
+        <Route path="*" element={<Home />} />
       </Routes>
     </ThemeProvider>
   );

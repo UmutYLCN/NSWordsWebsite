@@ -22,6 +22,7 @@ const Matching = () => {
   const [remainingPairs, setRemainingPairs] = useState(0);
   const [translationOrder, setTranslationOrder] = useState<string[]>([]);
   const [incorrectPair, setIncorrectPair] = useState<string[]>([]);
+  const [showCompletionMessage, setShowCompletionMessage] = useState(false);
 
   useEffect(() => {
     const loadWords = async () => {
@@ -59,10 +60,9 @@ const Matching = () => {
           throw new Error('Ünite bulunamadı');
         }
 
-        // Kelimeleri karıştır ve ilk 6 tanesini al
+        // Tüm kelimeleri kullan
         const shuffledWords = [...currentUnit.words]
-          .sort(() => Math.random() - 0.5)
-          .slice(0, 6);
+          .sort(() => Math.random() - 0.5);
 
         // Her kelime için iki item oluştur (İngilizce ve Türkçe)
         const matchingItems = shuffledWords.flatMap(word => [
@@ -119,7 +119,13 @@ const Matching = () => {
             : item
         ));
         setScore(prev => prev + 1);
-        setRemainingPairs(prev => prev - 1);
+        setRemainingPairs(prev => {
+          const newRemaining = prev - 1;
+          if (newRemaining === 0) {
+            setShowCompletionMessage(true);
+          }
+          return newRemaining;
+        });
         setSelectedItem(null);
       } else {
         // Yanlış eşleşme
@@ -148,6 +154,29 @@ const Matching = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {showCompletionMessage && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg text-center max-w-md mx-4"
+          >
+            <div className="text-4xl mb-4">🎉</div>
+            <h2 className="text-2xl font-bold text-primary mb-4">Tebrikler!</h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
+              Tüm eşleştirmeleri başarıyla tamamladınız! Puanınız: {score}
+            </p>
+            <div className="flex justify-center">
+              <Link
+                to={`/exercise/${unitId}`}
+                className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+              >
+                Diğer Alıştırmalara Geç
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      )}
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center mb-8 justify-between">
           <Link to={`/exercise/${unitId}`} className="flex items-center text-gray-600 hover:text-primary">

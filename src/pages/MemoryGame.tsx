@@ -139,6 +139,7 @@ const MemoryGame = () => {
   const [flippedCards, setFlippedCards] = useState<string[]>([]);
   const [canFlip, setCanFlip] = useState(true);
   const [gameOver, setGameOver] = useState(false);
+  const [showCompletionMessage, setShowCompletionMessage] = useState(false);
   const [player1Name, setPlayer1Name] = useState('');
   const [player2Name, setPlayer2Name] = useState('');
   const [player1Color, setPlayer1Color] = useState('blue-500');
@@ -166,9 +167,35 @@ const MemoryGame = () => {
   useEffect(() => {
     const loadCards = async () => {
       try {
-        const response = await fetch('/data.json');
+        const baseUrl = import.meta.env.BASE_URL;
+        const response = await fetch(`${baseUrl}data.json`);
         const units: Unit[] = await response.json();
-        const currentUnit = units.find(u => u.id === Number(unitId));
+
+        // Mix ünite kontrolü
+        const isMixUnit = Number(unitId) >= 1000;
+        let currentUnit: Unit | undefined;
+        
+        if (isMixUnit) {
+          const unitNumber = Number(unitId) - 1000;
+          const rwUnit = units.find(u => 
+            u.title.includes('Reading & Writing') && 
+            u.title.includes(`Unit ${unitNumber}`)
+          );
+          const lsUnit = units.find(u => 
+            u.title.includes('Listening & Speaking') && 
+            u.title.includes(`Unit ${unitNumber}`)
+          );
+
+          if (rwUnit && lsUnit) {
+            currentUnit = {
+              id: Number(unitId),
+              title: `Mix Unit ${unitNumber}`,
+              words: [...rwUnit.words, ...lsUnit.words]
+            };
+          }
+        } else {
+          currentUnit = units.find(u => u.id === Number(unitId));
+        }
 
         if (!currentUnit) {
           throw new Error('Ünite bulunamadı');
@@ -302,6 +329,7 @@ const MemoryGame = () => {
           );
           if (allMatched) {
             setGameOver(true);
+            setShowCompletionMessage(true);
           }
         }, 1000);
       } else {
@@ -328,6 +356,7 @@ const MemoryGame = () => {
       const allMatched = cards.every(card => card.isMatched);
       if (allMatched) {
         setGameOver(true);
+        setShowCompletionMessage(true);
       }
     }
   }, [cards, gameStarted, loading]);
@@ -339,26 +368,26 @@ const MemoryGame = () => {
     return (
       <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
         <motion.div
-          initial={{ scale: 0.9, opacity: 0 }}
+          initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg max-w-sm w-full mx-4"
+          className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg text-center max-w-md mx-4"
         >
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-            Oyundan Çıkmak İstiyor musunuz?
-          </h3>
-          <p className="text-gray-600 dark:text-gray-400 mb-6">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            Oyundan Çıkmak İstediğinize Emin Misiniz?
+          </h2>
+          <p className="text-gray-600 dark:text-gray-300 mb-6">
             Oyundan çıkarsanız ilerlemeniz kaydedilmeyecektir.
           </p>
-          <div className="flex gap-3">
+          <div className="flex justify-center space-x-4">
             <button
               onClick={() => navigate('/units')}
-              className="flex-1 bg-red-500 text-white py-2 rounded-lg hover:bg-red-600 transition-colors"
+              className="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition-colors"
             >
-              Evet, Çık
+              Çık
             </button>
             <button
               onClick={() => setShowExitConfirm(false)}
-              className="flex-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-400 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+              className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-6 py-3 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
             >
               İptal
             </button>
@@ -525,6 +554,68 @@ const MemoryGame = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      {/* Completion Message */}
+      {showCompletionMessage && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg text-center max-w-md mx-4"
+          >
+            <div className="text-6xl mb-4">🏆</div>
+            <h2 className="text-2xl font-bold text-primary mb-4">Tebrikler!</h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-2">
+              Oyunu başarıyla tamamladınız!
+            </p>
+            <div className="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 mb-6">
+              <h3 className="font-semibold mb-2">Sonuçlar:</h3>
+              {players.map((player, index) => (
+                <p key={index} className={`text-${player.color} mb-1`}>
+                  {player.name}: {player.score} puan
+                </p>
+              ))}
+            </div>
+            <div className="flex justify-center space-x-4">
+              <Link
+                to="/units"
+                className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+              >
+                Ünitelere Dön
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      )}
+      {showExitConfirm && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg text-center max-w-md mx-4"
+          >
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              Oyundan Çıkmak İstediğinize Emin Misiniz?
+            </h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
+              Oyundan çıkarsanız ilerlemeniz kaydedilmeyecektir.
+            </p>
+            <div className="flex justify-center space-x-4">
+              <button
+                onClick={() => navigate('/units')}
+                className="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition-colors"
+              >
+                Çık
+              </button>
+              <button
+                onClick={() => setShowExitConfirm(false)}
+                className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-6 py-3 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+              >
+                İptal
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      )}
       <div className="container mx-auto px-4 py-4">
         {/* Skor Tablosu - Kompakt Tasarım */}
         <div className="flex justify-center mb-6">
@@ -631,7 +722,6 @@ const MemoryGame = () => {
             );
           })}
         </div>
-        <ExitConfirmPopup />
       </div>
     </div>
   );
