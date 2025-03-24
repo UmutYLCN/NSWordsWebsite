@@ -3,9 +3,9 @@ import { Link, useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 import { Unit } from '../types';
 import { motion } from 'framer-motion';
-import MultipleChoice from './exercise/MultipleChoice';
-import Matching from './exercise/Matching';
-import Writing from './exercise/Writing';
+import MultipleChoice from './exercises/MultipleChoice';
+import Matching from './exercises/Matching';
+import Writing from './exercises/Writing';
 
 interface ExerciseType {
   id: string;
@@ -87,7 +87,8 @@ const Exercise = () => {
   };
 
   const handleComplete = () => {
-    navigate('/units');
+    setShowExercise(false);
+    setSelectedType(null);
   };
 
   if (loading) {

@@ -4,13 +4,18 @@ import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 import { Unit, Word } from '../../types';
 
+interface MultipleChoiceProps {
+  unit: Unit;
+  onComplete: () => void;
+}
+
 interface Question {
   word: Word;
   options: string[];
   correctAnswer: string;
 }
 
-const MultipleChoice = () => {
+const MultipleChoice = ({ unit, onComplete }: MultipleChoiceProps) => {
   const { unitId } = useParams();
   const navigate = useNavigate();
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -20,46 +25,18 @@ const MultipleChoice = () => {
   const [score, setScore] = useState(0);
   const [loading, setLoading] = useState(true);
   const [showResult, setShowResult] = useState(false);
+  const [showExitConfirmation, setShowExitConfirmation] = useState(false);
 
   useEffect(() => {
     const loadQuestions = async () => {
       try {
-        const response = await fetch('/data.json');
-        const units: Unit[] = await response.json();
+        // Ünite bilgisi props olarak geliyor, fetch etmemize gerek yok
+        // Kelimeleri karıştıralım
+        const words = [...unit.words].sort(() => Math.random() - 0.5);
 
-        // Mix ünite kontrolü
-        const isMixUnit = Number(unitId) >= 1000;
-        let currentUnit: Unit | undefined;
-        
-        if (isMixUnit) {
-          const unitNumber = Number(unitId) - 1000;
-          const rwUnit = units.find(u => 
-            u.title.includes('Reading & Writing') && 
-            u.title.includes(`Unit ${unitNumber}`)
-          );
-          const lsUnit = units.find(u => 
-            u.title.includes('Listening & Speaking') && 
-            u.title.includes(`Unit ${unitNumber}`)
-          );
-
-          if (rwUnit && lsUnit) {
-            currentUnit = {
-              id: Number(unitId),
-              title: `Mix Unit ${unitNumber}`,
-              words: [...rwUnit.words, ...lsUnit.words]
-            };
-          }
-        } else {
-          currentUnit = units.find(u => u.id === Number(unitId));
-        }
-        
-        if (!currentUnit) {
-          throw new Error('Ünite bulunamadı');
-        }
-
-        const generatedQuestions = currentUnit.words.map(word => {
+        const generatedQuestions = words.map(word => {
           // Her kelime için diğer kelimelerden 3 yanlış cevap seç
-          const otherWords = currentUnit!.words.filter(w => w.id !== word.id);
+          const otherWords = unit.words.filter(w => w.id !== word.id);
           const wrongAnswers = otherWords
             .sort(() => Math.random() - 0.5)
             .slice(0, 3)
@@ -86,7 +63,7 @@ const MultipleChoice = () => {
     };
 
     loadQuestions();
-  }, [unitId, navigate]);
+  }, [unit, navigate]);
 
   const handleAnswerSelect = (answer: string) => {
     if (selectedAnswer !== null) return;
@@ -107,9 +84,21 @@ const MultipleChoice = () => {
     }, 1500);
   };
 
+  const handleBackClick = () => {
+    setShowExitConfirmation(true);
+  };
+
+  const handleExitConfirm = () => {
+    onComplete();
+  };
+
+  const handleExitCancel = () => {
+    setShowExitConfirmation(false);
+  };
+
   if (loading) {
     return (
-      <div className="min-h-screen bg-background flex items-center justify-center">
+      <div className="min-h-screen w-full bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
         <div className="text-primary text-xl">Yükleniyor...</div>
       </div>
     );
@@ -117,18 +106,18 @@ const MultipleChoice = () => {
 
   if (showResult) {
     return (
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen w-full bg-gray-50 dark:bg-gray-900 py-8">
         <div className="container mx-auto px-4 py-8">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-primary mb-8">
               Tebrikler! Tüm soruları tamamladınız!
             </h2>
-            <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg mb-8">
               <p className="text-2xl font-semibold mb-4">
                 Puanınız: {score}/{questions.length}
               </p>
               <button
-                onClick={() => navigate(`/exercise/${unitId}`)}
+                onClick={onComplete}
                 className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors"
               >
                 Yeni Egzersiz Seç
@@ -143,22 +132,53 @@ const MultipleChoice = () => {
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen w-full bg-gray-50 dark:bg-gray-900">
+      {showExitConfirmation && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg text-center max-w-md mx-4"
+          >
+            <h2 className="text-xl font-bold text-primary mb-4">Uyarı</h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
+              Alıştırmadan çıkmak istediğinize emin misiniz? İlerlemeniz kaydedilmeyecektir.
+            </p>
+            <div className="flex justify-center space-x-4">
+              <button
+                onClick={handleExitCancel}
+                className="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-6 py-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+              >
+                İptal
+              </button>
+              <button
+                onClick={handleExitConfirm}
+                className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors"
+              >
+                Çıkış Yap
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      )}
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center mb-8 justify-between">
-          <Link to={`/exercise/${unitId}`} className="flex items-center text-gray-600 hover:text-primary">
+          <button
+            onClick={handleBackClick}
+            className="flex items-center text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
+          >
             <ArrowLeftIcon className="w-5 h-5 mr-2" />
             <span>Geri Dön</span>
-          </Link>
+          </button>
           <div className="text-lg font-semibold text-primary">
             Soru {currentQuestionIndex + 1}/{questions.length} • Puan: {score}
           </div>
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg mb-8">
             <h2 className="text-2xl font-bold mb-2">{currentQuestion.word.word}</h2>
-            <p className="text-gray-600 mb-6">{currentQuestion.word.definition}</p>
+            <p className="text-gray-600 dark:text-gray-400 mb-6">{currentQuestion.word.definition}</p>
             
             <div className="space-y-4">
               {currentQuestion.options.map((option, index) => (
@@ -166,14 +186,14 @@ const MultipleChoice = () => {
                   key={index}
                   className={`w-full p-4 rounded-lg text-left transition-colors ${
                     selectedAnswer === null
-                      ? 'hover:bg-gray-50 border border-gray-200'
+                      ? 'hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
                       : selectedAnswer === option
                       ? isCorrect
-                        ? 'bg-green-100 border border-green-500 text-green-700'
-                        : 'bg-red-100 border border-red-500 text-red-700'
+                        ? 'bg-green-100 dark:bg-green-900 border border-green-500 text-green-700 dark:text-green-300'
+                        : 'bg-red-100 dark:bg-red-900 border border-red-500 text-red-700 dark:text-red-300'
                       : option === currentQuestion.correctAnswer && !isCorrect
-                      ? 'bg-green-100 border border-green-500 text-green-700'
-                      : 'border border-gray-200 opacity-50'
+                      ? 'bg-green-100 dark:bg-green-900 border border-green-500 text-green-700 dark:text-green-300'
+                      : 'border border-gray-200 dark:border-gray-700 opacity-50'
                   }`}
                   onClick={() => handleAnswerSelect(option)}
                   disabled={selectedAnswer !== null}

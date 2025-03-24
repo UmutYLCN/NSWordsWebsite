@@ -58,7 +58,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">Kelime Haznenizi Geliştirin</h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto">
               NSWords ile İngilizce kelime öğrenmeyi daha etkili ve eğlenceli hale getirin. 
-              Üniteler halinde düzenlenmiş kelimeler, alıştırmalar ve takip sistemi ile 
+              Üniteler halinde düzenlenmiş kelimeler, alıştırmalar ile 
               öğrenme sürecinizi hızlandırın.
             </p>
             <div className="flex justify-center space-x-4">
