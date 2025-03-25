@@ -1,13 +1,15 @@
 {
   "name": "nswords",
   "private": true,
+  "homepage": "https://northstarb1.github.io/NSWordsWebsite",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
