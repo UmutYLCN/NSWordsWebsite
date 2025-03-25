@@ -71,7 +71,7 @@ export default function Home() {
               </Link>
               <button
                 onClick={() => setShowDictionary(true)}
-                className="inline-flex items-center px-6 py-3 bg-secondary dark:bg-gray-800 text-primary dark:text-primary rounded-lg hover:bg-secondary/90 dark:hover:bg-gray-700 transition-colors"
+                className="inline-flex items-center px-6 py-3 bg-white dark:bg-gray-800 text-primary dark:text-primary rounded-lg hover:bg-secondary/90 dark:hover:bg-gray-700 transition-colors"
               >
                 <MagnifyingGlassIcon className="w-5 h-5 mr-2" />
                 Sözlük
@@ -81,7 +81,7 @@ export default function Home() {
 
           <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-secondary dark:bg-gray-700 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-4">
                 <BookOpenIcon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Kelime Üniteleri</h3>
@@ -91,7 +91,7 @@ export default function Home() {
             </div>
 
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-secondary dark:bg-gray-700 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center mb-4">
                 <AcademicCapIcon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Hafıza Oyunu</h3>
