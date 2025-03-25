@@ -6,7 +6,7 @@ import './index.css';
 
 // GitHub Pages yönlendirmesi için base tag eklemek
 const baseTag = document.createElement('base');
-baseTag.href = '/NorthStarB1WordsWebsite/';
+baseTag.href = '/NSWordsWebsite/';
 document.head.appendChild(baseTag);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
