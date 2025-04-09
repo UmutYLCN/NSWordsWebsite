@@ -99,7 +99,7 @@ const Contact = () => {
                       </a>
 
                       <a 
-                        href="https://www.instagram.com/umutyalcinn" 
+                        href="https://www.instagram.com/umutylcnn_/" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"

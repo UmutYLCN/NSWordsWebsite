@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Reading & Writing Unit 1",
+    "title": "NorthStar 2 Reading & Writing Unit 1",
     "words": [
       {
           "id": 1,
@@ -150,7 +150,7 @@
   },
   {
     "id": 2,
-    "title": "Reading & Writing Unit 2",
+    "title": "NorthStar 2 Reading & Writing Unit 2",
     "words": [
       {
         "id": 14,
@@ -310,7 +310,7 @@
   },
   {
     "id": 3,
-    "title": "Reading & Writing Unit 3",
+    "title": "NorthStar 2 Reading & Writing Unit 3",
     "words": [
       {
         "id": 28,
@@ -580,7 +580,7 @@
   },
   {
     "id": 4,
-    "title": "Reading & Writing Unit 4",
+    "title": "NorthStar 2 Reading & Writing Unit 4",
     "words": [
       {
         "id": 52,
@@ -762,7 +762,7 @@
   },
   {
     "id": 5,
-    "title": "Reading & Writing Unit 5",
+    "title": "NorthStar 2 Reading & Writing Unit 5",
     "words": [
       {
         "id": 68,
@@ -922,7 +922,7 @@
   },
   {
     "id": 6,
-    "title": "Reading & Writing Unit 6",
+    "title": "NorthStar 2 Reading & Writing Unit 6",
     "words": [
       {
         "id": 82,
@@ -1082,7 +1082,7 @@
   },
   {
     "id": 7,
-    "title": "Reading & Writing Unit 7",
+    "title": "NorthStar 2 Reading & Writing Unit 7",
     "words": [
       {
         "id": 96,
@@ -1352,7 +1352,7 @@
   },
   {
     "id": 8,
-    "title": "Reading & Writing Unit 8",
+    "title": "NorthStar 2 Reading & Writing Unit 8",
     "words": [
       {
         "id": 120,
@@ -1512,7 +1512,7 @@
   },
   {
     "id": 9,
-    "title": "Listening & Speaking Unit 1",
+    "title": "NorthStar 2 Listening & Speaking Unit 1",
     "words": [
       {
         "id": 134,
@@ -1672,7 +1672,7 @@
   },
   {
     "id": 10,
-    "title": "Listening & Speaking Unit 2",
+    "title": "NorthStar 2 Listening & Speaking Unit 2",
     "words": [
       {
         "id": 148,
@@ -1953,7 +1953,7 @@
   },
   {
     "id": 11,
-    "title": "Listening & Speaking Unit 3",
+    "title": "NorthStar 2 Listening & Speaking Unit 3",
     "words": [
       {
         "id": 173,
@@ -2157,7 +2157,7 @@
   },
   {
     "id": 12,
-    "title": "Listening & Speaking Unit 4",
+    "title": "NorthStar 2 Listening & Speaking Unit 4",
     "words": [
       {
         "id": 191,
@@ -2405,7 +2405,7 @@
   },
   {
     "id": 13,
-    "title": "Listening & Speaking Unit 5",
+    "title": "NorthStar 2 Listening & Speaking Unit 5",
     "words": [
       {
         "id": 213,
@@ -2576,7 +2576,7 @@
   },
   {
     "id": 14,
-    "title": "Listening & Speaking Unit 6",
+    "title": "NorthStar 2 Listening & Speaking Unit 6",
     "words": [
       {
         "id": 228,
@@ -2747,7 +2747,7 @@
   },
   {
     "id": 15,
-    "title": "Listening & Speaking Unit 7",
+    "title": "NorthStar 2 Listening & Speaking Unit 7",
     "words": [
       {
         "id": 243,
@@ -2929,7 +2929,7 @@
   },
   {
     "id": 16,
-    "title": "Listening & Speaking Unit 8",
+    "title": "NorthStar 2 Listening & Speaking Unit 8",
     "words": [
       {
         "id": 259,
@@ -3105,6 +3105,1297 @@
         "examples": [
           "English is the official language in many countries.",
           "Canada has two official languages: English and French."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "NorthStar 3 Reading & Writing Unit 1",
+    "words": [
+      {
+        "id": 275,
+        "word": "accomplished",
+        "definition": "skilled or talented in a particular activity",
+        "translation": "başarılı",
+        "meaning": "Belirli bir aktivitede yetenekli veya becerikli olan",
+        "examples": [
+          "She is an accomplished pianist who has performed all over the world.",
+          "He became an accomplished writer after years of practice."
+        ]
+      },
+      {
+        "id": 276,
+        "word": "challenge",
+        "definition": "something that tests strength, skill, or ability",
+        "translation": "zorluk",
+        "meaning": "Güç, beceri veya yeteneği sınayan bir şey",
+        "examples": [
+          "Climbing Mount Everest is a significant challenge for any mountaineer.",
+          "The math competition presented a real challenge to the students."
+        ]
+      },
+      {
+        "id": 277,
+        "word": "complications",
+        "definition": "situations or factors that make something more difficult",
+        "translation": "komplikasyonlar",
+        "meaning": "Bir şeyi daha zor hale getiren durumlar veya faktörler",
+        "examples": [
+          "The surgery went well, but there were some complications during recovery.",
+          "Legal complications delayed the construction project for months."
+        ]
+      },
+      {
+        "id": 278,
+        "word": "daring",
+        "definition": "the quality of being brave or courageous",
+        "translation": "cesaret",
+        "meaning": "Cesur veya gözüpek olma niteliği",
+        "examples": [
+          "The firefighter showed great daring when rescuing the child.",
+          "Her daring in business ventures has led to significant success."
+        ]
+      },
+      {
+        "id": 279,
+        "word": "enormous",
+        "definition": "extremely large in size or quantity",
+        "translation": "muazzam",
+        "meaning": "Boyut veya miktar olarak son derece büyük",
+        "examples": [
+          "The project required an enormous amount of resources.",
+          "The elephant is an enormous animal compared to most mammals."
+        ]
+      },
+      {
+        "id": 280,
+        "word": "focused",
+        "definition": "giving attention and effort to one particular task or goal",
+        "translation": "odaklanmış",
+        "meaning": "Belirli bir göreve veya hedefe dikkat ve çaba veren",
+        "examples": [
+          "She remained focused on her studies despite the distractions.",
+          "A focused approach to problem-solving often yields better results."
+        ]
+      },
+      {
+        "id": 281,
+        "word": "impressive",
+        "definition": "evoking admiration through size, quality, or skill",
+        "translation": "etkileyici",
+        "meaning": "Boyut, kalite veya beceri yoluyla hayranlık uyandıran",
+        "examples": [
+          "His knowledge of languages is quite impressive.",
+          "The new skyscraper's architecture is truly impressive."
+        ]
+      },
+      {
+        "id": 282,
+        "word": "inspire",
+        "definition": "to fill someone with the urge or ability to do or feel something",
+        "translation": "ilham vermek",
+        "meaning": "Birine bir şey yapma veya hissetme dürtüsü veya yeteneği aşılamak",
+        "examples": [
+          "Good teachers inspire their students to learn more.",
+          "Her story inspired many people to overcome their own challenges."
+        ]
+      },
+      {
+        "id": 283,
+        "word": "obsession",
+        "definition": "a persistent idea or feeling that dominates one's thoughts",
+        "translation": "takıntı",
+        "meaning": "Kişinin düşüncelerine hakim olan ısrarlı bir fikir veya duygu",
+        "examples": [
+          "His obsession with cleanliness made living with him difficult.",
+          "She developed an obsession with collecting rare books."
+        ]
+      },
+      {
+        "id": 284,
+        "word": "pressure",
+        "definition": "the use of persuasion or intimidation to make someone do something",
+        "translation": "baskı",
+        "meaning": "Birini bir şey yapmaya ikna etmek veya korkutmak için kullanılan yöntem",
+        "examples": [
+          "He felt pressure from his parents to become a doctor.",
+          "There's a lot of pressure on athletes to perform well in important competitions."
+        ]
+      },
+      {
+        "id": 285,
+        "word": "risk",
+        "definition": "a situation involving exposure to danger or potential harm",
+        "translation": "risk",
+        "meaning": "Tehlikeye veya potansiyel zarara maruz kalmayı içeren bir durum",
+        "examples": [
+          "Starting a new business always involves some risk.",
+          "Doctors explained the risks associated with the surgery."
+        ]
+      },
+      {
+        "id": 286,
+        "word": "unthinkable",
+        "definition": "too extreme or unlikely to be considered possible",
+        "translation": "düşünülemez",
+        "meaning": "Mümkün olarak düşünülemeyecek kadar aşırı veya olası olmayan",
+        "examples": [
+          "Just a century ago, traveling to the moon was unthinkable.",
+          "For many people, living without technology is now unthinkable."
+        ]
+      },
+      {
+        "id": 287,
+        "word": "willingness",
+        "definition": "the quality of being ready, eager, or prepared to do something",
+        "translation": "isteklilik",
+        "meaning": "Bir şeyi yapmaya hazır, hevesli veya hazırlıklı olma niteliği",
+        "examples": [
+          "Her willingness to help others makes her a valuable team member.",
+          "The company appreciated his willingness to work overtime."
+        ]
+      },
+      {
+        "id": 288,
+        "word": "do-or-die",
+        "definition": "requiring a determined effort in a critical situation",
+        "translation": "ya hep ya hiç",
+        "meaning": "Kritik bir durumda kararlı bir çaba gerektiren",
+        "examples": [
+          "The team was in a do-or-die situation in the final match.",
+          "It was a do-or-die moment for the struggling company."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "NorthStar 3 Reading & Writing Unit 2",
+    "words": [
+      {
+        "id": 317,
+        "word": "astonishing",
+        "definition": "extremely surprising or impressive; amazing",
+        "translation": "şaşırtıcı",
+        "meaning": "Son derece şaşırtıcı veya etkileyici; hayranlık uyandıran",
+        "examples": [
+          "The magician performed some astonishing tricks.",
+          "Scientists have made astonishing discoveries about the human brain."
+        ]
+      },
+      {
+        "id": 318,
+        "word": "con",
+        "definition": "to trick or deceive someone",
+        "translation": "dolandırmak",
+        "meaning": "Birini kandırmak veya aldatmak",
+        "examples": [
+          "He conned her out of her life savings.",
+          "The salesman tried to con me into buying a useless product."
+        ]
+      },
+      {
+        "id": 319,
+        "word": "convincing",
+        "definition": "able to make someone believe that something is true or right",
+        "translation": "ikna edici",
+        "meaning": "Birinin bir şeyin doğru veya haklı olduğuna inanmasını sağlayabilen",
+        "examples": [
+          "She gave a convincing explanation for her late arrival.",
+          "His argument was very convincing."
+        ]
+      },
+      {
+        "id": 320,
+        "word": "deception",
+        "definition": "the act of hiding the truth, especially to get an advantage",
+        "translation": "aldatma",
+        "meaning": "Özellikle bir avantaj elde etmek için gerçeği gizleme eylemi",
+        "examples": [
+          "The company was accused of deception in its advertising.",
+          "He used deception to win the competition."
+        ]
+      },
+      {
+        "id": 321,
+        "word": "duplicate",
+        "definition": "to make an exact copy of something",
+        "translation": "kopyalamak",
+        "meaning": "Bir şeyin birebir kopyasını yapmak",
+        "examples": [
+          "The software can duplicate the entire hard drive.",
+          "She duplicated the recipe with perfect results."
+        ]
+      },
+      {
+        "id": 322,
+        "word": "fake",
+        "definition": "not genuine; made to look like something real",
+        "translation": "sahte",
+        "meaning": "Gerçek olmayan; gerçeğine benzetilmiş",
+        "examples": [
+          "The painting turned out to be a fake.",
+          "She wore a fake diamond necklace to the party."
+        ]
+      },
+      {
+        "id": 323,
+        "word": "fishy",
+        "definition": "seeming dishonest or false; suspicious",
+        "translation": "şüpheli",
+        "meaning": "Dürüst veya gerçek görünmeyen; kuşkulu",
+        "examples": [
+          "There's something fishy about his explanation.",
+          "The deal sounded too good to be true - it was definitely fishy."
+        ]
+      },
+      {
+        "id": 324,
+        "word": "fraud",
+        "definition": "the crime of getting money by deceiving people",
+        "translation": "dolandırıcılık",
+        "meaning": "İnsanları aldatarak para kazanma suçu",
+        "examples": [
+          "He was arrested for credit card fraud.",
+          "The insurance company suspected fraud after investigating the claim."
+        ]
+      },
+      {
+        "id": 325,
+        "word": "honesty",
+        "definition": "the quality of being truthful and trustworthy",
+        "translation": "dürüstlük",
+        "meaning": "Doğru sözlü ve güvenilir olma niteliği",
+        "examples": [
+          "Honesty is the most important quality in a friend.",
+          "I appreciate her honesty in telling me the truth."
+        ]
+      },
+      {
+        "id": 326,
+        "word": "impersonate",
+        "definition": "to pretend to be another person",
+        "translation": "taklit etmek",
+        "meaning": "Başka biri gibi davranmak",
+        "examples": [
+          "He impersonated a police officer to gain entry to the building.",
+          "The comedian impersonates famous politicians in her act."
+        ]
+      },
+      {
+        "id": 327,
+        "word": "impress",
+        "definition": "to cause someone to admire or respect you",
+        "translation": "etkilemek",
+        "meaning": "Birinin sizi takdir etmesine veya saygı duymasına neden olmak",
+        "examples": [
+          "She impressed everyone with her knowledge of the subject.",
+          "His cooking skills impressed all the dinner guests."
+        ]
+      },
+      {
+        "id": 328,
+        "word": "motive",
+        "definition": "a reason for doing something",
+        "translation": "güdü",
+        "meaning": "Bir şey yapma nedeni",
+        "examples": [
+          "The police are trying to establish a motive for the crime.",
+          "Profit was his main motive for starting the business."
+        ]
+      },
+      {
+        "id": 329,
+        "word": "suspicious",
+        "definition": "feeling or showing doubt about something or someone",
+        "translation": "şüpheci",
+        "meaning": "Bir şey veya biri hakkında şüphe duyan veya gösteren",
+        "examples": [
+          "The police became suspicious when he changed his story.",
+          "She gave me a suspicious look when I arrived late."
+        ]
+      },
+      {
+        "id": 330,
+        "word": "weary",
+        "definition": "very tired, especially after working hard for a long time",
+        "translation": "yorgun",
+        "meaning": "Çok yorgun, özellikle uzun süre çalıştıktan sonra",
+        "examples": [
+          "The hikers were weary after walking all day.",
+          "She had a weary expression on her face after the long meeting."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "NorthStar 3 Reading & Writing Unit 3",
+    "words": [
+      {
+        "id": 331,
+        "word": "artificial",
+        "definition": "made by humans rather than occurring naturally",
+        "translation": "yapay",
+        "meaning": "Doğal olarak oluşmak yerine insanlar tarafından yapılmış",
+        "examples": [
+          "The flowers in the vase were artificial.",
+          "Artificial intelligence is becoming more advanced every year."
+        ]
+      },
+      {
+        "id": 332,
+        "word": "automatically",
+        "definition": "without needing direct human control",
+        "translation": "otomatik olarak",
+        "meaning": "Doğrudan insan kontrolüne ihtiyaç duymadan",
+        "examples": [
+          "The lights turn on automatically when someone enters the room.",
+          "The software updates automatically when connected to the internet."
+        ]
+      },
+      {
+        "id": 333,
+        "word": "boredom",
+        "definition": "the state of feeling bored",
+        "translation": "sıkıntı",
+        "meaning": "Sıkılma durumu",
+        "examples": [
+          "Children often complain of boredom during long car trips.",
+          "Boredom can lead to creative thinking."
+        ]
+      },
+      {
+        "id": 334,
+        "word": "depression",
+        "definition": "a mental condition in which a person feels very sad and hopeless",
+        "translation": "depresyon",
+        "meaning": "Kişinin çok üzgün ve umutsuz hissettiği zihinsel durum",
+        "examples": [
+          "He suffered from depression after losing his job.",
+          "Depression is a common but serious mental illness."
+        ]
+      },
+      {
+        "id": 335,
+        "word": "engine",
+        "definition": "a machine that converts energy into mechanical force or motion",
+        "translation": "motor",
+        "meaning": "Enerjiyi mekanik güce veya harekete dönüştüren makine",
+        "examples": [
+          "The car's engine stopped working on the highway.",
+          "Modern jet engines are incredibly powerful."
+        ]
+      },
+      {
+        "id": 336,
+        "word": "establish",
+        "definition": "to set up or create something that will last for a long time",
+        "translation": "kurmak",
+        "meaning": "Uzun süre dayanacak bir şeyi kurmak veya oluşturmak",
+        "examples": [
+          "They established a new company last year.",
+          "The treaty established peace between the two countries."
+        ]
+      },
+      {
+        "id": 337,
+        "word": "isolated",
+        "definition": "far away from other places, buildings, or people; remote",
+        "translation": "izole",
+        "meaning": "Diğer yerlerden, binalardan veya insanlardan uzak; ücra",
+        "examples": [
+          "They lived in an isolated farmhouse in the mountains.",
+          "She felt isolated when she first moved to the new city."
+        ]
+      },
+      {
+        "id": 338,
+        "word": "reaction",
+        "definition": "something you do, say, or think as a response to something else",
+        "translation": "tepki",
+        "meaning": "Başka bir şeye yanıt olarak yaptığınız, söylediğiniz veya düşündüğünüz şey",
+        "examples": [
+          "His reaction to the news was one of shock.",
+          "The chemical reaction produced a bright blue color."
+        ]
+      },
+      {
+        "id": 339,
+        "word": "research",
+        "definition": "careful study to discover new facts or information",
+        "translation": "araştırma",
+        "meaning": "Yeni gerçekleri veya bilgileri keşfetmek için yapılan dikkatli çalışma",
+        "examples": [
+          "The scientist spent years conducting research on cancer.",
+          "Market research shows that consumers prefer the new design."
+        ]
+      },
+      {
+        "id": 340,
+        "word": "simulate",
+        "definition": "to create a situation that is similar to something that exists or might exist",
+        "translation": "simüle etmek",
+        "meaning": "Var olan veya var olabilecek bir şeye benzer bir durum yaratmak",
+        "examples": [
+          "The software can simulate flight conditions for pilot training.",
+          "Scientists simulate natural disasters to study their effects."
+        ]
+      },
+      {
+        "id": 341,
+        "word": "speculation",
+        "definition": "ideas or guesses about something without knowing all the facts",
+        "translation": "tahmin",
+        "meaning": "Tüm gerçekleri bilmeden bir şey hakkında fikirler veya tahminler",
+        "examples": [
+          "There's a lot of speculation about who will get the job.",
+          "Financial speculation can be risky."
+        ]
+      },
+      {
+        "id": 342,
+        "word": "spin",
+        "definition": "to turn around and around quickly",
+        "translation": "döndürmek",
+        "meaning": "Hızlı bir şekilde etrafa dönmek",
+        "examples": [
+          "The Earth spins on its axis once every 24 hours.",
+          "The dancer spun around gracefully."
+        ]
+      },
+      {
+        "id": 343,
+        "word": "survive",
+        "definition": "to continue to live or exist after a dangerous event or time",
+        "translation": "hayatta kalmak",
+        "meaning": "Tehlikeli bir olaydan veya zamandan sonra yaşamaya veya var olmaya devam etmek",
+        "examples": [
+          "Only a few plants can survive in the desert.",
+          "She survived the accident with minor injuries."
+        ]
+      },
+      {
+        "id": 344,
+        "word": "count on",
+        "definition": "to depend on someone or something",
+        "translation": "güvenmek",
+        "meaning": "Birine veya bir şeye bağlı olmak",
+        "examples": [
+          "You can count on me to help you move this weekend.",
+          "Don't count on the weather being good for the picnic."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "NorthStar 3 Reading & Writing Unit 4",
+    "words": [
+      {
+        "id": 345,
+        "word": "assertive",
+        "definition": "confident and direct in expressing your opinions",
+        "translation": "kendinden emin",
+        "meaning": "Görüşlerini ifade ederken kendinden emin ve doğrudan olan",
+        "examples": [
+          "You need to be more assertive in business meetings.",
+          "Her assertive attitude helped her succeed in the negotiation."
+        ]
+      },
+      {
+        "id": 346,
+        "word": "dialect",
+        "definition": "a form of a language spoken in a particular area with different grammar, words or pronunciation",
+        "translation": "lehçe",
+        "meaning": "Farklı gramer, kelimeler veya telaffuzla belirli bir bölgede konuşulan bir dil formu",
+        "examples": [
+          "She speaks a southern dialect of Chinese.",
+          "The novel uses local dialect to make the characters more authentic."
+        ]
+      },
+      {
+        "id": 347,
+        "word": "dominate",
+        "definition": "to have control or power over someone or something",
+        "translation": "hâkim olmak",
+        "meaning": "Biri veya bir şey üzerinde kontrol veya güce sahip olmak",
+        "examples": [
+          "The team has dominated the league for the past five years.",
+          "The tall buildings dominate the city skyline."
+        ]
+      },
+      {
+        "id": 348,
+        "word": "excessive",
+        "definition": "more than necessary, normal, or desirable; too much",
+        "translation": "aşırı",
+        "meaning": "Gerekli, normal veya istenenden fazla; çok fazla",
+        "examples": [
+          "Excessive noise from the party disturbed the neighbors.",
+          "The project went over budget due to excessive spending."
+        ]
+      },
+      {
+        "id": 349,
+        "word": "inferior",
+        "definition": "lower in rank, status, or quality",
+        "translation": "aşağı",
+        "meaning": "Rütbe, statü veya kalite olarak daha düşük",
+        "examples": [
+          "He felt inferior to his more experienced colleagues.",
+          "The company sells inferior products at lower prices."
+        ]
+      },
+      {
+        "id": 350,
+        "word": "myth",
+        "definition": "an ancient story explaining natural or social phenomena",
+        "translation": "efsane",
+        "meaning": "Doğal veya toplumsal olayları açıklayan eski bir hikâye",
+        "examples": [
+          "Greek myths often involve gods and heroes.",
+          "The myth of Icarus teaches about hubris and its consequences."
+        ]
+      },
+      {
+        "id": 351,
+        "word": "profanity",
+        "definition": "offensive or obscene language",
+        "translation": "küfür",
+        "meaning": "Saldırgan veya müstehcen dil",
+        "examples": [
+          "The movie contains too much profanity for young viewers.",
+          "He was asked to stop using profanity in the workplace."
+        ]
+      },
+      {
+        "id": 352,
+        "word": "proverb",
+        "definition": "a short, well-known saying that expresses a common truth or piece of advice",
+        "translation": "atasözü",
+        "meaning": "Ortak bir gerçeği veya tavsiyeyi ifade eden kısa, iyi bilinen bir söz",
+        "examples": [
+          "'A stitch in time saves nine' is a proverb about preventing problems.",
+          "Every culture has its own proverbs and sayings."
+        ]
+      },
+      {
+        "id": 353,
+        "word": "sexist",
+        "definition": "showing prejudice, stereotyping, or discrimination based on gender",
+        "translation": "cinsiyetçi",
+        "meaning": "Cinsiyete dayalı önyargı, kalıplaşmış düşünce veya ayrımcılık gösteren",
+        "examples": [
+          "The company was criticized for its sexist hiring practices.",
+          "That comment about women drivers is quite sexist."
+        ]
+      },
+      {
+        "id": 354,
+        "word": "slang",
+        "definition": "very informal language that is usually spoken rather than written",
+        "translation": "argo",
+        "meaning": "Genellikle yazılı olmak yerine konuşulan çok gayri resmi dil",
+        "examples": [
+          "Teenagers often use slang that adults don't understand.",
+          "The dictionary includes common slang terms."
+        ]
+      },
+      {
+        "id": 355,
+        "word": "synonym",
+        "definition": "a word or phrase that means exactly or nearly the same as another word or phrase",
+        "translation": "eş anlamlı",
+        "meaning": "Başka bir kelime veya ifadeyle tam olarak veya neredeyse aynı anlama gelen kelime veya ifade",
+        "examples": [
+          "'Happy' and 'joyful' are synonyms.",
+          "Using synonyms makes your writing more interesting."
+        ]
+      },
+      {
+        "id": 356,
+        "word": "talkative",
+        "definition": "liking to talk a lot; chatty",
+        "translation": "konuşkan",
+        "meaning": "Çok konuşmayı seven; geveze",
+        "examples": [
+          "She's usually quiet, but becomes very talkative after a few drinks.",
+          "The talkative student was asked to be quiet during the exam."
+        ]
+      },
+      {
+        "id": 357,
+        "word": "unique",
+        "definition": "being the only one of its kind; unlike anything else",
+        "translation": "benzersiz",
+        "meaning": "Türünün tek örneği olan; başka hiçbir şeye benzemeyen",
+        "examples": [
+          "Each snowflake has a unique pattern.",
+          "The restaurant offers a unique dining experience."
+        ]
+      },
+      {
+        "id": 358,
+        "word": "valued",
+        "definition": "considered to be important or beneficial",
+        "translation": "değerli",
+        "meaning": "Önemli veya faydalı olarak kabul edilen",
+        "examples": [
+          "She is a valued member of our team.",
+          "His advice is highly valued by everyone in the company."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "NorthStar 3 Reading & Writing Unit 5",
+    "words": [
+      {
+        "id": 359,
+        "word": "benefit",
+        "definition": "an advantage or profit gained from something",
+        "translation": "fayda",
+        "meaning": "Bir şeyden elde edilen avantaj veya kazanç",
+        "examples": [
+          "The new health insurance offers many benefits to employees.",
+          "One benefit of exercise is improved sleep quality."
+        ]
+      },
+      {
+        "id": 360,
+        "word": "ensure",
+        "definition": "to make certain that something happens or is done",
+        "translation": "sağlamak",
+        "meaning": "Bir şeyin gerçekleşmesini veya yapılmasını kesin hale getirmek",
+        "examples": [
+          "We need to ensure that all safety regulations are followed.",
+          "The manager will ensure that the project is completed on time."
+        ]
+      },
+      {
+        "id": 361,
+        "word": "entrepreneur",
+        "definition": "a person who sets up a business, taking on financial risks in the hope of profit",
+        "translation": "girişimci",
+        "meaning": "Kâr umuduyla finansal riskler alarak bir işletme kuran kişi",
+        "examples": [
+          "She is a successful entrepreneur who started three companies.",
+          "Young entrepreneurs are changing the business landscape."
+        ]
+      },
+      {
+        "id": 362,
+        "word": "expert",
+        "definition": "a person with extensive knowledge or ability in a particular area",
+        "translation": "uzman",
+        "meaning": "Belirli bir alanda kapsamlı bilgi veya yeteneğe sahip kişi",
+        "examples": [
+          "They consulted a security expert about the system.",
+          "She is an expert in Renaissance art."
+        ]
+      },
+      {
+        "id": 363,
+        "word": "freelancer",
+        "definition": "a self-employed person who works for different companies on particular assignments",
+        "translation": "serbest çalışan",
+        "meaning": "Farklı şirketler için belirli görevlerde çalışan kendi işinin sahibi kişi",
+        "examples": [
+          "He works as a freelancer, designing websites for various clients.",
+          "Many journalists start their careers as freelancers."
+        ]
+      },
+      {
+        "id": 364,
+        "word": "injured",
+        "definition": "physically harmed or wounded",
+        "translation": "yaralı",
+        "meaning": "Fiziksel olarak zarar görmüş veya yara almış",
+        "examples": [
+          "Three people were injured in the car accident.",
+          "The injured athlete had to sit out the rest of the season."
+        ]
+      },
+      {
+        "id": 365,
+        "word": "obsolete",
+        "definition": "no longer used because something newer exists; out of date",
+        "translation": "eskimiş",
+        "meaning": "Daha yenisi var olduğu için artık kullanılmayan; modası geçmiş",
+        "examples": [
+          "This technology has become obsolete with the introduction of smartphones.",
+          "Many job skills are becoming obsolete due to automation."
+        ]
+      },
+      {
+        "id": 366,
+        "word": "outsource",
+        "definition": "to obtain goods or services from an outside supplier instead of internally",
+        "translation": "dış kaynak kullanmak",
+        "meaning": "İçeride yapmak yerine mal veya hizmetleri dışarıdan bir tedarikçiden temin etmek",
+        "examples": [
+          "Many companies outsource their IT support to save money.",
+          "The manufacturer decided to outsource the production of certain components."
+        ]
+      },
+      {
+        "id": 367,
+        "word": "prospect",
+        "definition": "the possibility or likelihood of something happening",
+        "translation": "olasılık",
+        "meaning": "Bir şeyin olma ihtimali veya olasılığı",
+        "examples": [
+          "There is little prospect of finding a solution to this problem soon.",
+          "The prospect of moving to another country excited her."
+        ]
+      },
+      {
+        "id": 368,
+        "word": "security",
+        "definition": "protection from danger or worry; safety",
+        "translation": "güvenlik",
+        "meaning": "Tehlike veya endişeden korunma; emniyet",
+        "examples": [
+          "The building has tight security measures in place.",
+          "Financial security is important for peace of mind."
+        ]
+      },
+      {
+        "id": 369,
+        "word": "strategy",
+        "definition": "a detailed plan for achieving success in situations such as war, politics, business, etc.",
+        "translation": "strateji",
+        "meaning": "Savaş, politika, iş vb. durumlarda başarı elde etmek için ayrıntılı plan",
+        "examples": [
+          "The company is developing a new marketing strategy.",
+          "His strategy for winning the game was brilliant."
+        ]
+      },
+      {
+        "id": 370,
+        "word": "sustainable",
+        "definition": "able to continue over a period of time without damaging the environment",
+        "translation": "sürdürülebilir",
+        "meaning": "Çevreye zarar vermeden zaman içinde devam edebilir",
+        "examples": [
+          "We need to find more sustainable ways to produce energy.",
+          "The company adopted sustainable business practices."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "NorthStar 3 Reading & Writing Unit 6",
+    "words": [
+      {
+        "id": 371,
+        "word": "characteristic",
+        "definition": "a typical feature or quality that someone or something has",
+        "translation": "özellik",
+        "meaning": "Birinin veya bir şeyin sahip olduğu tipik özellik veya nitelik",
+        "examples": [
+          "Generosity is one of her defining characteristics.",
+          "The building has many characteristic features of Gothic architecture."
+        ]
+      },
+      {
+        "id": 372,
+        "word": "coast",
+        "definition": "the land next to or close to the sea or ocean",
+        "translation": "sahil",
+        "meaning": "Denize bitişik veya yakın olan kara parçası",
+        "examples": [
+          "We spent our vacation on the west coast of Italy.",
+          "The hurricane caused damage along the entire coast."
+        ]
+      },
+      {
+        "id": 373,
+        "word": "consequence",
+        "definition": "the result or effect of an action or condition",
+        "translation": "sonuç",
+        "meaning": "Bir eylem veya durumun sonucu veya etkisi",
+        "examples": [
+          "She didn't study, and the consequence was that she failed the exam.",
+          "Climate change has serious consequences for the planet."
+        ]
+      },
+      {
+        "id": 374,
+        "word": "continent",
+        "definition": "one of the main large areas of land on Earth",
+        "translation": "kıta",
+        "meaning": "Dünya üzerindeki ana büyük kara parçalarından biri",
+        "examples": [
+          "Australia is both a country and a continent.",
+          "Africa is the second-largest continent."
+        ]
+      },
+      {
+        "id": 375,
+        "word": "explore",
+        "definition": "to travel to or around an area to learn about it",
+        "translation": "keşfetmek",
+        "meaning": "Bir alanı öğrenmek için ona veya etrafına seyahat etmek",
+        "examples": [
+          "They spent a week exploring the ancient ruins.",
+          "Scientists continue to explore the depths of the ocean."
+        ]
+      },
+      {
+        "id": 376,
+        "word": "fragile",
+        "definition": "easily broken, damaged, or destroyed",
+        "translation": "kırılgan",
+        "meaning": "Kolayca kırılan, zarar gören veya yok olan",
+        "examples": [
+          "Be careful with that vase—it's very fragile.",
+          "The ecosystem of the island is extremely fragile."
+        ]
+      },
+      {
+        "id": 377,
+        "word": "harsh",
+        "definition": "severe, extreme, and unpleasant, especially relating to weather or living conditions",
+        "translation": "sert",
+        "meaning": "Özellikle hava veya yaşam koşullarıyla ilgili şiddetli, aşırı ve hoş olmayan",
+        "examples": [
+          "The refugees faced harsh conditions in the camp.",
+          "Animals have adapted to survive in the harsh desert climate."
+        ]
+      },
+      {
+        "id": 378,
+        "word": "inhabit",
+        "definition": "to live in a place or environment",
+        "translation": "yaşamak",
+        "meaning": "Bir yerde veya çevrede yaşamak",
+        "examples": [
+          "The region is inhabited mainly by nomadic tribes.",
+          "These fish inhabit the deepest parts of the ocean."
+        ]
+      },
+      {
+        "id": 379,
+        "word": "landscape",
+        "definition": "the visible features of an area of land, often in terms of their aesthetic appeal",
+        "translation": "manzara",
+        "meaning": "Genellikle estetik çekicilikleri açısından bir arazi alanının görünür özellikleri",
+        "examples": [
+          "The rolling hills create a beautiful landscape.",
+          "The desert landscape appears barren but is full of life."
+        ]
+      },
+      {
+        "id": 380,
+        "word": "preserve",
+        "definition": "to keep something in its original state or in good condition",
+        "translation": "korumak",
+        "meaning": "Bir şeyi orijinal durumunda veya iyi durumda tutmak",
+        "examples": [
+          "The museum works to preserve ancient artifacts.",
+          "We must preserve these forests for future generations."
+        ]
+      },
+      {
+        "id": 381,
+        "word": "protect",
+        "definition": "to keep someone or something safe from harm, damage, or injury",
+        "translation": "korumak",
+        "meaning": "Birini veya bir şeyi zarardan, hasardan veya yaralanmadan güvende tutmak",
+        "examples": [
+          "Sunscreen protects your skin from UV rays.",
+          "Laws are designed to protect endangered species."
+        ]
+      },
+      {
+        "id": 382,
+        "word": "remote",
+        "definition": "far away from cities or populated areas",
+        "translation": "uzak",
+        "meaning": "Şehirlerden veya yerleşim yerlerinden uzak",
+        "examples": [
+          "They lived in a remote village in the mountains.",
+          "Scientists set up a research station in a remote part of Antarctica."
+        ]
+      },
+      {
+        "id": 383,
+        "word": "research",
+        "definition": "careful study to discover new facts or information",
+        "translation": "araştırma",
+        "meaning": "Yeni gerçekleri veya bilgileri keşfetmek için yapılan dikkatli çalışma",
+        "examples": [
+          "He conducted research on climate change for ten years.",
+          "Medical research has led to many important discoveries."
+        ]
+      },
+      {
+        "id": 384,
+        "word": "tourist",
+        "definition": "a person who travels to a place for pleasure and interest",
+        "translation": "turist",
+        "meaning": "Zevk ve ilgi için bir yere seyahat eden kişi",
+        "examples": [
+          "Millions of tourists visit Paris each year.",
+          "The island's economy depends heavily on tourist dollars."
+        ]
+      },
+      {
+        "id": 385,
+        "word": "vast",
+        "definition": "extremely large in area, size, amount, or number",
+        "translation": "geniş",
+        "meaning": "Alan, boyut, miktar veya sayı olarak son derece büyük",
+        "examples": [
+          "The Sahara Desert covers a vast area of North Africa.",
+          "There is a vast difference between theory and practice."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "NorthStar 3 Reading & Writing Unit 7",
+    "words": [
+      {
+        "id": 386,
+        "word": "abolish",
+        "definition": "to officially end a law, system, or practice",
+        "translation": "kaldırmak",
+        "meaning": "Bir yasayı, sistemi veya uygulamayı resmi olarak sonlandırmak",
+        "examples": [
+          "Many countries have abolished the death penalty.",
+          "They are fighting to abolish unfair labor practices."
+        ]
+      },
+      {
+        "id": 387,
+        "word": "cruel",
+        "definition": "causing pain or suffering to others, often deliberately",
+        "translation": "zalim",
+        "meaning": "Başkalarına acı veya ızdırap veren, genellikle kasıtlı olarak",
+        "examples": [
+          "It was cruel to make fun of his disability.",
+          "The prisoners were subjected to cruel treatment."
+        ]
+      },
+      {
+        "id": 388,
+        "word": "forgiveness",
+        "definition": "the act of stopping feeling angry with someone who has done something wrong",
+        "translation": "affetme",
+        "meaning": "Yanlış bir şey yapan birine karşı kızgınlık hissetmeyi bırakma eylemi",
+        "examples": [
+          "She asked for forgiveness for her mistake.",
+          "Forgiveness is an important part of healing after a conflict."
+        ]
+      },
+      {
+        "id": 389,
+        "word": "guilty",
+        "definition": "having done something wrong or committed a crime",
+        "translation": "suçlu",
+        "meaning": "Yanlış bir şey yapmış veya suç işlemiş",
+        "examples": [
+          "The jury found him guilty of murder.",
+          "She felt guilty about lying to her parents."
+        ]
+      },
+      {
+        "id": 390,
+        "word": "innocent",
+        "definition": "not guilty of a crime or wrong action",
+        "translation": "masum",
+        "meaning": "Bir suç veya yanlış eylemden suçlu olmayan",
+        "examples": [
+          "The evidence proved that he was innocent.",
+          "Many innocent people were harmed in the conflict."
+        ]
+      },
+      {
+        "id": 391,
+        "word": "justice",
+        "definition": "fair treatment and fair behavior; the quality of being fair or reasonable",
+        "translation": "adalet",
+        "meaning": "Adil muamele ve adil davranış; adil veya makul olma niteliği",
+        "examples": [
+          "The victims of the crime are seeking justice.",
+          "Social justice movements fight for equal rights for all."
+        ]
+      },
+      {
+        "id": 392,
+        "word": "murderer",
+        "definition": "a person who commits the crime of killing someone deliberately",
+        "translation": "katil",
+        "meaning": "Kasıtlı olarak birini öldürme suçunu işleyen kişi",
+        "examples": [
+          "The police arrested the suspected murderer.",
+          "The murderer was sentenced to life in prison."
+        ]
+      },
+      {
+        "id": 393,
+        "word": "oppose",
+        "definition": "to disagree with something or someone, often strongly",
+        "translation": "karşı çıkmak",
+        "meaning": "Bir şeye veya birine katılmamak, genellikle güçlü bir şekilde",
+        "examples": [
+          "Many citizens opposed the new tax law.",
+          "She opposed the decision to close the school."
+        ]
+      },
+      {
+        "id": 394,
+        "word": "respect",
+        "definition": "a feeling of admiration for someone or something because of their qualities or achievements",
+        "translation": "saygı",
+        "meaning": "Nitelikleri veya başarıları nedeniyle birine veya bir şeye duyulan hayranlık hissi",
+        "examples": [
+          "She has earned the respect of her colleagues.",
+          "We should show respect for different cultures and traditions."
+        ]
+      },
+      {
+        "id": 395,
+        "word": "revenge",
+        "definition": "the action of hurting or harming someone in return for an injury or wrong done to you",
+        "translation": "intikam",
+        "meaning": "Size yapılan bir yaralanma veya haksızlık karşılığında birini incitme veya zarar verme eylemi",
+        "examples": [
+          "He was motivated by revenge when he damaged her car.",
+          "Seeking revenge often leads to more violence."
+        ]
+      },
+      {
+        "id": 396,
+        "word": "right",
+        "definition": "a moral or legal entitlement to have or do something",
+        "translation": "hak",
+        "meaning": "Bir şeye sahip olmak veya yapmak için ahlaki veya yasal yetki",
+        "examples": [
+          "Education is a basic human right.",
+          "The constitution protects the right to free speech."
+        ]
+      },
+      {
+        "id": 397,
+        "word": "society",
+        "definition": "people in general living together in organized communities, with laws and traditions",
+        "translation": "toplum",
+        "meaning": "Yasalar ve geleneklerle düzenlenmiş topluluklarda birlikte yaşayan genel olarak insanlar",
+        "examples": [
+          "Crime affects the whole of society.",
+          "Modern society is becoming increasingly digital."
+        ]
+      },
+      {
+        "id": 398,
+        "word": "support",
+        "definition": "to help or encourage someone or something by giving approval, sympathy or money",
+        "translation": "desteklemek",
+        "meaning": "Onay, sempati veya para vererek birine veya bir şeye yardım etmek veya cesaretlendirmek",
+        "examples": [
+          "Her family supported her decision to go to college.",
+          "Many celebrities support charitable causes."
+        ]
+      },
+      {
+        "id": 399,
+        "word": "violent",
+        "definition": "using physical force to hurt, damage or kill someone or something",
+        "translation": "şiddetli",
+        "meaning": "Birine veya bir şeye zarar vermek, hasar vermek veya öldürmek için fiziksel güç kullanmak",
+        "examples": [
+          "The protest turned violent when police intervened.",
+          "He has a violent temper and often breaks things when angry."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "title": "NorthStar 3 Reading & Writing Unit 8",
+    "words": [
+      {
+        "id": 400,
+        "word": "adapt",
+        "definition": "to change to suit different conditions or environments",
+        "translation": "uyum sağlamak",
+        "meaning": "Farklı koşullara veya ortamlara uyum sağlamak için değişmek",
+        "examples": [
+          "Animals adapt to their environment over time.",
+          "She had to adapt to living in a colder climate."
+        ]
+      },
+      {
+        "id": 401,
+        "word": "affect",
+        "definition": "to influence or have an impact on someone or something",
+        "translation": "etkilemek",
+        "meaning": "Birini veya bir şeyi etkilemek veya üzerinde etkisi olmak",
+        "examples": [
+          "Climate change affects weather patterns around the world.",
+          "His decision will affect everyone in the company."
+        ]
+      },
+      {
+        "id": 402,
+        "word": "atmosphere",
+        "definition": "the layer of gases surrounding the Earth or another planet",
+        "translation": "atmosfer",
+        "meaning": "Dünya'yı veya başka bir gezegeni çevreleyen gaz katmanı",
+        "examples": [
+          "Pollutants in the atmosphere contribute to climate change.",
+          "The Earth's atmosphere contains mostly nitrogen and oxygen."
+        ]
+      },
+      {
+        "id": 403,
+        "word": "carbon dioxide",
+        "definition": "a gas formed during respiration, by the burning of carbon-containing fuels, and by decomposition of organic matter",
+        "translation": "karbondioksit",
+        "meaning": "Solunum sırasında, karbon içeren yakıtların yanması ve organik maddelerin çürümesi ile oluşan bir gaz",
+        "examples": [
+          "Plants absorb carbon dioxide and release oxygen.",
+          "Rising levels of carbon dioxide in the atmosphere are a major concern."
+        ]
+      },
+      {
+        "id": 404,
+        "word": "drought",
+        "definition": "a prolonged period of abnormally low rainfall, leading to a shortage of water",
+        "translation": "kuraklık",
+        "meaning": "Anormal derecede düşük yağış nedeniyle su kıtlığına yol açan uzun süre",
+        "examples": [
+          "The severe drought caused crop failures across the region.",
+          "Many farmers lost their livelihoods during the drought."
+        ]
+      },
+      {
+        "id": 405,
+        "word": "effect",
+        "definition": "a change that is caused by something; a result",
+        "translation": "etki",
+        "meaning": "Bir şeyin neden olduğu değişiklik; sonuç",
+        "examples": [
+          "The effect of the medication was immediate.",
+          "The pollution had a negative effect on local wildlife."
+        ]
+      },
+      {
+        "id": 406,
+        "word": "emissions",
+        "definition": "substances, especially gases, that are released into the air",
+        "translation": "emisyonlar",
+        "meaning": "Havaya salınan maddeler, özellikle gazlar",
+        "examples": [
+          "The factory's emissions exceeded legal limits.",
+          "Reducing carbon emissions is essential to combat climate change."
+        ]
+      },
+      {
+        "id": 407,
+        "word": "energetic",
+        "definition": "having or showing a lot of energy and enthusiasm",
+        "translation": "enerjik",
+        "meaning": "Çok enerji ve coşku sahibi olan veya gösteren",
+        "examples": [
+          "She's always been an energetic person, even as a child.",
+          "The energetic performance impressed the audience."
+        ]
+      },
+      {
+        "id": 408,
+        "word": "escape",
+        "definition": "to get away from a place or situation, especially one that is dangerous or unpleasant",
+        "translation": "kaçmak",
+        "meaning": "Özellikle tehlikeli veya hoş olmayan bir yerden veya durumdan uzaklaşmak",
+        "examples": [
+          "The prisoner escaped during the night.",
+          "Gases can escape into the atmosphere from factories."
+        ]
+      },
+      {
+        "id": 409,
+        "word": "evidence",
+        "definition": "facts, signs, or objects that make you believe that something is true",
+        "translation": "kanıt",
+        "meaning": "Bir şeyin doğru olduğuna inanmanızı sağlayan gerçekler, işaretler veya nesneler",
+        "examples": [
+          "Scientists have found evidence of climate change.",
+          "The police collected evidence from the crime scene."
+        ]
+      },
+      {
+        "id": 410,
+        "word": "flood",
+        "definition": "a large amount of water covering an area that is usually dry",
+        "translation": "sel",
+        "meaning": "Genellikle kuru olan bir alanı kaplayan büyük miktarda su",
+        "examples": [
+          "Heavy rains caused severe floods in the region.",
+          "Many homes were damaged in the flood."
+        ]
+      },
+      {
+        "id": 411,
+        "word": "fossil fuels",
+        "definition": "natural fuels, such as coal or oil, formed in the earth from dead plants or animals",
+        "translation": "fosil yakıtlar",
+        "meaning": "Ölü bitki veya hayvanlardan yeryüzünde oluşmuş kömür veya petrol gibi doğal yakıtlar",
+        "examples": [
+          "Burning fossil fuels releases carbon dioxide into the atmosphere.",
+          "We need to reduce our dependence on fossil fuels."
+        ]
+      },
+      {
+        "id": 412,
+        "word": "gas",
+        "definition": "a substance that is not solid or liquid, and usually cannot be seen",
+        "translation": "gaz",
+        "meaning": "Katı veya sıvı olmayan ve genellikle görünmeyen bir madde",
+        "examples": [
+          "Natural gas is commonly used for heating homes.",
+          "Greenhouse gases contribute to global warming."
+        ]
+      },
+      {
+        "id": 413,
+        "word": "hunger",
+        "definition": "the feeling of needing or wanting food",
+        "translation": "açlık",
+        "meaning": "Yiyecek ihtiyacı veya isteği duyma hissi",
+        "examples": [
+          "Millions of people around the world suffer from hunger.",
+          "Food shortages caused by drought led to widespread hunger."
+        ]
+      },
+      {
+        "id": 414,
+        "word": "link",
+        "definition": "a connection or relationship between two or more things or people",
+        "translation": "bağlantı",
+        "meaning": "İki veya daha fazla şey veya kişi arasındaki bağlantı veya ilişki",
+        "examples": [
+          "Scientists have found a link between carbon emissions and climate change.",
+          "There's a strong link between education and economic success."
+        ]
+      },
+      {
+        "id": 415,
+        "word": "record",
+        "definition": "to keep information about something by writing it down, storing it on a computer, or putting it on film, etc.",
+        "translation": "kaydetmek",
+        "meaning": "Bir şey hakkında bilgileri yazarak, bilgisayarda saklayarak veya filme alarak vb. tutmak",
+        "examples": [
+          "Scientists record temperature changes over time.",
+          "She recorded the interview on her smartphone."
         ]
       }
     ]

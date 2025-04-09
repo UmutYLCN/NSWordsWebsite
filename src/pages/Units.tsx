@@ -65,8 +65,9 @@ const Units = () => {
 
   const filteredUnits = units.filter(unit => {
     if (!selectedType) return true;
-    if (selectedType === 'RW') return unit.title.includes('Reading & Writing');
-    if (selectedType === 'LS') return unit.title.includes('Listening & Speaking');
+    if (selectedType === 'NS2RW') return unit.title.includes('NorthStar 2 Reading & Writing');
+    if (selectedType === 'NS2LS') return unit.title.includes('NorthStar 2 Listening & Speaking');
+    if (selectedType === 'NS3RW') return unit.title.includes('NorthStar 3 Reading & Writing');
     return true;
   });
 
@@ -138,24 +139,34 @@ const Units = () => {
                   Tüm Üniteler
                 </button>
                 <button
-                  onClick={() => setSelectedType('RW')}
+                  onClick={() => setSelectedType('NS2RW')}
                   className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
-                    selectedType === 'RW'
+                    selectedType === 'NS2RW'
                       ? 'bg-primary/10 text-primary dark:text-primary font-medium'
                       : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'
                   }`}
                 >
-                  Reading & Writing
+                  NorthStar 2 Reading & Writing
                 </button>
                 <button
-                  onClick={() => setSelectedType('LS')}
+                  onClick={() => setSelectedType('NS2LS')}
                   className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
-                    selectedType === 'LS'
+                    selectedType === 'NS2LS'
                       ? 'bg-primary/10 text-primary dark:text-primary font-medium'
                       : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'
                   }`}
                 >
-                  Listening & Speaking
+                  NorthStar 2 Listening & Speaking
+                </button>
+                <button
+                  onClick={() => setSelectedType('NS3RW')}
+                  className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
+                    selectedType === 'NS3RW'
+                      ? 'bg-primary/10 text-primary dark:text-primary font-medium'
+                      : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'
+                  }`}
+                >
+                  NorthStar 3 Reading & Writing
                 </button>
               </div>
             </div>
