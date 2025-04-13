@@ -177,14 +177,14 @@ const MultipleChoice = ({ unit, onComplete }: MultipleChoiceProps) => {
 
         <div className="max-w-2xl mx-auto">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg mb-8">
-            <h2 className="text-2xl font-bold mb-2">{currentQuestion.word.word}</h2>
+            <h2 className="text-white text-2xl font-bold mb-2">{currentQuestion.word.word}</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-6">{currentQuestion.word.definition}</p>
             
             <div className="space-y-4">
               {currentQuestion.options.map((option, index) => (
                 <motion.button
                   key={index}
-                  className={`w-full p-4 rounded-lg text-left transition-colors ${
+                  className={`text-white w-full p-4 rounded-lg text-left transition-colors ${
                     selectedAnswer === null
                       ? 'hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
                       : selectedAnswer === option

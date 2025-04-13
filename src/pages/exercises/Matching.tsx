@@ -221,7 +221,7 @@ const Matching = ({ unit, onComplete }: MatchingProps) => {
               {words.map((item) => (
                 <motion.button
                   key={item.id}
-                  className={`w-full p-4 rounded-lg text-left transition-all ${
+                  className={`text-white w-full p-4 rounded-lg text-left transition-all ${
                     item.isMatched
                       ? 'bg-green-100 dark:bg-green-900 border border-green-500 text-green-700 dark:text-green-300'
                       : incorrectPair.includes(item.id)
@@ -246,7 +246,7 @@ const Matching = ({ unit, onComplete }: MatchingProps) => {
               {translations.map((item) => (
                 <motion.button
                   key={item.id}
-                  className={`w-full p-4 rounded-lg text-left transition-all ${
+                  className={`text-white w-full p-4 rounded-lg text-left transition-all ${
                     item.isMatched
                       ? 'bg-green-100 dark:bg-green-900 border border-green-500 text-green-700 dark:text-green-300'
                       : incorrectPair.includes(item.id)

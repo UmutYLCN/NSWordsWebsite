@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 import MultipleChoice from './exercises/MultipleChoice';
 import Matching from './exercises/Matching';
 import Writing from './exercises/Writing';
-import VocabularyTest from './exercises/VocabularyTest';
 
 interface ExerciseType {
   id: string;
@@ -38,13 +37,6 @@ const exerciseTypes: ExerciseType[] = [
     icon: '✍️',
     color: 'from-orange-500 to-red-500'
   },
-  {
-    id: 'vocabulary-test',
-    title: 'Kendini Test Et',
-    description: 'İngilizce kelimelerin Türkçe karşılığını bildiğiniz kadar yazın',
-    icon: '🏆',
-    color: 'from-blue-500 to-cyan-500'
-  }
 ];
 
 const Exercise = () => {
@@ -123,7 +115,7 @@ const Exercise = () => {
     return (
       <div className="min-h-screen bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 py-8">
-          <div className="bg-gray-800 rounded-xl shadow-sm p-8">
+          <div className="rounded-xl shadow-sm p-8">
             {selectedType === 'multiple-choice' && (
               <MultipleChoice unit={unit} onComplete={handleComplete} />
             )}
@@ -132,9 +124,6 @@ const Exercise = () => {
             )}
             {selectedType === 'writing' && (
               <Writing unit={unit} onComplete={handleComplete} />
-            )}
-            {selectedType === 'vocabulary-test' && (
-              <VocabularyTest unit={unit} onComplete={handleComplete} />
             )}
           </div>
         </div>
