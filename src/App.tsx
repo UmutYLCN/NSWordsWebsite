@@ -4,9 +4,10 @@ import Units from './pages/Units';
 import Flashcards from './pages/Flashcards';
 import MemoryGame from './pages/MemoryGame';
 import Exercise from './pages/Exercise';
-import About from './pages/About';
 import Contact from './pages/Contact';
 import { ThemeProvider } from './contexts/ThemeContext';
+import VocabularyTestPage from './pages/VocabularyTestPage';
+import HighScoresPage from './pages/HighScoresPage';
 
 function App() {
   return (
@@ -15,9 +16,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/units" element={<Units />} />
         <Route path="/flashcards/:unitId" element={<Flashcards />} />
+        <Route path="/memory-game" element={<MemoryGame />} />
         <Route path="/memory-game/:unitId" element={<MemoryGame />} />
         <Route path="/exercise/:unitId" element={<Exercise />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/vocabulary-test" element={<VocabularyTestPage />} />
+        <Route path="/high-scores" element={<HighScoresPage />} />
         <Route path="/contact" element={<Contact />} />
         {/* Fallback route for the base URL */}
         <Route path="*" element={<Home />} />

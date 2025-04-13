@@ -1,10 +1,13 @@
 export interface Word {
   id: number;
   word: string;
+  title?: string;
   definition: string;
   translation: string;
+  translations?: string[];
   meaning: string;
   examples: string[];
+  example?: string;
 }
 
 export interface Unit {

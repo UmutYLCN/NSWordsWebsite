@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import MultipleChoice from './exercises/MultipleChoice';
 import Matching from './exercises/Matching';
 import Writing from './exercises/Writing';
+import VocabularyTest from './exercises/VocabularyTest';
 
 interface ExerciseType {
   id: string;
@@ -36,6 +37,13 @@ const exerciseTypes: ExerciseType[] = [
     description: 'Verilen kelimeyi doğru şekilde yazın',
     icon: '✍️',
     color: 'from-orange-500 to-red-500'
+  },
+  {
+    id: 'vocabulary-test',
+    title: 'Kendini Test Et',
+    description: 'İngilizce kelimelerin Türkçe karşılığını bildiğiniz kadar yazın',
+    icon: '🏆',
+    color: 'from-blue-500 to-cyan-500'
   }
 ];
 
@@ -93,9 +101,9 @@ const Exercise = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
+      <div className="min-h-screen bg-gray-900 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-primary dark:text-primary text-xl">Yükleniyor...</div>
+          <div className="text-white text-xl">Yükleniyor...</div>
         </div>
       </div>
     );
@@ -103,7 +111,7 @@ const Exercise = () => {
 
   if (error || !unit) {
     return (
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
+      <div className="min-h-screen bg-gray-900 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-red-500 text-xl">{error}</div>
         </div>
@@ -113,9 +121,9 @@ const Exercise = () => {
 
   if (showExercise && selectedType) {
     return (
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <div className="min-h-screen bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 py-8">
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-8">
+          <div className="bg-gray-800 rounded-xl shadow-sm p-8">
             {selectedType === 'multiple-choice' && (
               <MultipleChoice unit={unit} onComplete={handleComplete} />
             )}
@@ -125,6 +133,9 @@ const Exercise = () => {
             {selectedType === 'writing' && (
               <Writing unit={unit} onComplete={handleComplete} />
             )}
+            {selectedType === 'vocabulary-test' && (
+              <VocabularyTest unit={unit} onComplete={handleComplete} />
+            )}
           </div>
         </div>
       </div>
@@ -132,19 +143,19 @@ const Exercise = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-900">
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center mb-12">
           <Link
             to="/units"
-            className="flex items-center text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
+            className="flex items-center text-gray-400 hover:text-white transition-colors"
           >
             <ArrowLeftIcon className="w-5 h-5 mr-2" />
             <span>Geri Dön</span>
           </Link>
         </div>
 
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">
+        <h1 className="text-3xl font-bold text-white text-center mb-8">
           Egzersiz Seç
         </h1>
 
@@ -160,7 +171,7 @@ const Exercise = () => {
               <div
                 className={`h-64 rounded-xl p-6 bg-gradient-to-br ${type.color} transition-all duration-300 ${
                   selectedType === type.id
-                    ? 'ring-4 ring-primary shadow-2xl scale-105'
+                    ? 'ring-4 ring-blue-400 shadow-2xl scale-105'
                     : 'shadow-lg hover:shadow-xl'
                 }`}
               >
@@ -171,7 +182,7 @@ const Exercise = () => {
                   <div className="absolute top-4 right-4 bg-white rounded-full p-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-primary"
+                      className="h-6 w-6 text-blue-500"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -194,8 +205,8 @@ const Exercise = () => {
             disabled={!selectedType}
             className={`px-8 py-3 rounded-lg text-lg font-semibold transition-colors ${
               selectedType
-                ? 'bg-primary text-white hover:bg-primary/90'
-                : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                ? 'bg-blue-500 text-white hover:bg-blue-600'
+                : 'bg-gray-700 text-gray-500 cursor-not-allowed'
             }`}
             whileHover={selectedType ? { scale: 1.05 } : {}}
             whileTap={selectedType ? { scale: 0.95 } : {}}

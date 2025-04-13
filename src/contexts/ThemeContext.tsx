@@ -10,22 +10,18 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = useState<Theme>(() => {
-    const savedTheme = localStorage.getItem('theme');
-    return (savedTheme as Theme) || 'light';
-  });
+  // Her zaman 'dark' temayı kullanacağız
+  const [theme] = useState<Theme>('dark');
 
   useEffect(() => {
-    localStorage.setItem('theme', theme);
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [theme]);
+    // Dark modunu zorla uygula
+    document.documentElement.classList.add('dark');
+  }, []);
 
+  // Tema değiştirme fonksiyonu artık işlevsiz
   const toggleTheme = () => {
-    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+    // Hiçbir şey yapmıyor
+    console.log('Tema değiştirme şimdilik devre dışı.');
   };
 
   return (

@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { QuestionMarkCircleIcon, ArrowLeftIcon } from '@heroicons/react/24/outline';
+import { QuestionMarkCircleIcon, ArrowLeftIcon, FunnelIcon } from '@heroicons/react/24/outline';
 import { motion} from 'framer-motion';
-import { Unit} from '../types';
+import { Unit } from '../types';
 import { TrophyIcon } from '@heroicons/react/24/solid';
 
 interface Player {
@@ -135,6 +135,8 @@ const MemoryGame = () => {
     { name: 'Player 1', score: 0, color: '' },
     { name: 'Player 2', score: 0, color: '' }
   ]);
+  const [units, setUnits] = useState<Unit[]>([]);
+  const [selectedUnitId, setSelectedUnitId] = useState<number | null>(unitId ? Number(unitId) : null);
   const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
   const [flippedCards, setFlippedCards] = useState<string[]>([]);
   const [canFlip, setCanFlip] = useState(true);
@@ -148,6 +150,7 @@ const MemoryGame = () => {
   const [showColorPicker2, setShowColorPicker2] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
   const [showExitConfirm, setShowExitConfirm] = useState(false);
+  const [selectedType, setSelectedType] = useState<string | null>(null);
 
   // Tarayıcı geri tuşu kontrolü
   useEffect(() => {
@@ -164,78 +167,105 @@ const MemoryGame = () => {
     return () => window.removeEventListener('popstate', handlePopState);
   }, [gameStarted, gameOver]);
 
+  // Üniteleri yükle
   useEffect(() => {
-    const loadCards = async () => {
+    const loadUnits = async () => {
       try {
+        setLoading(true);
         const baseUrl = import.meta.env.BASE_URL;
         const response = await fetch(`${baseUrl}data.json`);
-        const units: Unit[] = await response.json();
-
-        // Mix ünite kontrolü
-        const isMixUnit = Number(unitId) >= 1000;
-        let currentUnit: Unit | undefined;
+        const data = await response.json();
+        setUnits(data);
         
-        if (isMixUnit) {
-          const unitNumber = Number(unitId) - 1000;
-          const rwUnit = units.find(u => 
-            u.title.includes('Reading & Writing') && 
-            u.title.includes(`Unit ${unitNumber}`)
-          );
-          const lsUnit = units.find(u => 
-            u.title.includes('Listening & Speaking') && 
-            u.title.includes(`Unit ${unitNumber}`)
-          );
-
-          if (rwUnit && lsUnit) {
-            currentUnit = {
-              id: Number(unitId),
-              title: `Mix Unit ${unitNumber}`,
-              words: [...rwUnit.words, ...lsUnit.words]
-            };
-          }
+        // unitId varsa, direkt oyunu yükle, yoksa seçim ekranını göster
+        if (unitId) {
+          loadCardsForUnit(Number(unitId), data);
         } else {
-          currentUnit = units.find(u => u.id === Number(unitId));
+          setLoading(false);
         }
-
-        if (!currentUnit) {
-          throw new Error('Ünite bulunamadı');
-        }
-
-        // Üniteden rastgele 12 kelime seç
-        const shuffledWords = [...currentUnit.words]
-          .sort(() => Math.random() - 0.5)
-          .slice(0, 12);
-
-        const cardPairs = shuffledWords.flatMap(word => [
-          {
-            id: `word-${word.id}`,
-            content: word.word,
-            type: 'word' as const,
-            originalId: word.id,
-            isFlipped: false,
-            isMatched: false
-          },
-          {
-            id: `translation-${word.id}`,
-            content: word.translation,
-            type: 'translation' as const,
-            originalId: word.id,
-            isFlipped: false,
-            isMatched: false
-          }
-        ]);
-
-        // Kartları karıştır
-        setCards(cardPairs.sort(() => Math.random() - 0.5));
-        setLoading(false);
       } catch (error) {
-        console.error('Kartlar yüklenirken bir hata oluştu:', error);
+        console.error('Üniteler yüklenirken bir hata oluştu:', error);
         navigate('/units');
       }
     };
 
-    loadCards();
+    loadUnits();
   }, [unitId, navigate]);
+
+  // Filtre uygulanıyor
+  const filteredUnits = units.filter(unit => {
+    if (!selectedType) return true;
+    if (selectedType === 'NS2RW') return unit.title.includes('NorthStar 2 Reading & Writing');
+    if (selectedType === 'NS2LS') return unit.title.includes('NorthStar 2 Listening & Speaking');
+    if (selectedType === 'NS3RW') return unit.title.includes('NorthStar 3 Reading & Writing');
+    return true;
+  });
+
+  // Seçilen ünite için kartları yükle
+  const loadCardsForUnit = async (unitIdToLoad: number, availableUnits: Unit[]) => {
+    try {
+      // Mix ünite kontrolü
+      const isMixUnit = unitIdToLoad >= 1000;
+      let currentUnit: Unit | undefined;
+      
+      if (isMixUnit) {
+        const unitNumber = unitIdToLoad - 1000;
+        const rwUnit = availableUnits.find(u => 
+          u.title.includes('Reading & Writing') && 
+          u.title.includes(`Unit ${unitNumber}`)
+        );
+        const lsUnit = availableUnits.find(u => 
+          u.title.includes('Listening & Speaking') && 
+          u.title.includes(`Unit ${unitNumber}`)
+        );
+
+        if (rwUnit && lsUnit) {
+          currentUnit = {
+            id: unitIdToLoad,
+            title: `Mix Unit ${unitNumber}`,
+            words: [...rwUnit.words, ...lsUnit.words]
+          };
+        }
+      } else {
+        currentUnit = availableUnits.find(u => u.id === unitIdToLoad);
+      }
+
+      if (!currentUnit) {
+        throw new Error('Ünite bulunamadı');
+      }
+
+      // Üniteden rastgele 12 kelime seç
+      const shuffledWords = [...currentUnit.words]
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 12);
+
+      const cardPairs = shuffledWords.flatMap(word => [
+        {
+          id: `word-${word.id}`,
+          content: word.word,
+          type: 'word' as const,
+          originalId: word.id,
+          isFlipped: false,
+          isMatched: false
+        },
+        {
+          id: `translation-${word.id}`,
+          content: word.translation,
+          type: 'translation' as const,
+          originalId: word.id,
+          isFlipped: false,
+          isMatched: false
+        }
+      ]);
+
+      // Kartları karıştır
+      setCards(cardPairs.sort(() => Math.random() - 0.5));
+      setLoading(false);
+    } catch (error) {
+      console.error('Kartlar yüklenirken bir hata oluştu:', error);
+      navigate('/units');
+    }
+  };
 
   // Alert komponenti
   const Alert = () => {
@@ -271,15 +301,28 @@ const MemoryGame = () => {
       alert('Lütfen her iki oyuncu için renk seçin');
       return;
     }
+    
     if (player1Color === player2Color) {
       setShowAlert(true);
       return;
     }
+    
+    if (!selectedUnitId) {
+      alert('Lütfen bir ünite seçin');
+      return;
+    }
+
     setPlayers([
       { name: player1Name || 'Player 1', score: 0, color: player1Color },
       { name: player2Name || 'Player 2', score: 0, color: player2Color }
     ]);
+    
     setGameStarted(true);
+  };
+
+  const handleUnitSelect = (id: number) => {
+    setSelectedUnitId(id);
+    loadCardsForUnit(id, units);
   };
 
   const handleCardClick = async (cardId: string) => {
@@ -396,6 +439,194 @@ const MemoryGame = () => {
       </div>
     );
   };
+
+  // Oyuna başlamadan önce ünite ve oyuncu seçimi
+  if (!gameStarted && !unitId) {
+    return (
+      <div className="min-h-screen bg-gray-900 text-white pt-8 pb-12 px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto">
+          {/* Header */}
+          <div className="flex items-center mb-10 justify-between">
+            <Link to="/" className="flex items-center text-gray-400 hover:text-white">
+              <ArrowLeftIcon className="w-5 h-5 mr-2" />
+              <span>Geri Dön</span>
+            </Link>
+            <h1 className="text-3xl font-bold text-center text-blue-400">Hafıza Oyunu</h1>
+            <div className="w-24"></div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Sol Taraf - Oyuncu Ayarları */}
+            <div className="lg:col-span-1">
+              <div className="bg-gray-800 rounded-xl p-6">
+                <h2 className="text-xl font-semibold mb-6 text-white">Oyuncu Ayarları</h2>
+                
+                {/* Oyuncu 1 */}
+                <div className="mb-6">
+                  <label className="block text-gray-400 mb-2 text-sm">Oyuncu 1</label>
+                  <input
+                    type="text"
+                    value={player1Name}
+                    onChange={(e) => setPlayer1Name(e.target.value)}
+                    placeholder="İsim girin"
+                    className="w-full px-4 py-2.5 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  
+                  <div className="mt-3">
+                    <label className="block text-gray-400 mb-2 text-sm">Renk Seçin</label>
+                    <button
+                      onClick={() => setShowColorPicker1(true)}
+                      className={`w-full py-2 px-3 rounded-lg flex justify-between items-center border border-gray-600 hover:bg-gray-700`}
+                    >
+                      <span className="text-white">{playerColors.find(c => c.value === player1Color)?.name || 'Seç'}</span>
+                      <div className={`w-6 h-6 rounded-full bg-${player1Color}`}></div>
+                    </button>
+                  </div>
+                </div>
+                
+                {/* Oyuncu 2 */}
+                <div>
+                  <label className="block text-gray-400 mb-2 text-sm">Oyuncu 2</label>
+                  <input
+                    type="text"
+                    value={player2Name}
+                    onChange={(e) => setPlayer2Name(e.target.value)}
+                    placeholder="İsim girin"
+                    className="w-full px-4 py-2.5 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  
+                  <div className="mt-3">
+                    <label className="block text-gray-400 mb-2 text-sm">Renk Seçin</label>
+                    <button
+                      onClick={() => setShowColorPicker2(true)}
+                      className={`w-full py-2 px-3 rounded-lg flex justify-between items-center border border-gray-600 hover:bg-gray-700`}
+                    >
+                      <span className="text-white">{playerColors.find(c => c.value === player2Color)?.name || 'Seç'}</span>
+                      <div className={`w-6 h-6 rounded-full bg-${player2Color}`}></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Filtreler */}
+              <div className="bg-gray-800 rounded-xl p-6 mt-6">
+                <div className="flex items-center gap-2 pb-4 border-b border-gray-700">
+                  <FunnelIcon className="w-5 h-5 text-blue-400" />
+                  <h2 className="font-semibold text-white">Filtrele</h2>
+                </div>
+                <div className="mt-4 space-y-2">
+                  <button
+                    onClick={() => setSelectedType(null)}
+                    className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
+                      !selectedType
+                        ? 'bg-blue-500/10 text-blue-400 font-medium'
+                        : 'text-gray-400 hover:bg-gray-700'
+                    }`}
+                  >
+                    Tüm Üniteler
+                  </button>
+                  <button
+                    onClick={() => setSelectedType('NS2RW')}
+                    className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
+                      selectedType === 'NS2RW'
+                        ? 'bg-blue-500/10 text-blue-400 font-medium'
+                        : 'text-gray-400 hover:bg-gray-700'
+                    }`}
+                  >
+                    NorthStar 2 Reading & Writing
+                  </button>
+                  <button
+                    onClick={() => setSelectedType('NS2LS')}
+                    className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
+                      selectedType === 'NS2LS'
+                        ? 'bg-blue-500/10 text-blue-400 font-medium'
+                        : 'text-gray-400 hover:bg-gray-700'
+                    }`}
+                  >
+                    NorthStar 2 Listening & Speaking
+                  </button>
+                  <button
+                    onClick={() => setSelectedType('NS3RW')}
+                    className={`w-full text-left px-4 py-2 rounded-lg transition-colors ${
+                      selectedType === 'NS3RW'
+                        ? 'bg-blue-500/10 text-blue-400 font-medium'
+                        : 'text-gray-400 hover:bg-gray-700'
+                    }`}
+                  >
+                    NorthStar 3 Reading & Writing
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            {/* Sağ Taraf - Ünite Seçimi */}
+            <div className="lg:col-span-2">
+              <div className="bg-gray-800 rounded-xl p-6">
+                <h2 className="text-xl font-semibold mb-6 text-white">Ünite Seçimi</h2>
+                
+                {loading ? (
+                  <div className="text-center py-12">
+                    <div className="spinner border-t-2 border-blue-500 border-solid rounded-full w-8 h-8 mx-auto animate-spin"></div>
+                    <p className="mt-4 text-gray-400">Üniteler yükleniyor...</p>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {filteredUnits.map((unit) => (
+                      <button
+                        key={unit.id}
+                        onClick={() => handleUnitSelect(unit.id)}
+                        className={`text-left p-4 rounded-xl border transition-colors ${
+                          selectedUnitId === unit.id 
+                            ? 'border-blue-500 bg-blue-500/10' 
+                            : 'border-gray-700 hover:border-gray-600'
+                        }`}
+                      >
+                        <h3 className="font-medium text-white mb-2">{unit.title}</h3>
+                        <p className="text-sm text-gray-400">{unit.words.length} kelime</p>
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+              
+              {/* Başlat Butonu */}
+              <div className="mt-6 text-center">
+                <button
+                  onClick={handleStartGame}
+                  disabled={!selectedUnitId || loading}
+                  className={`px-8 py-3 text-lg font-medium rounded-xl ${
+                    selectedUnitId && !loading
+                      ? 'bg-blue-500 hover:bg-blue-600 text-white'
+                      : 'bg-gray-700 text-gray-400 cursor-not-allowed'
+                  }`}
+                >
+                  Oyunu Başlat
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ColorPickerPopup
+          isOpen={showColorPicker1}
+          onClose={() => setShowColorPicker1(false)}
+          onSelect={setPlayer1Color}
+          selectedColor={player1Color}
+          disabledColor={player2Color}
+        />
+        
+        <ColorPickerPopup
+          isOpen={showColorPicker2}
+          onClose={() => setShowColorPicker2(false)}
+          onSelect={setPlayer2Color}
+          selectedColor={player2Color}
+          disabledColor={player1Color}
+        />
+        
+        <Alert />
+      </div>
+    );
+  }
 
   if (loading) {
     return (

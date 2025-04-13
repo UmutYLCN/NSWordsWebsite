@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-900">
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="flex items-center mb-12">
-          <Link to="/" className="flex items-center text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">
+          <Link to="/" className="flex items-center text-gray-400 hover:text-white transition-colors">
             <ArrowLeftIcon className="w-5 h-5 mr-2" />
             <span>Geri Dön</span>
           </Link>
@@ -18,41 +18,41 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-6">
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6">
-                <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              <div className="bg-gray-800 rounded-lg shadow-sm p-6">
+                <h1 className="text-4xl font-bold text-white mb-4">
                   İletişime Geçin
                 </h1>
-                <p className="text-gray-600 dark:text-gray-400 text-lg mb-6">
+                <p className="text-gray-400 text-lg mb-6">
                   Projeye katkıda bulunmak, öneride bulunmak veya herhangi bir konuda iletişime geçmek için
                   aşağıdaki kanalları kullanabilirsiniz.
                 </p>
                 <div className="space-y-4">
                   {/* Email Section */}
                   <div>
-                    <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                    <h2 className="text-xl font-semibold text-white mb-4">
                       E-posta Adresleri
                     </h2>
                     <ul className="space-y-2">
                       <li>
                         <a 
                           href="mailto:dev.umutyalcin@gmail.com"
-                          className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+                          className="flex items-center gap-3 p-4 rounded-xl bg-gray-700 hover:bg-gray-600 transition-colors"
                         >
                           <svg className="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                           </svg>
-                          <span className="font-medium dark:text-white">dev.umutyalcin@gmail.com</span>
+                          <span className="font-medium text-white">dev.umutyalcin@gmail.com</span>
                         </a>
                       </li>
                       <li>
                         <a 
                           href="mailto:umut.yalcin@istun.edu.tr"
-                          className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+                          className="flex items-center gap-3 p-4 rounded-xl bg-gray-700 hover:bg-gray-600 transition-colors"
                         >
                           <svg className="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                           </svg>
-                          <span className="font-medium dark:text-white">umut.yalcin@istun.edu.tr</span>
+                          <span className="font-medium text-white">umut.yalcin@istun.edu.tr</span>
                         </a>
                       </li>
                     </ul>
@@ -60,7 +60,7 @@ const Contact = () => {
 
                   {/* Social Media Section */}
                   <div>
-                    <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                    <h2 className="text-xl font-semibold text-white mb-4">
                       Sosyal Medya
                     </h2>
                     <div className="grid grid-cols-1 gap-4">
@@ -68,7 +68,7 @@ const Contact = () => {
                         href="https://github.com/UmutYLCN" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors group"
+                        className="flex items-center gap-3 p-4 rounded-xl bg-gray-700 hover:bg-gray-600 transition-colors group"
                       >
                         <div className="w-10 h-10 rounded-lg bg-black flex items-center justify-center">
                           <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
@@ -76,8 +76,8 @@ const Contact = () => {
                           </svg>
                         </div>
                         <div>
-                          <span className="font-medium dark:text-white">GitHub</span>
-                          <p className="text-sm text-gray-500 dark:text-gray-400">Proje kaynak kodları ve katkıda bulunma</p>
+                          <span className="font-medium text-white">GitHub</span>
+                          <p className="text-sm text-gray-400">Proje kaynak kodları ve katkıda bulunma</p>
                         </div>
                       </a>
                       
@@ -85,7 +85,7 @@ const Contact = () => {
                         href="https://www.linkedin.com/in/umut-yalcin/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+                        className="flex items-center gap-3 p-4 rounded-xl bg-gray-700 hover:bg-gray-600 transition-colors"
                       >
                         <div className="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center">
                           <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
@@ -93,8 +93,8 @@ const Contact = () => {
                           </svg>
                         </div>
                         <div>
-                          <span className="font-medium dark:text-white">LinkedIn</span>
-                          <p className="text-sm text-gray-500 dark:text-gray-400">Profesyonel iletişim ve kariyer</p>
+                          <span className="font-medium text-white">LinkedIn</span>
+                          <p className="text-sm text-gray-400">Profesyonel iletişim ve kariyer</p>
                         </div>
                       </a>
 
@@ -102,7 +102,7 @@ const Contact = () => {
                         href="https://www.instagram.com/umutylcnn_/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+                        className="flex items-center gap-3 p-4 rounded-xl bg-gray-700 hover:bg-gray-600 transition-colors"
                       >
                         <div className="w-10 h-10 rounded-lg bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 flex items-center justify-center">
                           <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
@@ -110,8 +110,8 @@ const Contact = () => {
                           </svg>
                         </div>
                         <div>
-                          <span className="font-medium dark:text-white">Instagram</span>
-                          <p className="text-sm text-gray-500 dark:text-gray-400">Günlük paylaşımlar ve hikayeler</p>
+                          <span className="font-medium text-white">Instagram</span>
+                          <p className="text-sm text-gray-400">Günlük paylaşımlar ve hikayeler</p>
                         </div>
                       </a>
                     </div>
