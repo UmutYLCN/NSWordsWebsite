@@ -86,14 +86,17 @@ const LearningPath = () => {
             <AnimatePresence>
                 {hoveredInfo && (
                     <motion.div
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: -10 }}
-                        className="fixed z-50 pointer-events-none"
-                        style={{ top: hoveredInfo.top, left: '6.5rem', transform: 'translateY(-50%)' }}
+                        initial={{ opacity: 0, x: 10, scale: 0.8 }}
+                        animate={{ opacity: 1, x: 30, scale: 1 }}
+                        exit={{ opacity: 0, x: 10, scale: 0.8 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 25 }}
+                        className="fixed z-50 pointer-events-none origin-left"
+                        style={{ top: hoveredInfo.top, left: '3rem', transform: 'translateY(-50%)' }}
                     >
-                        <div className="px-4 py-2 rounded-xl backdrop-blur-xl border border-slate-700/50 shadow-2xl bg-slate-900/90 text-slate-200 whitespace-nowrap">
-                            <span className="text-base font-bold tracking-wide">{hoveredInfo.unit.title}</span>
+                        <div className="px-4 py-2 rounded-r-xl rounded-bl-xl backdrop-blur-xl border border-slate-700/50 shadow-2xl bg-slate-900/90 text-slate-200 whitespace-nowrap flex items-center">
+                            {/* Small arrow pointing to the line */}
+                            <div className="absolute -left-1.5 top-1/2 -translate-y-1/2 w-3 h-3 bg-slate-900/90 border-l border-b border-slate-700/50 rotate-45 transform"></div>
+                            <span className="text-base font-bold tracking-wide relative z-10">{hoveredInfo.unit.title}</span>
                         </div>
                     </motion.div>
                 )}
