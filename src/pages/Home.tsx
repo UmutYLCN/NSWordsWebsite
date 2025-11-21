@@ -20,11 +20,11 @@ export default function Home() {
       try {
         const baseUrl = import.meta.env.BASE_URL;
         const response = await fetch(`${baseUrl}data.json`);
-        
+
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        
+
         const data = await response.json();
         const words = data.flatMap((unit: any) => unit.words);
         setAllWords(words);
@@ -48,7 +48,7 @@ export default function Home() {
       return;
     }
 
-    const filtered = allWords.filter(word => 
+    const filtered = allWords.filter(word =>
       word.word.toLowerCase().includes(searchTerm.toLowerCase()) ||
       word.translation.toLowerCase().includes(searchTerm.toLowerCase())
     );
@@ -58,8 +58,8 @@ export default function Home() {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (searchInputRef.current && !searchInputRef.current.contains(event.target as Node) && 
-          !document.getElementById('dictionaryPopup')?.contains(event.target as Node)) {
+      if (searchInputRef.current && !searchInputRef.current.contains(event.target as Node) &&
+        !document.getElementById('dictionaryPopup')?.contains(event.target as Node)) {
         setShowSearchResults(false);
         setSearchFocused(false);
       }
@@ -100,6 +100,9 @@ export default function Home() {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <h1 className="text-2xl font-bold text-white">NSWords</h1>
           <div className="flex items-center space-x-8">
+            <Link to="/learning-path" className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-medium transition-colors flex items-center">
+              <span className="mr-2">🚀</span> Öğrenme Yolu
+            </Link>
             <Link to="/high-scores" className="text-gray-300 hover:text-white">Skor Tablosu</Link>
             <Link to="/contact" className="text-gray-300 hover:text-white">İletişim</Link>
             <div className="opacity-50 pointer-events-none">
@@ -127,7 +130,7 @@ export default function Home() {
 
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16 relative pt-20">
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -135,7 +138,7 @@ export default function Home() {
             >
               NSWords'e Hoş Geldiniz
             </motion.h2>
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -145,7 +148,7 @@ export default function Home() {
             </motion.h1>
           </div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -188,7 +191,7 @@ export default function Home() {
             </Link>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
@@ -215,7 +218,7 @@ export default function Home() {
             {/* Sözlük popup - ARAMA ÇUBUĞUNUN ALTINDA, arkaplan kaldırıldı */}
             <AnimatePresence>
               {showSearchResults && (
-                <motion.div 
+                <motion.div
                   id="dictionaryPopup"
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -227,7 +230,7 @@ export default function Home() {
                   <div className="p-4 border-b border-gray-700/80 flex justify-between items-center sticky top-0 bg-gray-800/95 backdrop-blur-md z-10">
                     <div className="flex items-center space-x-3">
                       {showWordDetail ? (
-                        <button 
+                        <button
                           onClick={closeWordDetail}
                           className="p-1.5 rounded-full hover:bg-gray-700 text-gray-400 hover:text-white transition-colors"
                         >
@@ -247,11 +250,11 @@ export default function Home() {
                       <XMarkIcon className="w-5 h-5 text-gray-400" />
                     </button>
                   </div>
-                  
+
                   {/* Kelime listesi veya Kelime detayı */}
                   <AnimatePresence mode="wait">
                     {!showWordDetail ? (
-                      <motion.div 
+                      <motion.div
                         key="wordList"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -279,8 +282,8 @@ export default function Home() {
                                 </div>
                                 {word.definition && (
                                   <div className="text-sm text-gray-400 bg-gray-800/80 px-3 py-2 rounded-lg mt-2">
-                                    {word.definition.length > 100 
-                                      ? word.definition.substring(0, 100) + "..." 
+                                    {word.definition.length > 100
+                                      ? word.definition.substring(0, 100) + "..."
                                       : word.definition}
                                   </div>
                                 )}
@@ -314,7 +317,7 @@ export default function Home() {
                         </div>
 
                         {selectedWord.definition && (
-                          <motion.div 
+                          <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.3, delay: 0.1 }}
@@ -326,7 +329,7 @@ export default function Home() {
                         )}
 
                         {selectedWord.examples && selectedWord.examples.length > 0 && (
-                          <motion.div 
+                          <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.3, delay: 0.2 }}
@@ -344,7 +347,7 @@ export default function Home() {
                         )}
 
                         {selectedWord.meaning && (
-                          <motion.div 
+                          <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.3, delay: 0.3 }}
@@ -365,4 +368,4 @@ export default function Home() {
       </main>
     </div>
   );
-} 
+}

@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import { ThemeProvider } from './contexts/ThemeContext';
 import VocabularyTestPage from './pages/VocabularyTestPage';
 import HighScoresPage from './pages/HighScoresPage';
+import LearningPath from './pages/LearningPath';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/exercise/:unitId" element={<Exercise />} />
         <Route path="/vocabulary-test" element={<VocabularyTestPage />} />
         <Route path="/high-scores" element={<HighScoresPage />} />
+        <Route path="/learning-path" element={<LearningPath />} />
         <Route path="/contact" element={<Contact />} />
         {/* Fallback route for the base URL */}
         <Route path="*" element={<Home />} />
